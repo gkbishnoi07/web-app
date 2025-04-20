@@ -3,9 +3,9 @@ name: Unit Tests & Coverage
 on:
   workflow_dispatch:
   push:
-    branches: [dev]
+    branches: [test-workflow]
   pull_request:
-    branches: [dev]
+    branches: [test-workflow]
 
 jobs:
   test:
