@@ -25,7 +25,7 @@ export class FixedDepositsCashTransactionComponent implements OnInit {
   /** transaction type flag to render required UI */
   transactionType: { deposit: boolean; withdrawal: boolean } = { deposit: false, withdrawal: false };
   /** transaction command for submit request */
-  transactionCommand: string;
+  transactionCommand: 'deposit' | 'withdrawal';
   actionName: string;
   /** saving account's Id */
   accountId: string;
@@ -53,7 +53,7 @@ export class FixedDepositsCashTransactionComponent implements OnInit {
       this.paymentTypeOptions = data.fixedDepositsAccountActionData.paymentTypeOptions;
     });
     this.actionName = this.route.snapshot.params['name'];
-    this.transactionCommand = this.actionName.toLowerCase();
+    this.transactionCommand = this.actionName.toLowerCase() as 'deposit' | 'withdrawal';
     this.transactionType[this.transactionCommand] = true;
     this.accountId = this.route.parent.snapshot.params['fixedDepositAccountId'];
   }

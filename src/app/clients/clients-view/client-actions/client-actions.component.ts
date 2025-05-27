@@ -2,6 +2,25 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+type ClientActionType =
+  | 'Assign Staff'
+  | 'Close'
+  | 'Survey'
+  | 'Reject'
+  | 'Activate' // Add this
+  | 'Withdraw'
+  | 'Update Default Savings'
+  | 'Transfer Client'
+  | 'Undo Transfer'
+  | 'Reject Transfer'
+  | 'Accept Transfer'
+  | 'Reactivate'
+  | 'Undo Rejection'
+  | 'Add Charge'
+  | 'Take Survey'
+  | 'Client Screen Reports'
+  | 'Create Collateral';
+
 /**
  * Client actions component.
  */
@@ -12,34 +31,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ClientActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
-  actions: {
-    'Assign Staff': boolean;
-    Close: boolean;
-    Reject: boolean;
-    Survey: boolean;
-    Withdraw: boolean;
-    'Update Default Savings': boolean;
-    'Transfer Client': boolean;
-    'Undo Transfer': boolean;
-    'Accept Transfer': boolean;
-    'Reject Transfer': boolean;
-    Reactivate: boolean;
-    'Undo Rejection': boolean;
-    'Add Charge': boolean;
-    'Take Survey': boolean;
-    'Client Screen Reports': boolean;
-    'Create Collateral': boolean;
-  } = {
+  actions: Record<ClientActionType, boolean> = {
     'Assign Staff': false,
     Close: false,
-    Reject: false,
     Survey: false,
+    Reject: false,
+    Activate: false, // Add this
     Withdraw: false,
     'Update Default Savings': false,
     'Transfer Client': false,
     'Undo Transfer': false,
-    'Accept Transfer': false,
     'Reject Transfer': false,
+    'Accept Transfer': false,
     Reactivate: false,
     'Undo Rejection': false,
     'Add Charge': false,
@@ -57,7 +60,7 @@ export class ClientActionsComponent {
     private router: Router
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const name = this.route.snapshot.params['name'];
+    const name = this.route.snapshot.params['name'] as keyof typeof this.actions;
     this.actions[name] = true;
   }
 }

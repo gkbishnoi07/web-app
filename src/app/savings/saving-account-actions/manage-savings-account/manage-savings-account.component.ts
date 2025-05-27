@@ -7,6 +7,15 @@ import { SettingsService } from 'app/settings/settings.service';
 import { Currency } from 'app/shared/models/general.model';
 import { SystemService } from 'app/system/system.service';
 
+type TransactionCommandType = 'holdamount' | 'blockaccount' | 'blockdeposit' | 'blockwithdrawal';
+
+interface TransactionType {
+  holdamount: boolean;
+  blockaccount: boolean;
+  blockdeposit: boolean;
+  blockwithdrawal: boolean;
+}
+
 @Component({
   selector: 'mifosx-manage-savings-account',
   templateUrl: './manage-savings-account.component.html',
@@ -22,16 +31,11 @@ export class ManageSavingsAccountComponent implements OnInit {
   manageSavingsAccountForm: UntypedFormGroup;
   /** Savings Account Id */
   savingAccountId: string;
-  transactionCommand: string;
+  transactionCommand: TransactionCommandType;
 
   reasonOptions: any = [];
 
-  transactionType: {
-    holdamount: boolean;
-    blockaccount: boolean;
-    blockdeposit: boolean;
-    blockwithdrawal: boolean;
-  } = {
+  transactionType: TransactionType = {
     holdamount: false,
     blockaccount: false,
     blockdeposit: false,
@@ -56,6 +60,7 @@ export class ManageSavingsAccountComponent implements OnInit {
     private settingsService: SettingsService
   ) {
     this.transactionCommand = this.route.snapshot.params['name'].toLowerCase().replaceAll(' ', '');
+    // Now TypeScript knows this is safe
     this.transactionType[this.transactionCommand] = true;
     this.savingAccountId = this.route.snapshot.params['savingAccountId'];
   }
@@ -130,7 +135,7 @@ export class ManageSavingsAccountComponent implements OnInit {
 
   submit() {
     let command = '';
-    let payload = {};
+    let payload: { transactionAmount?: number; [key: string]: any } = {};
 
     if (this.transactionType.holdamount) {
       const manageSavingsAccountFormData = this.manageSavingsAccountForm.value;

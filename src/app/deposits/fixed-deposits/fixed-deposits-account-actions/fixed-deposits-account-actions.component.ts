@@ -40,7 +40,7 @@ export class FixedDepositsAccountActionsComponent {
    * @param {ActivatedRoute} route Activated Route
    */
   constructor(private route: ActivatedRoute) {
-    const name = this.route.snapshot.params['name'];
+    const name = this.route.snapshot.params['name'] as keyof typeof this.actions;
     this.actions[name] = true;
   }
 }

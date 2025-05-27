@@ -233,13 +233,15 @@ export class EntityToEntityMappingComponent implements OnInit {
         controlName: 'fromId',
         label: this.translateService.instant(`labels.inputs.${this.firstMappingEntity}`),
         options: { label: 'name', value: 'id', data: this.firstEntityData },
-        required: true
+        required: true,
+        order: 1
       }),
       new SelectBase({
         controlName: 'toId',
         label: this.translateService.instant(`labels.text.${this.secondMappingEntity}`),
         options: { label: 'name', value: 'id', data: this.secondEntityData },
-        required: true
+        required: true,
+        order: 2
       }),
       new DatepickerBase({
         controlName: 'startDate',
@@ -288,13 +290,15 @@ export class EntityToEntityMappingComponent implements OnInit {
         controlName: 'fromId',
         label: this.translateService.instant(`labels.inputs.${this.firstMappingEntity}`),
         options: { label: 'name', value: 'id', data: this.firstEntityData },
-        required: true
+        required: true,
+        order: 1
       }),
       new SelectBase({
         controlName: 'toId',
         label: this.translateService.instant(`labels.text.${this.secondMappingEntity}`),
         options: { label: 'name', value: 'id', data: this.secondEntityData },
-        required: true
+        required: true,
+        order: 2
       }),
       new DatepickerBase({
         controlName: 'startDate',

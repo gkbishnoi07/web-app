@@ -145,7 +145,7 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
         formArray.push(chartSlabInfo);
 
         // Iterate for every slab in chartSlab
-        const chartIncentiveControl = chartDetailControl.controls['chartSlabs']['controls'][j];
+        const chartIncentiveControl = (chartDetailControl.controls['chartSlabs'] as UntypedFormArray).controls[j];
 
         // Iterate to input all the incentive for particular chart slab
         this.chartsDetail[i].chartSlabs[j].incentives.forEach((chartIncentiveDetail: any) => {
@@ -175,7 +175,7 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
               Validators.required
             ]
           });
-          const newFormArray = chartIncentiveControl['controls']['incentives'] as UntypedFormArray;
+          const newFormArray = (chartIncentiveControl as UntypedFormGroup).controls['incentives'] as UntypedFormArray;
           newFormArray.push(incentiveInfo);
         });
       });
@@ -183,8 +183,8 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
   }
 
   getChartsDetailsData() {
-    this.chartDetailData.forEach((chartData: any) => {
-      const chart = {
+    this.chartDetailData.forEach((chartData: ChartData) => {
+      const chart: Chart = {
         endDate: chartData.endDate ? new Date(chartData.endDate) : '',
         fromDate: chartData.fromDate ? new Date(chartData.fromDate) : '',
         isPrimaryGroupingByAmount: chartData.isPrimaryGroupingByAmount,
@@ -192,11 +192,14 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
         description: chartData.description,
         chartSlabs: this.getChartSlabsData(chartData)
       };
+
       if (chartData.id) {
-        chart['id'] = chartData.id;
+        chart.id = chartData.id;
       }
+
       this.chartsDetail.push(chart);
     });
+
     this.fixedDepositProductInterestRateChartForm.patchValue({
       charts: this.chartsDetail
     });
@@ -213,7 +216,17 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
     }
 
     chartSlabData.forEach((eachChartSlabData: any) => {
-      const chartSlab = {
+      const chartSlab: {
+        id?: any;
+        periodType: any;
+        amountRangeFrom: any;
+        amountRangeTo: any;
+        annualInterestRate: any;
+        description: any;
+        fromPeriod: any;
+        toPeriod: any;
+        incentives: any[];
+      } = {
         periodType: eachChartSlabData.periodType.id,
         amountRangeFrom: eachChartSlabData.amountRangeFrom,
         amountRangeTo: eachChartSlabData.amountRangeTo,
@@ -467,4 +480,29 @@ export class FixedDepositProductInterestRateChartStepComponent implements OnInit
     }
     return fixedDepositProductInterestRateChart;
   }
+}
+
+interface ChartData {
+  id?: number;
+  endDate?: string;
+  fromDate?: string;
+  isPrimaryGroupingByAmount: boolean;
+  name: string;
+  description: string;
+  chartSlabs: ChartSlab[];
+}
+
+interface ChartSlab {
+  periodType?: string;
+  fromPeriod?: number;
+  toPeriod?: number;
+  amountRangeFrom?: number;
+  amountRangeTo?: number;
+  annualInterestRate?: number;
+  description?: string;
+}
+
+interface Chart extends Omit<ChartData, 'endDate' | 'fromDate'> {
+  endDate: Date | string;
+  fromDate: Date | string;
 }

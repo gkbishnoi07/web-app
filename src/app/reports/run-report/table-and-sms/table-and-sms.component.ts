@@ -113,7 +113,11 @@ export class TableAndSmsComponent implements OnChanges {
         controlName: 'delimiter',
         label: 'Delimiter',
         value: environment.defaultCharDelimiter,
-        options: { label: 'name', value: 'char', data: delimiterOptions },
+        options: {
+          label: 'name',
+          value: 'char',
+          data: delimiterOptions
+        },
         required: true,
         order: 1
       }),
@@ -143,7 +147,7 @@ export class TableAndSmsComponent implements OnChanges {
   exportToXLS(): void {
     const fileName = `${this.dataObject.report.name}.xlsx`;
     const data = this.csvData.map((object: any) => {
-      const row = {};
+      const row: { [key: string]: any } = {};
       for (let i = 0; i < this.displayedColumns.length; i++) {
         row[this.displayedColumns[i]] = object.row[i];
       }

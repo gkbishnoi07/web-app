@@ -15,6 +15,30 @@ import { SettingsService } from 'app/settings/settings.service';
 import { Dates } from 'app/core/utils/dates';
 import { TranslateService } from '@ngx-translate/core';
 
+interface Office {
+  id: number;
+  name: string;
+  loans: Loan[];
+  [key: string]: any;
+}
+
+interface Loan {
+  id: number;
+  clientOfficeId?: number;
+  group?: {
+    officeId: number;
+  };
+  status: {
+    pendingApproval: boolean;
+    waitingForDisbursal: boolean;
+  };
+  [key: string]: any;
+}
+
+interface NodeMap {
+  [key: number]: Office;
+}
+
 @Component({
   selector: 'mifosx-loan-approval',
   templateUrl: './loan-approval.component.html',
@@ -22,21 +46,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LoanApprovalComponent {
   /** Offices Data */
-  offices: any;
+  offices: Office[] = [];
   /** Loans Data */
-  loans: any;
+  loans: Loan[] = [];
   /** Checks whether to show data or not */
   showData = false;
   /** Data source for loans approval table. */
-  dataSource: MatTableDataSource<any>;
+  dataSource!: MatTableDataSource<Office | Loan>;
   /** Row Selection Data */
-  selection: SelectionModel<any>;
+  selection!: SelectionModel<Loan>;
   /** Map data */
-  idToNodeMap = {};
+  idToNodeMap: NodeMap = {};
   /** Grouped Office Data */
-  officesArray: any[];
+  officesArray: Office[] = [];
   /** List of Requests */
-  batchRequests: any[];
+  batchRequests: any[] = [];
   /** Displayed Columns */
   displayedColumns: string[] = [
     'select',
@@ -72,35 +96,40 @@ export class LoanApprovalComponent {
   }
 
   /** Group Office Data */
-  setOfficeData() {
-    this.offices.forEach((officeEle: any) => {
+  setOfficeData(): void {
+    // Initialize offices with loans array
+    this.offices.forEach((officeEle: Office) => {
       officeEle.loans = [];
       this.idToNodeMap[officeEle.id] = officeEle;
     });
-    this.loans.forEach((loanEle: any) => {
+
+    // Process loans
+    this.loans.forEach((loanEle: Loan) => {
       if (loanEle.status.pendingApproval) {
-        let tempOffice = {};
+        let tempOffice: Office;
+
         if (loanEle.clientOfficeId) {
           tempOffice = this.idToNodeMap[loanEle.clientOfficeId];
-          tempOffice['loans'].push(loanEle);
-        } else {
-          if (loanEle.group) {
-            tempOffice = this.idToNodeMap[loanEle.group.officeId];
-            tempOffice['loans'].push(loanEle);
-          }
+          tempOffice.loans.push(loanEle);
+        } else if (loanEle.group?.officeId) {
+          tempOffice = this.idToNodeMap[loanEle.group.officeId];
+          tempOffice.loans.push(loanEle);
         }
       }
     });
-    const finalArray: any[] = [];
-    this.offices.forEach((officeEle: any) => {
+
+    // Create final array
+    const finalArray: Office[] = [];
+    this.offices.forEach((officeEle: Office) => {
       if (officeEle.loans && officeEle.loans.length > 0) {
         this.showData = true;
         finalArray.push(officeEle);
       }
     });
+
     this.officesArray = finalArray;
     this.dataSource = new MatTableDataSource(this.officesArray);
-    this.selection = new SelectionModel(true, []);
+    this.selection = new SelectionModel<Loan>(true, []);
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
@@ -181,13 +210,14 @@ export class LoanApprovalComponent {
   }
 
   loanResource() {
-    this.tasksService.getAllLoansToBeApproved().subscribe((response: any) => {
+    this.tasksService.getAllLoansToBeApproved().subscribe((response: { pageItems: Loan[] }) => {
       this.loans = response.pageItems;
-      this.loans = this.loans.filter((account: any) => {
+      this.loans = this.loans.filter((account: Loan) => {
         return account.status.waitingForDisbursal === true;
       });
-      this.dataSource = new MatTableDataSource(this.loans);
-      this.selection = new SelectionModel(true, []);
+      // Now this assignment is type-safe
+      this.dataSource = new MatTableDataSource<Loan>(this.loans);
+      this.selection = new SelectionModel<Loan>(true, []);
     });
   }
 

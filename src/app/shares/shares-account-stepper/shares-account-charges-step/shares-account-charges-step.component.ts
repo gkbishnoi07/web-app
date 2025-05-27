@@ -92,7 +92,8 @@ export class SharesAccountChargesStepComponent implements OnInit, OnChanges {
         label: this.translateService.instant('labels.inputs.Amount'),
         value: charge.amount || charge.amountOrPercentage,
         type: 'number',
-        required: false
+        required: false,
+        order: 1
       })
 
     ];

@@ -211,7 +211,7 @@ export class ViewTransactionComponent implements OnInit {
         value: this.amountRelationsAllowed,
         type: 'number',
         required: true,
-        max: this.amountRelationsAllowed,
+        max: this.amountRelationsAllowed, // Now TypeScript will recognize this
         order: 2
       })
 

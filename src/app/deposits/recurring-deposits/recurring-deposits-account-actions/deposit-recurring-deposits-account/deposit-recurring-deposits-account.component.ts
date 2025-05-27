@@ -39,7 +39,7 @@ export class DepositRecurringDepositsAccountComponent implements OnInit {
 
   action: string;
   actionName: string;
-  transactionCommand: string;
+  transactionCommand: 'deposit' | 'withdrawal';
   transactionType: { deposit: boolean; withdrawal: boolean } = { deposit: false, withdrawal: false };
 
   /**
@@ -71,7 +71,7 @@ export class DepositRecurringDepositsAccountComponent implements OnInit {
     });
     this.actionName = this.route.snapshot.params['name'];
     this.action = this.actionName.toLowerCase();
-    this.transactionCommand = this.action.toLowerCase();
+    this.transactionCommand = this.action.toLowerCase() as 'deposit' | 'withdrawal';
     this.transactionType[this.transactionCommand] = true;
     this.accountId = this.route.parent.snapshot.params['recurringDepositAccountId'];
   }

@@ -46,7 +46,7 @@ export class RecurringDepositsAccountActionsComponent {
         this.currency = data.recurringDepositsAccountActionData.currency;
       }
     });
-    const name = this.route.snapshot.params['name'];
+    const name = this.route.snapshot.params['name'] as keyof typeof this.actions;
     this.actions[name] = true;
   }
 }

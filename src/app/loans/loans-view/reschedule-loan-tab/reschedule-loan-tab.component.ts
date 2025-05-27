@@ -56,7 +56,7 @@ export class RescheduleLoanTabComponent {
       if (response.confirm) {
         const locale = this.settingsService.language.code;
         const dateFormat = this.settingsService.dateFormat;
-        const payload = {
+        const payload: { dateFormat: any; locale: any; approvedOnDate?: string; rejectedOnDate?: string } = {
           dateFormat,
           locale
         };
