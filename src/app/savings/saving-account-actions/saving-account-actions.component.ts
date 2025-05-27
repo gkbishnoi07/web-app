@@ -3,6 +3,28 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Currency } from 'app/shared/models/general.model';
 
+type SavingAccountActionType =
+  | 'Approve'
+  | 'Reject'
+  | 'Withdrawal'
+  | 'Deposit'
+  | 'Activate'
+  | 'Close'
+  | 'Undo Approval'
+  | 'Post Interest As On'
+  | 'Assign Staff'
+  | 'Add Charge'
+  | 'Unassign Staff'
+  | 'Withdrawn by Client'
+  | 'Apply Annual Fees'
+  | 'Hold Amount'
+  | 'Block Account'
+  | 'Unblock Account'
+  | 'Block Deposit'
+  | 'Unblock Deposit'
+  | 'Block Withdrawal'
+  | 'Unblock Withdrawal';
+
 /**
  * Savings account actions component.
  */
@@ -13,28 +35,7 @@ import { Currency } from 'app/shared/models/general.model';
 })
 export class SavingAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
-  actions: {
-    Approve: boolean;
-    Reject: boolean;
-    Withdrawal: boolean;
-    Deposit: boolean;
-    Activate: boolean;
-    Close: boolean;
-    'Undo Approval': boolean;
-    'Post Interest As On': boolean;
-    'Assign Staff': boolean;
-    'Add Charge': boolean;
-    'Unassign Staff': boolean;
-    'Withdrawn by Client': boolean;
-    'Apply Annual Fees': boolean;
-    'Hold Amount': boolean;
-    'Block Account': boolean;
-    'Unblock Account': boolean;
-    'Block Deposit': boolean;
-    'Unblock Deposit': boolean;
-    'Block Withdrawal': boolean;
-    'Unblock Withdrawal': boolean;
-  } = {
+  actions: Record<SavingAccountActionType, boolean> = {
     Approve: false,
     Reject: false,
     Withdrawal: false,
@@ -68,7 +69,14 @@ export class SavingAccountActionsComponent {
         this.currency = data.savingsAccountActionData.currency;
       }
     });
+
     const name = this.route.snapshot.params['name'];
-    this.actions[name] = true;
+    if (this.isValidAction(name)) {
+      this.actions[name] = true;
+    }
+  }
+
+  private isValidAction(action: string): action is SavingAccountActionType {
+    return action in this.actions;
   }
 }

@@ -43,7 +43,7 @@ export class GroupActionsComponent {
     private router: Router
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const action = this.route.snapshot.params['action'];
+    const action = this.route.snapshot.params['action'] as keyof typeof this.actions;
     this.actions[action] = true;
   }
 }

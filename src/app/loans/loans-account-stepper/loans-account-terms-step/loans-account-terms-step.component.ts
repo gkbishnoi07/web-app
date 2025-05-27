@@ -62,7 +62,7 @@ export class LoansAccountTermsStepComponent implements OnInit, OnChanges {
   /** Client Active Loan Data */
   clientActiveLoanData: any;
   /** Multi Disbursement Data */
-  disbursementDataSource: {}[] = [];
+  disbursementDataSource: DisbursementData[] = [];
   /** Loan repayment strategies */
   transactionProcessingStrategyOptions: any = [];
   repaymentStrategyDisabled = false;
@@ -507,11 +507,12 @@ export class LoansAccountTermsStepComponent implements OnInit, OnChanges {
     const dialogRef = this.dialog.open(DeleteDialogComponent, {
       data: { deleteContext: `this` }
     });
-    dialogRef.afterClosed().subscribe((response: any) => {
+
+    dialogRef.afterClosed().subscribe((response: { delete: boolean }) => {
       if (response.delete) {
-        const principal = this.disbursementDataSource[index]['principal'] * 1;
+        const principal = this.disbursementDataSource[index].principal;
         this.disbursementDataSource.splice(index, 1);
-        this.disbursementDataSource = this.disbursementDataSource.concat([]);
+        this.disbursementDataSource = [...this.disbursementDataSource];
         this.totalMultiDisbursed -= principal;
         this.isMultiDisbursedCompleted = this.totalMultiDisbursed === currentPrincipalAmount;
       }
@@ -617,4 +618,11 @@ export class LoansAccountTermsStepComponent implements OnInit, OnChanges {
       collateral: this.collateralDataSource
     };
   }
+}
+
+// Add this interface to define the structure of disbursement data
+interface DisbursementData {
+  expectedDisbursementDate?: string;
+  principal: number;
+  [key: string]: any; // For any additional properties
 }

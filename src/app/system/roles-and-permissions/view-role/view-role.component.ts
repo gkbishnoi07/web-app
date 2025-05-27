@@ -24,7 +24,7 @@ export class ViewRoleComponent implements OnInit {
   /** Role Permissions Data */
   rolePermissionService: any;
   /** Stores the current grouping */
-  currentGrouping: string;
+  currentGrouping = '';
   /** Stores the previous grouping */
   previousGrouping = '';
   /** Stores Grouping Data */
@@ -40,17 +40,13 @@ export class ViewRoleComponent implements OnInit {
   /** Role ID */
   roleId: any;
   /** Creates permission form  */
-  formGroup: UntypedFormGroup;
+  formGroup!: UntypedFormGroup;
   /** Creates Backup form */
   backupform: UntypedFormGroup;
   /** Temporarily stores Permission data */
-  tempPermissionUIData: {
-    permissions: { code: string }[];
-  }[];
+  tempPermissionUIData: PermissionData = {};
   /** Stores permissions */
-  permissions: {
-    permissions: { code: string; id: number }[];
-  };
+  permissions: PermissionGroup = { permissions: [] };
 
   /**
    * Retrieves the roledetails data from `resolve`.
@@ -78,9 +74,6 @@ export class ViewRoleComponent implements OnInit {
    * Groups all the data on init
    */
   ngOnInit() {
-    this.permissions = {
-      permissions: []
-    };
     this.createForm();
     this.groupRules();
     this.selectedItem = 'special';
@@ -121,23 +114,23 @@ export class ViewRoleComponent implements OnInit {
    * Groups the permissions based on rules
    */
   groupRules() {
-    this.tempPermissionUIData = [
-      {
-        permissions: []
-      }
-    ];
+    this.tempPermissionUIData = {};
+
     for (const i in this.rolePermissionService.permissionUsageData) {
       if (this.rolePermissionService.permissionUsageData[i]) {
-        if (this.rolePermissionService.permissionUsageData[i].grouping !== this.currentGrouping) {
-          this.currentGrouping = this.rolePermissionService.permissionUsageData[i].grouping;
+        const permData = this.rolePermissionService.permissionUsageData[i];
+        if (permData.grouping !== this.currentGrouping) {
+          this.currentGrouping = permData.grouping;
           this.groupings.push(this.currentGrouping);
           this.tempPermissionUIData[this.currentGrouping] = { permissions: [] };
         }
-        const temp = {
-          code: this.rolePermissionService.permissionUsageData[i].code,
-          id: i,
-          selected: this.rolePermissionService.permissionUsageData[i].selected
+
+        const temp: Permission = {
+          code: permData.code,
+          id: Number(i),
+          selected: permData.selected
         };
+
         this.tempPermissionUIData[this.currentGrouping].permissions.push(temp);
       }
     }
@@ -148,9 +141,12 @@ export class ViewRoleComponent implements OnInit {
    * @param grouping Selected Role
    */
   showPermissions(grouping: string) {
-    this.permissions = this.tempPermissionUIData[grouping];
-    this.selectedItem = grouping;
-    this.previousGrouping = grouping;
+    const group = this.tempPermissionUIData[grouping];
+    if (group) {
+      this.permissions = group;
+      this.selectedItem = grouping;
+      this.previousGrouping = grouping;
+    }
   }
 
   /**
@@ -219,18 +215,21 @@ export class ViewRoleComponent implements OnInit {
    * Submits the modified permissions
    */
   submit() {
-    const value = this.formGroup.get('roster').value;
-    const data = {};
-    const permissionData = {
+    const value = this.formGroup.get('roster')?.value;
+    const permissionData: { permissions: { [key: string]: boolean } } = {
       permissions: {}
     };
-    for (let i = 0; i < value.length; i++) {
-      data[value[i].code] = value[i].selected;
+
+    if (value) {
+      for (let i = 0; i < value.length; i++) {
+        permissionData.permissions[value[i].code] = value[i].selected;
+      }
     }
-    permissionData.permissions = data;
-    this.formGroup.controls.roster.disable();
+
+    this.formGroup.get('roster')?.disable();
     this.checkboxesChanged = false;
     this.isDisabled = true;
+
     this.systemService.updateRolePermission(this.roleId, permissionData).subscribe((response: any) => {});
   }
 
@@ -238,9 +237,13 @@ export class ViewRoleComponent implements OnInit {
    * Selects all the permission of a particular role
    */
   selectAll() {
-    for (let i = 0; i < this.permissions.permissions.length; i++) {
-      this.formGroup.controls.roster['controls'][this.permissions.permissions[i].id].patchValue({
-        selected: true
+    const rosterControl = this.formGroup.get('roster');
+    if (rosterControl && this.permissions.permissions) {
+      this.permissions.permissions.forEach((permission) => {
+        const control = rosterControl.get(String(permission.id));
+        if (control) {
+          control.patchValue({ selected: true });
+        }
       });
     }
   }
@@ -249,9 +252,13 @@ export class ViewRoleComponent implements OnInit {
    * Deselects all the permissions of a particular role
    */
   deselectAll() {
-    for (let i = 0; i < this.permissions.permissions.length; i++) {
-      this.formGroup.controls.roster['controls'][this.permissions.permissions[i].id].patchValue({
-        selected: false
+    const rosterControl = this.formGroup.get('roster');
+    if (rosterControl && this.permissions.permissions) {
+      this.permissions.permissions.forEach((permission) => {
+        const control = rosterControl.get(String(permission.id));
+        if (control) {
+          control.patchValue({ selected: false });
+        }
       });
     }
   }
@@ -306,4 +313,18 @@ export class ViewRoleComponent implements OnInit {
       }
     });
   }
+}
+
+interface Permission {
+  code: string;
+  id: number;
+  selected: boolean;
+}
+
+interface PermissionGroup {
+  permissions: Permission[];
+}
+
+interface PermissionData {
+  [key: string]: PermissionGroup;
 }

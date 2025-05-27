@@ -10,6 +10,13 @@ import { DatepickerBase } from 'app/shared/form-dialog/formfield/model/datepicke
 import { FormfieldBase } from 'app/shared/form-dialog/formfield/model/formfield-base';
 import { InputBase } from 'app/shared/form-dialog/formfield/model/input-base';
 
+interface DisbursementData {
+  expectedDisbursementDate: string;
+  disbursedOnDate?: string;
+  principal: number;
+  id?: number;
+}
+
 @Component({
   selector: 'mifosx-loan-tranche-details',
   templateUrl: './loan-tranche-details.component.html',
@@ -35,7 +42,7 @@ export class LoanTrancheDetailsComponent implements OnInit {
   currentPrincipalAmount: number;
   minDate = new Date(2000, 0, 1);
   maxDate = new Date(2100, 0, 1);
-  disbursementDataSource: {}[] = [];
+  disbursementDataSource: DisbursementData[] = [];
   totalMultiDisbursed: number = null;
   disallowExpectedDisbursements = false;
   pristine = true;
@@ -108,8 +115,8 @@ export class LoanTrancheDetailsComponent implements OnInit {
   calculateTotalDisbursedAmount() {
     this.totalMultiDisbursed = 0;
     this.count = 0;
-    this.disbursementDataSource.forEach((item: any) => {
-      this.totalMultiDisbursed += item.principal * 1;
+    this.disbursementDataSource.forEach((item: DisbursementData) => {
+      this.totalMultiDisbursed += item.principal;
       this.count += 1;
     });
   }
@@ -166,9 +173,9 @@ export class LoanTrancheDetailsComponent implements OnInit {
    * Edit the Disbursement Data entry form to given Disbursement Data entry.
    */
   editDisbursementDataEntry(index: number) {
-    const principal: number = this.disbursementDataSource[index]['principal'] * 1;
-    const expectedDisbursementDate: Date = this.dateUtils.parseDate(
-      this.disbursementDataSource[index]['expectedDisbursementDate']
+    const principal = this.disbursementDataSource[index].principal;
+    const expectedDisbursementDate = this.dateUtils.parseDate(
+      this.disbursementDataSource[index].expectedDisbursementDate
     );
 
     const data = {
@@ -189,15 +196,16 @@ export class LoanTrancheDetailsComponent implements OnInit {
     });
   }
 
-  removeDisbursementDataEntry(index: any) {
+  removeDisbursementDataEntry(index: number) {
     const dialogRef = this.dialog.open(DeleteDialogComponent, {
       data: { deleteContext: `this` }
     });
-    dialogRef.afterClosed().subscribe((response: any) => {
+
+    dialogRef.afterClosed().subscribe((response: { delete: boolean }) => {
       if (response.delete) {
-        const principal = this.disbursementDataSource[index]['principal'] * 1;
+        const principal = this.disbursementDataSource[index].principal;
         this.disbursementDataSource.splice(index, 1);
-        this.disbursementDataSource = this.disbursementDataSource.concat([]);
+        this.disbursementDataSource = [...this.disbursementDataSource];
         this.totalMultiDisbursed -= principal;
         this.pristine = false;
       }
