@@ -251,7 +251,7 @@ export class RunReportComponent implements OnInit {
           formattedResponse[newKey] = value;
           break;
         case 'select':
-          formattedResponse[newKey] = value['id'];
+          formattedResponse[newKey] = (value as { id: string | number })['id'];
           break;
         case 'date':
           if (this.isTableReport()) {
@@ -342,7 +342,7 @@ export class RunReportComponent implements OnInit {
   exportToXLS(reportName: string, csvData: any, displayedColumns: string[]): void {
     const fileName = `${reportName}.xlsx`;
     const data = csvData.map((object: any) => {
-      const row = {};
+      const row: Record<string, any> = {};
       for (let i = 0; i < displayedColumns.length; i++) {
         row[displayedColumns[i]] = object.row[i];
       }

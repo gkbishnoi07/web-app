@@ -11,6 +11,8 @@ import { DatepickerBase } from 'app/shared/form-dialog/formfield/model/datepicke
 import { FormfieldBase } from 'app/shared/form-dialog/formfield/model/formfield-base';
 import { InputBase } from 'app/shared/form-dialog/formfield/model/input-base';
 
+// Removed local declaration of DisbursementData as it conflicts with the imported one.
+
 @Component({
   selector: 'mifosx-loan-tranche-details',
   templateUrl: './loan-tranche-details.component.html',
