@@ -27,7 +27,8 @@
             "index": "src/index.html",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": [
-              "src/polyfills.ts"
+              "src/polyfills.ts",
+              "@angular/localize/init"
             ],
             "assets": [
               "src/favicon.ico",
@@ -51,7 +52,12 @@
               "@ckeditor/ckeditor5-build-classic",
               "moment"
             ],
-            "browser": "src/main.ts"
+            "browser": "src/main.ts",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -117,7 +123,10 @@
             "browsers": "ChromeHeadless",
             "main": "src/test.ts",
             "karmaConfig": "src/karma.conf.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts",
+              "@angular/localize/init"
+            ],
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
