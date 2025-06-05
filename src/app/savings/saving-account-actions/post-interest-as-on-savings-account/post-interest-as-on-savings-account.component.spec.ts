@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PostInterestAsOnSavingsAccountComponent } from './post-interest-as-on-savings-account.component';
 
