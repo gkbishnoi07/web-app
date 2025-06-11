@@ -118,31 +118,9 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
-            "browsers": "ChromeHeadless",
-            "main": "src/test.ts",
-            "karmaConfig": "src/karma.conf.ts",
-            "polyfills": [
-              "src/polyfills.ts",
-              "@angular/localize/init"
-            ],
-            "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [],
-            "styles": [
-              "src/main.scss",
-              {
-                "inject": false,
-                "input": "src/theme/mifosx-theme.scss",
-                "bundleName": "mifosx-theme"
-              }
-            ],
-            "assets": [
-              "src/favicon.ico",
-              "src/robots.txt",
-              "src/manifest.json",
-              "src/assets"
-            ]
+            "configPath": "./jest.config.ts"
           }
         },
         "lint": {
