@@ -14,7 +14,8 @@ import { of } from 'rxjs';
 @Component({
   selector: 'mifosx-sms-campaigns',
   templateUrl: './sms-campaigns.component.html',
-  styleUrls: ['./sms-campaigns.component.scss']
+  styleUrls: ['./sms-campaigns.component.scss'],
+  standalone: false
 })
 export class SmsCampaignsComponent implements OnInit {
   /** SMS Campaigns data. */

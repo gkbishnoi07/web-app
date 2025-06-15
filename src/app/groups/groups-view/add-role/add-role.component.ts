@@ -12,7 +12,8 @@ import { GroupsService } from '../../groups.service';
 @Component({
   selector: 'mifosx-add-role',
   templateUrl: './add-role.component.html',
-  styleUrls: ['./add-role.component.scss']
+  styleUrls: ['./add-role.component.scss'],
+  standalone: false
 })
 export class AddRoleComponent implements OnInit {
   /** Groups Add Role Form */

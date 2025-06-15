@@ -4,7 +4,8 @@ import { Clipboard } from '@angular/cdk/clipboard';
 @Component({
   selector: 'mifosx-account-number',
   templateUrl: './account-number.component.html',
-  styleUrls: ['./account-number.component.scss']
+  styleUrls: ['./account-number.component.scss'],
+  standalone: false
 })
 export class AccountNumberComponent implements OnInit {
   @Input() accountNo: string;

@@ -12,7 +12,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-codes',
   templateUrl: './codes.component.html',
-  styleUrls: ['./codes.component.scss']
+  styleUrls: ['./codes.component.scss'],
+  standalone: false
 })
 export class CodesComponent implements OnInit, AfterViewInit {
   /** Codes data. */

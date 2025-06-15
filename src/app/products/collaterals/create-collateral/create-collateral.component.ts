@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-collateral',
   templateUrl: './create-collateral.component.html',
-  styleUrls: ['./create-collateral.component.scss']
+  styleUrls: ['./create-collateral.component.scss'],
+  standalone: false
 })
 export class CreateCollateralComponent implements OnInit {
   /** Collateral form */

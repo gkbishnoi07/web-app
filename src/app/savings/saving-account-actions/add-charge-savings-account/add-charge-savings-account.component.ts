@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-add-charge-savings-account',
   templateUrl: './add-charge-savings-account.component.html',
-  styleUrls: ['./add-charge-savings-account.component.scss']
+  styleUrls: ['./add-charge-savings-account.component.scss'],
+  standalone: false
 })
 export class AddChargeSavingsAccountComponent implements OnInit {
   /** Minimum Due Date allowed. */

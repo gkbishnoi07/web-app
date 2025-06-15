@@ -15,7 +15,8 @@ import { ProgressBarService } from '../progress-bar/progress-bar.service';
 @Component({
   selector: 'mifosx-shell',
   templateUrl: './shell.component.html',
-  styleUrls: ['./shell.component.scss']
+  styleUrls: ['./shell.component.scss'],
+  standalone: false
 })
 export class ShellComponent implements OnInit, OnDestroy {
   /** Subscription to breakpoint observer for handset. */

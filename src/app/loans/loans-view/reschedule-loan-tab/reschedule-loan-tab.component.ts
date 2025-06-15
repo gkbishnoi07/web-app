@@ -11,7 +11,8 @@ import { ConfirmationDialogComponent } from 'app/shared/confirmation-dialog/conf
 @Component({
   selector: 'mifosx-reschedule-loan-tab',
   templateUrl: './reschedule-loan-tab.component.html',
-  styleUrls: ['./reschedule-loan-tab.component.scss']
+  styleUrls: ['./reschedule-loan-tab.component.scss'],
+  standalone: false
 })
 export class RescheduleLoanTabComponent {
   @Input() loanStatus: LoanStatus;

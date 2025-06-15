@@ -12,7 +12,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'mifosx-view-journal-entry-transaction',
   templateUrl: './view-journal-entry-transaction.component.html',
-  styleUrls: ['./view-journal-entry-transaction.component.scss']
+  styleUrls: ['./view-journal-entry-transaction.component.scss'],
+  standalone: false
 })
 export class ViewJournalEntryTransactionComponent implements OnInit {
   title: string;

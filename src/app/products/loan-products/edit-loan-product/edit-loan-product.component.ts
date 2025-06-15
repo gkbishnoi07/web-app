@@ -31,7 +31,8 @@ import { UntypedFormGroup } from '@angular/forms';
 @Component({
   selector: 'mifosx-edit-loan-product',
   templateUrl: './edit-loan-product.component.html',
-  styleUrls: ['./edit-loan-product.component.scss']
+  styleUrls: ['./edit-loan-product.component.scss'],
+  standalone: false
 })
 export class EditLoanProductComponent implements OnInit {
   @ViewChild(LoanProductDetailsStepComponent, { static: true }) loanProductDetailsStep: LoanProductDetailsStepComponent;

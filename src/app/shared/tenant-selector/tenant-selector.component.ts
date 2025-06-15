@@ -5,7 +5,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-tenant-selector',
   templateUrl: './tenant-selector.component.html',
-  styleUrls: ['./tenant-selector.component.scss']
+  styleUrls: ['./tenant-selector.component.scss'],
+  standalone: false
 })
 export class TenantSelectorComponent implements OnInit {
   /** Tenant selector form control. */

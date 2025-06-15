@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-undo-transaction-dialog',
   templateUrl: './undo-transaction-dialog.component.html',
-  styleUrls: ['./undo-transaction-dialog.component.scss']
+  styleUrls: ['./undo-transaction-dialog.component.scss'],
+  standalone: false
 })
 export class UndoTransactionDialogComponent {
   /**

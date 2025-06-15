@@ -48,7 +48,8 @@ const routeAddBreadcrumbLink = 'addBreadcrumbLink';
 @Component({
   selector: 'mifosx-breadcrumb',
   templateUrl: './breadcrumb.component.html',
-  styleUrls: ['./breadcrumb.component.scss']
+  styleUrls: ['./breadcrumb.component.scss'],
+  standalone: false
 })
 export class BreadcrumbComponent implements AfterViewInit {
   /** Array of breadcrumbs. */

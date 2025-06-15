@@ -8,7 +8,8 @@ import { CancelDialogComponent } from 'app/shared/cancel-dialog/cancel-dialog.co
 @Component({
   selector: 'mifosx-external-asset-owner-tab',
   templateUrl: './external-asset-owner-tab.component.html',
-  styleUrls: ['./external-asset-owner-tab.component.scss']
+  styleUrls: ['./external-asset-owner-tab.component.scss'],
+  standalone: false
 })
 export class ExternalAssetOwnerTabComponent implements OnInit {
   defaultDate = '9999-12-31';

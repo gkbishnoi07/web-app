@@ -12,7 +12,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-saving-products',
   templateUrl: './saving-products.component.html',
-  styleUrls: ['./saving-products.component.scss']
+  styleUrls: ['./saving-products.component.scss'],
+  standalone: false
 })
 export class SavingProductsComponent implements OnInit, AfterViewInit {
   savingProductsData: any;

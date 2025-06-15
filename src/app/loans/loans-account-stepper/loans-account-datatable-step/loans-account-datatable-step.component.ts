@@ -6,7 +6,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-loans-account-datatable-step',
   templateUrl: './loans-account-datatable-step.component.html',
-  styleUrls: ['./loans-account-datatable-step.component.scss']
+  styleUrls: ['./loans-account-datatable-step.component.scss'],
+  standalone: false
 })
 export class LoansAccountDatatableStepComponent implements OnInit {
   /** Input Fields Data */

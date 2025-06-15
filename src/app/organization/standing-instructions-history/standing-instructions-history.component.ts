@@ -17,7 +17,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-standing-instructions-history',
   templateUrl: './standing-instructions-history.component.html',
-  styleUrls: ['./standing-instructions-history.component.scss']
+  styleUrls: ['./standing-instructions-history.component.scss'],
+  standalone: false
 })
 export class StandingInstructionsHistoryComponent implements OnInit {
   /** Minimum Date allowed. */

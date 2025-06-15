@@ -4,7 +4,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-release-amount-dialog',
   templateUrl: './release-amount-dialog.component.html',
-  styleUrls: ['./release-amount-dialog.component.scss']
+  styleUrls: ['./release-amount-dialog.component.scss'],
+  standalone: false
 })
 export class ReleaseAmountDialogComponent {
   /**

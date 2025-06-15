@@ -14,7 +14,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-view-checker-inbox',
   templateUrl: './view-checker-inbox.component.html',
-  styleUrls: ['./view-checker-inbox.component.scss']
+  styleUrls: ['./view-checker-inbox.component.scss'],
+  standalone: false
 })
 export class ViewCheckerInboxComponent {
   /** Checker Inbox Details Data */

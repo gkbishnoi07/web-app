@@ -12,7 +12,8 @@ import { SystemService } from 'app/system/system.service';
 @Component({
   selector: 'mifosx-edit-sms',
   templateUrl: './edit-sms.component.html',
-  styleUrls: ['./edit-sms.component.scss']
+  styleUrls: ['./edit-sms.component.scss'],
+  standalone: false
 })
 export class EditSMSComponent implements OnInit {
   /** SMS Configuration data */

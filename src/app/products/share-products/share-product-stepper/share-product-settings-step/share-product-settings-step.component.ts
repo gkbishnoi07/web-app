@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, FormControl, Validators } from '@
 @Component({
   selector: 'mifosx-share-product-settings-step',
   templateUrl: './share-product-settings-step.component.html',
-  styleUrls: ['./share-product-settings-step.component.scss']
+  styleUrls: ['./share-product-settings-step.component.scss'],
+  standalone: false
 })
 export class ShareProductSettingsStepComponent implements OnInit {
   @Input() shareProductsTemplate: any;

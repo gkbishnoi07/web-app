@@ -27,7 +27,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-charges-tab',
   templateUrl: './charges-tab.component.html',
-  styleUrls: ['./charges-tab.component.scss']
+  styleUrls: ['./charges-tab.component.scss'],
+  standalone: false
 })
 export class ChargesTabComponent implements OnInit {
   /** Fixed Deposits Account Data */

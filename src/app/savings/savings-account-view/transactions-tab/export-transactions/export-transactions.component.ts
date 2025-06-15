@@ -15,7 +15,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-export-transactions',
   templateUrl: './export-transactions.component.html',
-  styleUrls: ['./export-transactions.component.scss']
+  styleUrls: ['./export-transactions.component.scss'],
+  standalone: false
 })
 export class ExportTransactionsComponent implements OnInit {
   /** Minimum date allowed. */

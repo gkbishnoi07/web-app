@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-activate-fixed-deposits-account',
   templateUrl: './activate-fixed-deposits-account.component.html',
-  styleUrls: ['./activate-fixed-deposits-account.component.scss']
+  styleUrls: ['./activate-fixed-deposits-account.component.scss'],
+  standalone: false
 })
 export class ActivateFixedDepositsAccountComponent implements OnInit {
   /** Minimum date allowed. */

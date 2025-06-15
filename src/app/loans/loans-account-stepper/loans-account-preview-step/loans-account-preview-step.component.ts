@@ -8,7 +8,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-loans-account-preview-step',
   templateUrl: './loans-account-preview-step.component.html',
-  styleUrls: ['./loans-account-preview-step.component.scss']
+  styleUrls: ['./loans-account-preview-step.component.scss'],
+  standalone: false
 })
 export class LoansAccountPreviewStepComponent implements OnChanges {
   /** Loans Account Template */

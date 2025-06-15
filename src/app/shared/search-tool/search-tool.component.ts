@@ -21,7 +21,8 @@ import { UntypedFormControl } from '@angular/forms';
 
     ])
 
-  ]
+  ],
+  standalone: false
 })
 export class SearchToolComponent {
   /** Query Form Control */

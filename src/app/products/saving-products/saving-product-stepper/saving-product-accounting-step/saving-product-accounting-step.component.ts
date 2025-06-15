@@ -12,7 +12,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-saving-product-accounting-step',
   templateUrl: './saving-product-accounting-step.component.html',
-  styleUrls: ['./saving-product-accounting-step.component.scss']
+  styleUrls: ['./saving-product-accounting-step.component.scss'],
+  standalone: false
 })
 export class SavingProductAccountingStepComponent implements OnInit {
   @Input() savingProductsTemplate: any;

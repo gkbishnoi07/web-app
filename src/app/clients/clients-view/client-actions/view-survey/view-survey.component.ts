@@ -11,7 +11,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-view-survey',
   templateUrl: './view-survey.component.html',
-  styleUrls: ['./view-survey.component.scss']
+  styleUrls: ['./view-survey.component.scss'],
+  standalone: false
 })
 export class ViewSurveyComponent implements OnInit {
   /** Survey Data */

@@ -22,7 +22,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-recurring-deposits-account-view',
   templateUrl: './recurring-deposits-account-view.component.html',
-  styleUrls: ['./recurring-deposits-account-view.component.scss']
+  styleUrls: ['./recurring-deposits-account-view.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountViewComponent implements OnInit {
   /** RecurringDeposits Account Data */

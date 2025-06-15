@@ -13,7 +13,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-add-client-collateral',
   templateUrl: './add-client-collateral.component.html',
-  styleUrls: ['./add-client-collateral.component.scss']
+  styleUrls: ['./add-client-collateral.component.scss'],
+  standalone: false
 })
 export class AddClientCollateralComponent implements OnInit {
   /** Client Collateral Form */

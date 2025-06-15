@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-approve-loan',
   templateUrl: './approve-loan.component.html',
-  styleUrls: ['./approve-loan.component.scss']
+  styleUrls: ['./approve-loan.component.scss'],
+  standalone: false
 })
 export class ApproveLoanComponent implements OnInit {
   /** Approve Loan form. */

@@ -18,7 +18,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-edit-savings-account',
   templateUrl: './edit-savings-account.component.html',
-  styleUrls: ['./edit-savings-account.component.scss']
+  styleUrls: ['./edit-savings-account.component.scss'],
+  standalone: false
 })
 export class EditSavingsAccountComponent {
   /** Savings Account Template */

@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-collaterals',
   templateUrl: './collaterals.component.html',
-  styleUrls: ['./collaterals.component.scss']
+  styleUrls: ['./collaterals.component.scss'],
+  standalone: false
 })
 export class CollateralsComponent implements OnInit {
   /** Collateral Data */

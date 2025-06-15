@@ -23,7 +23,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-audit-trails',
   templateUrl: './audit-trails.component.html',
-  styleUrls: ['./audit-trails.component.scss']
+  styleUrls: ['./audit-trails.component.scss'],
+  standalone: false
 })
 export class AuditTrailsComponent implements OnInit, AfterViewInit {
   /** Minimum date allowed. */

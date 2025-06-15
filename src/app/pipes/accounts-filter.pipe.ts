@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'accountsFilter'
+  name: 'accountsFilter',
+  standalone: false
 })
 export class AccountsFilterPipe implements PipeTransform {
   transform(accounts: any, type: any, status: any, checkSavings: any): any {

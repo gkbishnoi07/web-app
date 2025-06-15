@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-scheduler-job',
   templateUrl: './view-scheduler-job.component.html',
-  styleUrls: ['./view-scheduler-job.component.scss']
+  styleUrls: ['./view-scheduler-job.component.scss'],
+  standalone: false
 })
 export class ViewSchedulerJobComponent {
   /** Job Data. */

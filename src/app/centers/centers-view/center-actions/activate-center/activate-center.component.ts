@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-activate-center',
   templateUrl: './activate-center.component.html',
-  styleUrls: ['./activate-center.component.scss']
+  styleUrls: ['./activate-center.component.scss'],
+  standalone: false
 })
 export class ActivateCenterComponent implements OnInit {
   /** Minimum date allowed. */

@@ -15,7 +15,8 @@ import { oneOfTheFieldsIsRequiredValidator } from '../one-of-the-fields-is-requi
 @Component({
   selector: 'mifosx-edit-rule',
   templateUrl: './edit-rule.component.html',
-  styleUrls: ['./edit-rule.component.scss']
+  styleUrls: ['./edit-rule.component.scss'],
+  standalone: false
 })
 export class EditRuleComponent implements OnInit {
   /** Accounting rule form. */

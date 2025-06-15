@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-savings-account-assign-staff',
   templateUrl: './savings-account-assign-staff.component.html',
-  styleUrls: ['./savings-account-assign-staff.component.scss']
+  styleUrls: ['./savings-account-assign-staff.component.scss'],
+  standalone: false
 })
 export class SavingsAccountAssignStaffComponent implements OnInit {
   /** Minimum date allowed. */

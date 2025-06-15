@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-close-center',
   templateUrl: './close-center.component.html',
-  styleUrls: ['./close-center.component.scss']
+  styleUrls: ['./close-center.component.scss'],
+  standalone: false
 })
 export class CloseCenterComponent implements OnInit {
   /** Minimum date allowed. */

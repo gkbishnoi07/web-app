@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } 
 @Component({
   selector: 'mifosx-share-product-accounting-step',
   templateUrl: './share-product-accounting-step.component.html',
-  styleUrls: ['./share-product-accounting-step.component.scss']
+  styleUrls: ['./share-product-accounting-step.component.scss'],
+  standalone: false
 })
 export class ShareProductAccountingStepComponent implements OnInit {
   @Input() shareProductsTemplate: any;

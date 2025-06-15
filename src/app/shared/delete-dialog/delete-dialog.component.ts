@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-delete-dialog',
   templateUrl: './delete-dialog.component.html',
-  styleUrls: ['./delete-dialog.component.scss']
+  styleUrls: ['./delete-dialog.component.scss'],
+  standalone: false
 })
 export class DeleteDialogComponent {
   /**

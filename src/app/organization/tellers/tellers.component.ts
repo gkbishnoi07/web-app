@@ -14,7 +14,8 @@ import { of } from 'rxjs';
 @Component({
   selector: 'mifosx-tellers',
   templateUrl: './tellers.component.html',
-  styleUrls: ['./tellers.component.scss']
+  styleUrls: ['./tellers.component.scss'],
+  standalone: false
 })
 export class TellersComponent implements OnInit {
   /** Tellers data. */

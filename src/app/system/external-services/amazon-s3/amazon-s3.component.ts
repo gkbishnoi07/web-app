@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-amazon-s3',
   templateUrl: './amazon-s3.component.html',
-  styleUrls: ['./amazon-s3.component.scss']
+  styleUrls: ['./amazon-s3.component.scss'],
+  standalone: false
 })
 export class AmazonS3Component implements OnInit {
   /** Amazon S3 configuration data. */

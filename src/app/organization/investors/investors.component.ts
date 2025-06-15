@@ -22,7 +22,8 @@ import { CancelDialogComponent } from 'app/shared/cancel-dialog/cancel-dialog.co
       state('expanded', style({ height: '*' })),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))])
 
-  ]
+  ],
+  standalone: false
 })
 export class InvestorsComponent implements OnInit {
   /** Minimum transaction date allowed. */

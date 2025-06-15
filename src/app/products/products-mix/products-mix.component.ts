@@ -14,7 +14,8 @@ import { of } from 'rxjs';
 @Component({
   selector: 'mifosx-products-mix',
   templateUrl: './products-mix.component.html',
-  styleUrls: ['./products-mix.component.scss']
+  styleUrls: ['./products-mix.component.scss'],
+  standalone: false
 })
 export class ProductsMixComponent implements OnInit {
   /** productMix data. */

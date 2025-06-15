@@ -8,7 +8,8 @@ import { DeleteDialogComponent } from 'app/shared/delete-dialog/delete-dialog.co
 @Component({
   selector: 'mifosx-fixed-deposit-product-charges-step',
   templateUrl: './fixed-deposit-product-charges-step.component.html',
-  styleUrls: ['./fixed-deposit-product-charges-step.component.scss']
+  styleUrls: ['./fixed-deposit-product-charges-step.component.scss'],
+  standalone: false
 })
 export class FixedDepositProductChargesStepComponent implements OnInit {
   @Input() fixedDepositProductsTemplate: any;

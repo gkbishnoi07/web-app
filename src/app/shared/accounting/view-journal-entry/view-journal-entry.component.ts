@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-view-journal-entry',
   templateUrl: './view-journal-entry.component.html',
-  styleUrls: ['./view-journal-entry.component.scss']
+  styleUrls: ['./view-journal-entry.component.scss'],
+  standalone: false
 })
 export class ViewJournalEntryComponent {
   existsPaymentDetails = false;

@@ -12,7 +12,8 @@ import { OrganizationService } from '../organization.service';
 @Component({
   selector: 'mifosx-password-preferences',
   templateUrl: './password-preferences.component.html',
-  styleUrls: ['./password-preferences.component.scss']
+  styleUrls: ['./password-preferences.component.scss'],
+  standalone: false
 })
 export class PasswordPreferencesComponent implements OnInit {
   /** Password preferences form. */

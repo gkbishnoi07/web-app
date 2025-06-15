@@ -15,7 +15,8 @@ import { ClientsService } from '../../clients.service';
 @Component({
   selector: 'mifosx-family-members-tab',
   templateUrl: './family-members-tab.component.html',
-  styleUrls: ['./family-members-tab.component.scss']
+  styleUrls: ['./family-members-tab.component.scss'],
+  standalone: false
 })
 export class FamilyMembersTabComponent {
   /** Client Family Members */

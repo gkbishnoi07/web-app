@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-disable-dialog',
   templateUrl: './disable-dialog.component.html',
-  styleUrls: ['./disable-dialog.component.scss']
+  styleUrls: ['./disable-dialog.component.scss'],
+  standalone: false
 })
 export class DisableDialogComponent {
   /**

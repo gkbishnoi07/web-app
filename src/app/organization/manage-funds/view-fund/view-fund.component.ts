@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-fund',
   templateUrl: './view-fund.component.html',
-  styleUrls: ['./view-fund.component.scss']
+  styleUrls: ['./view-fund.component.scss'],
+  standalone: false
 })
 export class ViewFundComponent {
   /** Fund data. */

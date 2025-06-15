@@ -5,7 +5,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-loans-account-add-collateral-dialog',
   templateUrl: './loans-account-add-collateral-dialog.component.html',
-  styleUrls: ['./loans-account-add-collateral-dialog.component.scss']
+  styleUrls: ['./loans-account-add-collateral-dialog.component.scss'],
+  standalone: false
 })
 export class LoansAccountAddCollateralDialogComponent implements OnInit {
   layout: {

@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-close-shares-account',
   templateUrl: './close-shares-account.component.html',
-  styleUrls: ['./close-shares-account.component.scss']
+  styleUrls: ['./close-shares-account.component.scss'],
+  standalone: false
 })
 export class CloseSharesAccountComponent implements OnInit {
   /** Minimum date allowed. */

@@ -18,7 +18,8 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'mifosx-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
+  standalone: false
 })
 export class FooterComponent implements OnInit, OnDestroy {
   @Input() styleClass: string = '';

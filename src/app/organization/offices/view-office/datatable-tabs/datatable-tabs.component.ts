@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-datatable-tabs',
   templateUrl: './datatable-tabs.component.html',
-  styleUrls: ['./datatable-tabs.component.scss']
+  styleUrls: ['./datatable-tabs.component.scss'],
+  standalone: false
 })
 export class DatatableTabsComponent {
   entityId: string;

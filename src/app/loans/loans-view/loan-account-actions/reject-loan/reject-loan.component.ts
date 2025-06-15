@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-reject-loan',
   templateUrl: './reject-loan.component.html',
-  styleUrls: ['./reject-loan.component.scss']
+  styleUrls: ['./reject-loan.component.scss'],
+  standalone: false
 })
 export class RejectLoanComponent implements OnInit {
   /** Loan Id. */

@@ -17,7 +17,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-business-rule-parameters',
   templateUrl: './business-rule-parameters.component.html',
-  styleUrls: ['./business-rule-parameters.component.scss']
+  styleUrls: ['./business-rule-parameters.component.scss'],
+  standalone: false
 })
 export class BusinessRuleParametersComponent implements OnInit, OnChanges {
   /** Run Report Parameters Data */

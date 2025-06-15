@@ -10,7 +10,8 @@ import { TransactionCommand, TransactionTypeFlags } from '../../../transaction.m
 @Component({
   selector: 'mifosx-fixed-deposits-cash-transaction',
   templateUrl: './fixed-deposits-cash-transaction.component.html',
-  styleUrls: ['./fixed-deposits-cash-transaction.component.scss']
+  styleUrls: ['./fixed-deposits-cash-transaction.component.scss'],
+  standalone: false
 })
 export class FixedDepositsCashTransactionComponent implements OnInit {
   /** Minimum Due Date allowed. */

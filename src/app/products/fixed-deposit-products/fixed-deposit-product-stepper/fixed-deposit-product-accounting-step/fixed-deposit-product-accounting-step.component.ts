@@ -13,7 +13,8 @@ import { SelectBase } from 'app/shared/form-dialog/formfield/model/select-base';
 @Component({
   selector: 'mifosx-fixed-deposit-product-accounting-step',
   templateUrl: './fixed-deposit-product-accounting-step.component.html',
-  styleUrls: ['./fixed-deposit-product-accounting-step.component.scss']
+  styleUrls: ['./fixed-deposit-product-accounting-step.component.scss'],
+  standalone: false
 })
 export class FixedDepositProductAccountingStepComponent implements OnInit {
   @Input() fixedDepositProductsTemplate: any;

@@ -12,7 +12,8 @@ import { SystemService } from 'app/system/system.service';
 @Component({
   selector: 'mifosx-edit-amazon-s3',
   templateUrl: './edit-amazon-s3.component.html',
-  styleUrls: ['./edit-amazon-s3.component.scss']
+  styleUrls: ['./edit-amazon-s3.component.scss'],
+  standalone: false
 })
 export class EditAmazonS3Component implements OnInit {
   /** Amazon S3 Configuration data */

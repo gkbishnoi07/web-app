@@ -9,7 +9,8 @@ import { UntypedFormControl } from '@angular/forms';
 @Component({
   selector: 'mifosx-revert-transaction',
   templateUrl: './revert-transaction.component.html',
-  styleUrls: ['./revert-transaction.component.scss']
+  styleUrls: ['./revert-transaction.component.scss'],
+  standalone: false
 })
 export class RevertTransactionComponent {
   /** Comments input form control. */

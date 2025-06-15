@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-close-client',
   templateUrl: './close-client.component.html',
-  styleUrls: ['./close-client.component.scss']
+  styleUrls: ['./close-client.component.scss'],
+  standalone: false
 })
 export class CloseClientComponent implements OnInit {
   /** Minimum date allowed. */

@@ -20,7 +20,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'mifosx-view-transaction',
   templateUrl: './view-transaction.component.html',
-  styleUrls: ['./view-transaction.component.scss']
+  styleUrls: ['./view-transaction.component.scss'],
+  standalone: false
 })
 export class ViewTransactionComponent {
   /** Transaction data. */

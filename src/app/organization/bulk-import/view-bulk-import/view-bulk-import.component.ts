@@ -16,7 +16,8 @@ import { BulkImports } from './bulk-imports';
 @Component({
   selector: 'mifosx-view-bulk-import',
   templateUrl: './view-bulk-import.component.html',
-  styleUrls: ['./view-bulk-import.component.scss']
+  styleUrls: ['./view-bulk-import.component.scss'],
+  standalone: false
 })
 export class ViewBulkImportComponent implements OnInit {
   /** offices Data */

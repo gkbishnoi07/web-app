@@ -15,7 +15,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-group',
   templateUrl: './create-group.component.html',
-  styleUrls: ['./create-group.component.scss']
+  styleUrls: ['./create-group.component.scss'],
+  standalone: false
 })
 export class CreateGroupComponent implements OnInit, AfterViewInit {
   /** Minimum date allowed. */

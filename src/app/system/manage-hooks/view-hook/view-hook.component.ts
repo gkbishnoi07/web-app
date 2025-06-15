@@ -16,7 +16,8 @@ import { SystemService } from '../../system.service';
 @Component({
   selector: 'mifosx-view-hook',
   templateUrl: './view-hook.component.html',
-  styleUrls: ['./view-hook.component.scss']
+  styleUrls: ['./view-hook.component.scss'],
+  standalone: false
 })
 export class ViewHookComponent {
   /** Hook Data. */

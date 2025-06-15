@@ -22,7 +22,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-group-attendance',
   templateUrl: './group-attendance.component.html',
-  styleUrls: ['./group-attendance.component.scss']
+  styleUrls: ['./group-attendance.component.scss'],
+  standalone: false
 })
 export class GroupAttendanceComponent implements OnInit {
   /** Members data. */

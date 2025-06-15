@@ -5,7 +5,8 @@ import { StringEnumOptionData } from '../../../../shared/models/option-data.mode
 @Component({
   selector: 'mifosx-loan-product-interest-refund-step',
   templateUrl: './loan-product-interest-refund-step.component.html',
-  styleUrls: ['./loan-product-interest-refund-step.component.scss']
+  styleUrls: ['./loan-product-interest-refund-step.component.scss'],
+  standalone: false
 })
 export class LoanProductInterestRefundStepComponent implements OnInit {
   @Input() loanProductsTemplate: any;

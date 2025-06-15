@@ -10,7 +10,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-savings-transaction-general-tab',
   templateUrl: './savings-transaction-general-tab.component.html',
-  styleUrls: ['./savings-transaction-general-tab.component.scss']
+  styleUrls: ['./savings-transaction-general-tab.component.scss'],
+  standalone: false
 })
 export class SavingsTransactionGeneralTabComponent {
   accountId: string;

@@ -16,7 +16,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'mifosx-view-gl-account',
   templateUrl: './view-gl-account.component.html',
-  styleUrls: ['./view-gl-account.component.scss']
+  styleUrls: ['./view-gl-account.component.scss'],
+  standalone: false
 })
 export class ViewGlAccountComponent {
   /** GL Account. */

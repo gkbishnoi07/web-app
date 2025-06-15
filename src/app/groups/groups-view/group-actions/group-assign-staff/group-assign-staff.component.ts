@@ -12,7 +12,8 @@ import { GroupsService } from 'app/groups/groups.service';
 @Component({
   selector: 'mifosx-group-assign-staff',
   templateUrl: './group-assign-staff.component.html',
-  styleUrls: ['./group-assign-staff.component.scss']
+  styleUrls: ['./group-assign-staff.component.scss'],
+  standalone: false
 })
 export class GroupAssignStaffComponent implements OnInit {
   /** Group Assign Staff form. */

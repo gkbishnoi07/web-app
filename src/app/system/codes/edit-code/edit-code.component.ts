@@ -12,7 +12,8 @@ import { SystemService } from '../../system.service';
 @Component({
   selector: 'mifosx-edit-code',
   templateUrl: './edit-code.component.html',
-  styleUrls: ['./edit-code.component.scss']
+  styleUrls: ['./edit-code.component.scss'],
+  standalone: false
 })
 export class EditCodeComponent implements OnInit {
   /** Code Form */

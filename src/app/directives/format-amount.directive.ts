@@ -4,7 +4,8 @@ import { NgControl } from '@angular/forms';
 import { LOCALE_ID } from '@angular/core';
 
 @Directive({
-  selector: '[mifosxFormatAmount]'
+  selector: '[mifosxFormatAmount]',
+  standalone: false
 })
 export class FormatAmountDirective implements OnInit {
   format = 'N0';

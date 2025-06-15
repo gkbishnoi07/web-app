@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-edit-cashier',
   templateUrl: './edit-cashier.component.html',
-  styleUrls: ['./edit-cashier.component.scss']
+  styleUrls: ['./edit-cashier.component.scss'],
+  standalone: false
 })
 export class EditCashierComponent implements OnInit {
   /** Cashier Data. */

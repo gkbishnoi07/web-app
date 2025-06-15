@@ -24,7 +24,8 @@ import { TreeControlService } from 'app/shared/common-logic/tree-control.service
 @Component({
   selector: 'mifosx-offices',
   templateUrl: './offices.component.html',
-  styleUrls: ['./offices.component.scss']
+  styleUrls: ['./offices.component.scss'],
+  standalone: false
 })
 export class OfficesComponent implements OnInit, AfterViewInit {
   /** Button toggle group form control for type of view. (list/tree) */

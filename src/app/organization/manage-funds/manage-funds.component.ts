@@ -28,7 +28,8 @@ import { MatSort } from '@angular/material/sort';
 @Component({
   selector: 'mifosx-manage-funds',
   templateUrl: './manage-funds.component.html',
-  styleUrls: ['./manage-funds.component.scss']
+  styleUrls: ['./manage-funds.component.scss'],
+  standalone: false
 })
 export class ManageFundsComponent implements OnInit, AfterViewInit {
   /** Manage Funds data. */

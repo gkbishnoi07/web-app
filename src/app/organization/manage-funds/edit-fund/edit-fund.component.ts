@@ -6,7 +6,8 @@ import { OrganizationService } from 'app/organization/organization.service';
 @Component({
   selector: 'mifosx-edit-fund',
   templateUrl: './edit-fund.component.html',
-  styleUrls: ['./edit-fund.component.scss']
+  styleUrls: ['./edit-fund.component.scss'],
+  standalone: false
 })
 export class EditFundComponent implements OnInit {
   /** Selected Data. */

@@ -18,7 +18,8 @@ import { ConfigurationWizardService } from '../configuration-wizard/configuratio
 @Component({
   selector: 'mifosx-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  styleUrls: ['./users.component.scss'],
+  standalone: false
 })
 export class UsersComponent implements OnInit, AfterViewInit {
   /** Users data. */

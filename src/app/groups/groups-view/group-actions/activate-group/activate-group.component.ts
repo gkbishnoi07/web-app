@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-activate-group',
   templateUrl: './activate-group.component.html',
-  styleUrls: ['./activate-group.component.scss']
+  styleUrls: ['./activate-group.component.scss'],
+  standalone: false
 })
 export class ActivateGroupComponent implements OnInit {
   /** Minimum date allowed. */

@@ -9,7 +9,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-add-report-parameter-dialog',
   templateUrl: './report-parameter-dialog.component.html',
-  styleUrls: ['./report-parameter-dialog.component.scss']
+  styleUrls: ['./report-parameter-dialog.component.scss'],
+  standalone: false
 })
 export class ReportParameterDialogComponent implements OnInit {
   /** Report Parameter Form. */

@@ -11,7 +11,8 @@ import { UntypedFormControl } from '@angular/forms';
 @Component({
   selector: 'mifosx-settings',
   templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  styleUrls: ['./settings.component.scss'],
+  standalone: false
 })
 export class SettingsComponent implements OnInit {
   /** Placeholder for languages. update once translations are set up */

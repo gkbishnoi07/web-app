@@ -13,7 +13,8 @@ import { TasksService } from 'app/tasks/tasks.service';
 @Component({
   selector: 'mifosx-loan-locked',
   templateUrl: './loan-locked.component.html',
-  styleUrls: ['./loan-locked.component.scss']
+  styleUrls: ['./loan-locked.component.scss'],
+  standalone: false
 })
 export class LoanLockedComponent implements OnInit {
   /** Loans Data */

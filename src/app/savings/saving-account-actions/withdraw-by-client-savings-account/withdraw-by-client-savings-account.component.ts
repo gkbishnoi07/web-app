@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-withdraw-by-client-savings-account',
   templateUrl: './withdraw-by-client-savings-account.component.html',
-  styleUrls: ['./withdraw-by-client-savings-account.component.scss']
+  styleUrls: ['./withdraw-by-client-savings-account.component.scss'],
+  standalone: false
 })
 export class WithdrawByClientSavingsAccountComponent implements OnInit {
   /** Minimum date allowed. */

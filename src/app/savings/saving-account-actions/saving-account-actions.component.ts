@@ -9,7 +9,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-saving-account-actions',
   templateUrl: './saving-account-actions.component.html',
-  styleUrls: ['./saving-account-actions.component.scss']
+  styleUrls: ['./saving-account-actions.component.scss'],
+  standalone: false
 })
 export class SavingAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */

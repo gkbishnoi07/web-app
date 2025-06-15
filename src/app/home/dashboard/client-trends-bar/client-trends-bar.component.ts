@@ -20,7 +20,8 @@ import Chart from 'chart.js';
 @Component({
   selector: 'mifosx-client-trends-bar',
   templateUrl: './client-trends-bar.component.html',
-  styleUrls: ['./client-trends-bar.component.scss']
+  styleUrls: ['./client-trends-bar.component.scss'],
+  standalone: false
 })
 export class ClientTrendsBarComponent implements OnInit {
   /** Static Form control for office Id */

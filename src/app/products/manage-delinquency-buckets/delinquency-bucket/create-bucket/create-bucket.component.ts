@@ -12,7 +12,8 @@ import { SelectBase } from 'app/shared/form-dialog/formfield/model/select-base';
 @Component({
   selector: 'mifosx-create-bucket',
   templateUrl: './create-bucket.component.html',
-  styleUrls: ['./create-bucket.component.scss']
+  styleUrls: ['./create-bucket.component.scss'],
+  standalone: false
 })
 export class CreateBucketComponent implements OnInit {
   /** Delinquency Bucket form. */

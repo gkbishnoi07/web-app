@@ -9,7 +9,8 @@ import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.
 @Component({
   selector: 'mifosx-view-collateral',
   templateUrl: './view-collateral.component.html',
-  styleUrls: ['./view-collateral.component.scss']
+  styleUrls: ['./view-collateral.component.scss'],
+  standalone: false
 })
 export class ViewCollateralComponent {
   clientCollateralData: any;

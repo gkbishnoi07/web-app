@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-completion-dialog',
   templateUrl: './completion-dialog.component.html',
-  styleUrls: ['./completion-dialog.component.scss']
+  styleUrls: ['./completion-dialog.component.scss'],
+  standalone: false
 })
 export class CompletionDialogComponent {
   constructor(

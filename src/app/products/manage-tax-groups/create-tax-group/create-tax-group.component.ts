@@ -23,7 +23,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-create-tax-group',
   templateUrl: './create-tax-group.component.html',
-  styleUrls: ['./create-tax-group.component.scss']
+  styleUrls: ['./create-tax-group.component.scss'],
+  standalone: false
 })
 export class CreateTaxGroupComponent implements OnInit {
   /** Minimum start date allowed. */

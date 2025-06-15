@@ -10,7 +10,8 @@ import { Dialogs } from 'app/core/dialogs/dialogs';
 @Component({
   selector: 'mifosx-confirmation-dialog',
   templateUrl: './confirmation-dialog.component.html',
-  styleUrls: ['./confirmation-dialog.component.scss']
+  styleUrls: ['./confirmation-dialog.component.scss'],
+  standalone: false
 })
 export class ConfirmationDialogComponent implements OnInit {
   color: string;

@@ -12,7 +12,8 @@ import { RecurringDepositsService } from '../../recurring-deposits.service';
 @Component({
   selector: 'mifosx-undo-approval-recurring-deposits-account',
   templateUrl: './undo-approval-recurring-deposits-account.component.html',
-  styleUrls: ['./undo-approval-recurring-deposits-account.component.scss']
+  styleUrls: ['./undo-approval-recurring-deposits-account.component.scss'],
+  standalone: false
 })
 export class UndoApprovalRecurringDepositsAccountComponent implements OnInit {
   /** Undo Approval Recurring Deposits Account form. */

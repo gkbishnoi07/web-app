@@ -21,7 +21,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  standalone: false
 })
 export class LoginComponent implements OnInit, OnDestroy {
   public environment = environment;

@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-activate-shares-account',
   templateUrl: './activate-shares-account.component.html',
-  styleUrls: ['./activate-shares-account.component.scss']
+  styleUrls: ['./activate-shares-account.component.scss'],
+  standalone: false
 })
 export class ActivateSharesAccountComponent implements OnInit {
   /** Minimum date allowed. */

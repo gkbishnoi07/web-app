@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-saving-product-currency-step',
   templateUrl: './saving-product-currency-step.component.html',
-  styleUrls: ['./saving-product-currency-step.component.scss']
+  styleUrls: ['./saving-product-currency-step.component.scss'],
+  standalone: false
 })
 export class SavingProductCurrencyStepComponent implements OnInit {
   @Input() savingProductsTemplate: any;

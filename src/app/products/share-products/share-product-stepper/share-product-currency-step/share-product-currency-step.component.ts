@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-share-product-currency-step',
   templateUrl: './share-product-currency-step.component.html',
-  styleUrls: ['./share-product-currency-step.component.scss']
+  styleUrls: ['./share-product-currency-step.component.scss'],
+  standalone: false
 })
 export class ShareProductCurrencyStepComponent implements OnInit {
   @Input() shareProductsTemplate: any;

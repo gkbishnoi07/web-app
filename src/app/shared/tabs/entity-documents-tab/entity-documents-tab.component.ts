@@ -13,7 +13,8 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'mifosx-entity-documents-tab',
   templateUrl: './entity-documents-tab.component.html',
-  styleUrls: ['./entity-documents-tab.component.scss']
+  styleUrls: ['./entity-documents-tab.component.scss'],
+  standalone: false
 })
 export class EntityDocumentsTabComponent implements OnInit {
   @ViewChild('documentsTable', { static: true }) documentsTable: MatTable<Element>;

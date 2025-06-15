@@ -12,7 +12,8 @@ import { OrganizationService } from '../../organization.service';
 @Component({
   selector: 'mifosx-edit-adhoc-query',
   templateUrl: './edit-adhoc-query.component.html',
-  styleUrls: ['./edit-adhoc-query.component.scss']
+  styleUrls: ['./edit-adhoc-query.component.scss'],
+  standalone: false
 })
 export class EditAdhocQueryComponent implements OnInit {
   /** Edit Adhoc Query form. */

@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-tax-component',
   templateUrl: './view-tax-component.component.html',
-  styleUrls: ['./view-tax-component.component.scss']
+  styleUrls: ['./view-tax-component.component.scss'],
+  standalone: false
 })
 export class ViewTaxComponentComponent {
   /** tax Component Data. */

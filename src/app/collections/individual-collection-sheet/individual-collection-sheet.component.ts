@@ -28,7 +28,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-individual-collection-sheet',
   templateUrl: './individual-collection-sheet.component.html',
-  styleUrls: ['./individual-collection-sheet.component.scss']
+  styleUrls: ['./individual-collection-sheet.component.scss'],
+  standalone: false
 })
 export class IndividualCollectionSheetComponent implements OnInit {
   /** Offices Data */

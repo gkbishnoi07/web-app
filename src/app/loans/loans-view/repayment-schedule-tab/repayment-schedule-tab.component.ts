@@ -15,7 +15,8 @@ import autoTable from 'jspdf-autotable';
 @Component({
   selector: 'mifosx-repayment-schedule-tab',
   templateUrl: './repayment-schedule-tab.component.html',
-  styleUrls: ['./repayment-schedule-tab.component.scss']
+  styleUrls: ['./repayment-schedule-tab.component.scss'],
+  standalone: false
 })
 export class RepaymentScheduleTabComponent implements OnInit, OnChanges {
   /** Currency Code */

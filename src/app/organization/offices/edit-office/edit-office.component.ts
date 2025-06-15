@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-edit-office',
   templateUrl: './edit-office.component.html',
-  styleUrls: ['./edit-office.component.scss']
+  styleUrls: ['./edit-office.component.scss'],
+  standalone: false
 })
 export class EditOfficeComponent implements OnInit {
   /** Selected Data. */

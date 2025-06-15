@@ -15,7 +15,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-guarantor',
   templateUrl: './create-guarantor.component.html',
-  styleUrls: ['./create-guarantor.component.scss']
+  styleUrls: ['./create-guarantor.component.scss'],
+  standalone: false
 })
 export class CreateGuarantorComponent implements OnInit, AfterViewInit {
   @Input() dataObject: any;

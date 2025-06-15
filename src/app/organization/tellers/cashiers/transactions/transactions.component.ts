@@ -15,7 +15,8 @@ import { OrganizationService } from 'app/organization/organization.service';
 @Component({
   selector: 'mifosx-transactions',
   templateUrl: './transactions.component.html',
-  styleUrls: ['./transactions.component.scss']
+  styleUrls: ['./transactions.component.scss'],
+  standalone: false
 })
 export class TransactionsComponent implements OnInit {
   /** Currency selector. */

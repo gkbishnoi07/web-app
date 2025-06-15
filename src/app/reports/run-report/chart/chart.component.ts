@@ -16,7 +16,8 @@ import Chart from 'chart.js';
 @Component({
   selector: 'mifosx-chart',
   templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.scss']
+  styleUrls: ['./chart.component.scss'],
+  standalone: false
 })
 export class ChartComponent implements OnChanges {
   /** Run Report Data */

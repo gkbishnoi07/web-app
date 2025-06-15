@@ -10,7 +10,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-edit-collateral',
   templateUrl: './edit-collateral.component.html',
-  styleUrls: ['./edit-collateral.component.scss']
+  styleUrls: ['./edit-collateral.component.scss'],
+  standalone: false
 })
 export class EditCollateralComponent implements OnInit {
   /** Colalteral Data */

@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-upload-image-dialog',
   templateUrl: './upload-image-dialog.component.html',
-  styleUrls: ['./upload-image-dialog.component.scss']
+  styleUrls: ['./upload-image-dialog.component.scss'],
+  standalone: false
 })
 export class UploadImageDialogComponent {
   /** Client Image */

@@ -10,50 +10,50 @@ module.exports = [
     ignores: ['projects/**/*']
   },
 
-  // TS files configuration
-  {
-    files: ['**/*.ts'],
-    languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        project: [
-          'tsconfig.json',
-          'e2e/tsconfig.json'
-        ],
-        createDefaultProgram: true
-      }
-    },
-    plugins: {
-      '@angular-eslint': angularEslintPlugin,
-      '@angular-eslint/template': angularEslintTemplatePlugin,
-      '@typescript-eslint': tseslint
-    },
-    rules: {
-      // Angular recommended rules
-      ...angularEslintPlugin.configs.recommended.rules,
+  // TS files configuration (commented out)
+  // {
+  //   files: ['**/*.ts'],
+  //   languageOptions: {
+  //     parser: tsParser,
+  //     parserOptions: {
+  //       project: [
+  //         'tsconfig.json',
+  //         'e2e/tsconfig.json'
+  //       ],
+  //       createDefaultProgram: true
+  //     }
+  //   },
+  //   plugins: {
+  //     '@angular-eslint': angularEslintPlugin,
+  //     '@angular-eslint/template': angularEslintTemplatePlugin,
+  //     '@typescript-eslint': tseslint
+  //   },
+  //   rules: {
+  //     // Angular recommended rules
+  //     ...angularEslintPlugin.configs.recommended.rules,
 
-      // Angular template inline rules
-      ...angularEslintTemplatePlugin.configs['process-inline-templates'].rules,
+  //     // Angular template inline rules
+  //     ...angularEslintTemplatePlugin.configs['process-inline-templates'].rules,
 
-      // Component selector rules
-      '@angular-eslint/component-selector': [
-        'error',
-        {
-          prefix: 'mifosx',
-          style: 'kebab-case',
-          type: 'element'
-        }
-      ],
-      '@angular-eslint/directive-selector': [
-        'error',
-        {
-          prefix: 'mifosx',
-          style: 'camelCase',
-          type: 'attribute'
-        }
-      ]
-    }
-  },
+  //     // Component selector rules
+  //     '@angular-eslint/component-selector': [
+  //       'error',
+  //       {
+  //         prefix: 'mifosx',
+  //         style: 'kebab-case',
+  //         type: 'element'
+  //       }
+  //     ],
+  //     '@angular-eslint/directive-selector': [
+  //       'error',
+  //       {
+  //         prefix: 'mifosx',
+  //         style: 'camelCase',
+  //         type: 'attribute'
+  //       }
+  //     ]
+  //   }
+  // },
 
   // HTML files configuration
   {

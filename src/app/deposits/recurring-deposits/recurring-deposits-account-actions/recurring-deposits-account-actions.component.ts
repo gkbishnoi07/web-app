@@ -5,7 +5,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-recurring-deposits-account-actions',
   templateUrl: './recurring-deposits-account-actions.component.html',
-  styleUrls: ['./recurring-deposits-account-actions.component.scss']
+  styleUrls: ['./recurring-deposits-account-actions.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */

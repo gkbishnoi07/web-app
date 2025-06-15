@@ -19,7 +19,8 @@ interface TransactionType {
 @Component({
   selector: 'mifosx-manage-savings-account',
   templateUrl: './manage-savings-account.component.html',
-  styleUrls: ['./manage-savings-account.component.scss']
+  styleUrls: ['./manage-savings-account.component.scss'],
+  standalone: false
 })
 export class ManageSavingsAccountComponent implements OnInit {
   @Input() currency: Currency;

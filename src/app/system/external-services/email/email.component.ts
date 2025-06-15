@@ -10,7 +10,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-email',
   templateUrl: './email.component.html',
-  styleUrls: ['./email.component.scss']
+  styleUrls: ['./email.component.scss'],
+  standalone: false
 })
 export class EmailComponent implements OnInit {
   /** Email configuration data. */

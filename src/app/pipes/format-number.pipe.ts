@@ -3,7 +3,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { SettingsService } from 'app/settings/settings.service';
 
 @Pipe({
-  name: 'formatNumber'
+  name: 'formatNumber',
+  standalone: false
 })
 export class FormatNumberPipe implements PipeTransform {
   constructor(

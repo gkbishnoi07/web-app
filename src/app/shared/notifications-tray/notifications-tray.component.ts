@@ -15,7 +15,8 @@ import { environment } from 'environments/environment';
   selector: 'mifosx-notifications-tray',
   templateUrl: './notifications-tray.component.html',
   styleUrls: ['./notifications-tray.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class NotificationsTrayComponent implements OnInit, OnDestroy {
   /** Wait time between API status calls 60 seg */

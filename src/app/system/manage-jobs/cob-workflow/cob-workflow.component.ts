@@ -5,7 +5,8 @@ import { environment } from 'environments/environment';
 @Component({
   selector: 'mifosx-cob-workflow',
   templateUrl: './cob-workflow.component.html',
-  styleUrls: ['./cob-workflow.component.scss']
+  styleUrls: ['./cob-workflow.component.scss'],
+  standalone: false
 })
 export class CobWorkflowComponent implements OnInit, OnDestroy {
   /** Wait time between API status calls 30 seg */

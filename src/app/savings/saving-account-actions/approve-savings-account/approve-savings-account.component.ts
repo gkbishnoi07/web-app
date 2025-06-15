@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-approve-savings-account',
   templateUrl: './approve-savings-account.component.html',
-  styleUrls: ['./approve-savings-account.component.scss']
+  styleUrls: ['./approve-savings-account.component.scss'],
+  standalone: false
 })
 export class ApproveSavingsAccountComponent implements OnInit {
   /** Minimum date allowed. */

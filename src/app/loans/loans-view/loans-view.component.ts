@@ -22,7 +22,8 @@ import { OptionData } from 'app/shared/models/option-data.model';
 @Component({
   selector: 'mifosx-loans-view',
   templateUrl: './loans-view.component.html',
-  styleUrls: ['./loans-view.component.scss']
+  styleUrls: ['./loans-view.component.scss'],
+  standalone: false
 })
 export class LoansViewComponent implements OnInit {
   /** Loan Details Data */

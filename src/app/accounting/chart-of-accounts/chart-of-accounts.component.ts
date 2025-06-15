@@ -26,7 +26,8 @@ import { TreeControlService } from 'app/shared/common-logic/tree-control.service
 @Component({
   selector: 'mifosx-chart-of-accounts',
   templateUrl: './chart-of-accounts.component.html',
-  styleUrls: ['./chart-of-accounts.component.scss']
+  styleUrls: ['./chart-of-accounts.component.scss'],
+  standalone: false
 })
 export class ChartOfAccountsComponent implements AfterViewInit, OnInit {
   /** Button toggle group form control for type of view. (list/tree) */

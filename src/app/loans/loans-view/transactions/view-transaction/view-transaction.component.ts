@@ -27,7 +27,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-view-transaction',
   templateUrl: './view-transaction.component.html',
-  styleUrls: ['./view-transaction.component.scss']
+  styleUrls: ['./view-transaction.component.scss'],
+  standalone: false
 })
 export class ViewTransactionComponent implements OnInit {
   /** Transaction data. */

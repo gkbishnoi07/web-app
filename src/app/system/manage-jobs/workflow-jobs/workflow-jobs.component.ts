@@ -19,7 +19,8 @@ export interface JobStep {
 @Component({
   selector: 'mifosx-workflow-jobs',
   templateUrl: './workflow-jobs.component.html',
-  styleUrls: ['./workflow-jobs.component.scss']
+  styleUrls: ['./workflow-jobs.component.scss'],
+  standalone: false
 })
 export class WorkflowJobsComponent implements OnInit {
   stepOrderHasChanged = false;

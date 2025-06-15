@@ -12,7 +12,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-share-products',
   templateUrl: './share-products.component.html',
-  styleUrls: ['./share-products.component.scss']
+  styleUrls: ['./share-products.component.scss'],
+  standalone: false
 })
 export class ShareProductsComponent implements OnInit, AfterViewInit {
   shareProductsData: any;

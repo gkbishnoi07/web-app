@@ -9,7 +9,8 @@ import { ProcessingStrategyService } from '../../services/processing-strategy.se
 @Component({
   selector: 'mifosx-loan-product-settings-step',
   templateUrl: './loan-product-settings-step.component.html',
-  styleUrls: ['./loan-product-settings-step.component.scss']
+  styleUrls: ['./loan-product-settings-step.component.scss'],
+  standalone: false
 })
 export class LoanProductSettingsStepComponent implements OnInit {
   DAYS_BEFORE_REPAYMENT_IS_DUE = LoanProducts.DAYS_BEFORE_REPAYMENT_IS_DUE;

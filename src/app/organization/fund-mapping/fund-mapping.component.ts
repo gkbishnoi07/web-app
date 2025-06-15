@@ -17,7 +17,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-fund-mapping',
   templateUrl: './fund-mapping.component.html',
-  styleUrls: ['./fund-mapping.component.scss']
+  styleUrls: ['./fund-mapping.component.scss'],
+  standalone: false
 })
 export class FundMappingComponent implements OnInit {
   /** Minimum Date allowed. */

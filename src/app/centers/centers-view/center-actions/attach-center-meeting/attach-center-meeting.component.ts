@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-attach-center-meeting',
   templateUrl: './attach-center-meeting.component.html',
-  styleUrls: ['./attach-center-meeting.component.scss']
+  styleUrls: ['./attach-center-meeting.component.scss'],
+  standalone: false
 })
 export class AttachCenterMeetingComponent implements OnInit {
   /** Minimum date allowed. */

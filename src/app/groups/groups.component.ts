@@ -22,7 +22,8 @@ import { GroupsDataSource } from './groups.datasource';
 @Component({
   selector: 'mifosx-app-groups',
   templateUrl: './groups.component.html',
-  styleUrls: ['./groups.component.scss']
+  styleUrls: ['./groups.component.scss'],
+  standalone: false
 })
 export class GroupsComponent implements OnInit, AfterViewInit {
   @ViewChild('showClosedGroups', { static: true }) showClosedGroups: MatCheckbox;

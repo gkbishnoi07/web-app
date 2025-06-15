@@ -12,7 +12,8 @@ import { ConfigurationWizardService } from '../../../configuration-wizard/config
 @Component({
   selector: 'mifosx-create-code',
   templateUrl: './create-code.component.html',
-  styleUrls: ['./create-code.component.scss']
+  styleUrls: ['./create-code.component.scss'],
+  standalone: false
 })
 export class CreateCodeComponent implements OnInit, AfterViewInit {
   /** Code form. */

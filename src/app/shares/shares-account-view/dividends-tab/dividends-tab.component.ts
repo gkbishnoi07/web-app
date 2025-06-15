@@ -9,7 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-dividends-tab',
   templateUrl: './dividends-tab.component.html',
-  styleUrls: ['./dividends-tab.component.scss']
+  styleUrls: ['./dividends-tab.component.scss'],
+  standalone: false
 })
 export class DividendsTabComponent implements OnInit {
   /** Shares Account Data */

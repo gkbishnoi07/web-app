@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-glim-account',
   templateUrl: './glim-account.component.html',
-  styleUrls: ['./glim-account.component.scss']
+  styleUrls: ['./glim-account.component.scss'],
+  standalone: false
 })
 export class GlimAccountComponent implements OnInit {
   /** Columns to be displayed in GLIM overview table. */

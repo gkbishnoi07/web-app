@@ -13,7 +13,8 @@ import { Accounting } from 'app/core/utils/accounting';
       state('expanded', style({ height: '*' })),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))])
 
-  ]
+  ],
+  standalone: false
 })
 export class RecurringDepositProductPreviewStepComponent implements OnInit, OnChanges {
   @Input() recurringDepositProductsTemplate: any;

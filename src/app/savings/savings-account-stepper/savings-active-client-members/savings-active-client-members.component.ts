@@ -4,7 +4,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-savings-active-client-members',
   templateUrl: './savings-active-client-members.component.html',
-  styleUrls: ['./savings-active-client-members.component.scss']
+  styleUrls: ['./savings-active-client-members.component.scss'],
+  standalone: false
 })
 export class SavingsActiveClientMembersComponent implements OnInit {
   @Input() activeClientMembers?: any;

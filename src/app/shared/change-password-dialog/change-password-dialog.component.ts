@@ -12,7 +12,8 @@ import { environment } from 'environments/environment';
 @Component({
   selector: 'mifosx-change-password-dialog',
   templateUrl: './change-password-dialog.component.html',
-  styleUrls: ['./change-password-dialog.component.scss']
+  styleUrls: ['./change-password-dialog.component.scss'],
+  standalone: false
 })
 export class ChangePasswordDialogComponent implements OnInit {
   minPasswordLength: number = environment.minPasswordLength | 12;

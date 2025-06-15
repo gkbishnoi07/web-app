@@ -13,7 +13,8 @@ import { ErrorStateMatcher } from '@angular/material/core';
 @Component({
   selector: 'mifosx-input-password',
   templateUrl: './input-password.component.html',
-  styleUrls: ['./input-password.component.scss']
+  styleUrls: ['./input-password.component.scss'],
+  standalone: false
 })
 export class InputPasswordComponent implements ControlValueAccessor, ErrorStateMatcher {
   disabled = false;

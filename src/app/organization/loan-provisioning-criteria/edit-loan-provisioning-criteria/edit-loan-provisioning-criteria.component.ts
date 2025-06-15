@@ -23,7 +23,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-edit-loan-provisioning-criteria',
   templateUrl: './edit-loan-provisioning-criteria.component.html',
-  styleUrls: ['./edit-loan-provisioning-criteria.component.scss']
+  styleUrls: ['./edit-loan-provisioning-criteria.component.scss'],
+  standalone: false
 })
 export class EditLoanProvisioningCriteriaComponent implements OnInit {
   /** Loan Provisioning Criteria form. */

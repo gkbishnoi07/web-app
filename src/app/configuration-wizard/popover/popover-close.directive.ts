@@ -8,7 +8,8 @@ import { PopoverRef } from './popover-ref';
  * Button that will close the current popover.
  */
 @Directive({
-  selector: '[mifosxPopoverClose]'
+  selector: '[mifosxPopoverClose]',
+  standalone: false
 })
 export class PopoverCloseDirective<T = any> {
   @Input('mifosxPopoverClose') popoverResult: T;

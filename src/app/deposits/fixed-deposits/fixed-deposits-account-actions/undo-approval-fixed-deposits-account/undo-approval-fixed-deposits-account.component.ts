@@ -13,7 +13,8 @@ import { FixedDepositsService } from '../../fixed-deposits.service';
 @Component({
   selector: 'mifosx-undo-approval-fixed-deposits-account',
   templateUrl: './undo-approval-fixed-deposits-account.component.html',
-  styleUrls: ['./undo-approval-fixed-deposits-account.component.scss']
+  styleUrls: ['./undo-approval-fixed-deposits-account.component.scss'],
+  standalone: false
 })
 export class UndoApprovalFixedDepositsAccountComponent implements OnInit {
   /** Undo Approval Fixed Deposits Account form. */

@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-withdrawn-by-client',
   templateUrl: './withdrawn-by-client.component.html',
-  styleUrls: ['./withdrawn-by-client.component.scss']
+  styleUrls: ['./withdrawn-by-client.component.scss'],
+  standalone: false
 })
 export class WithdrawnByClientComponent implements OnInit {
   @Input() dataObject: any;

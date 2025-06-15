@@ -19,7 +19,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-edit-fixed-deposit-product',
   templateUrl: './edit-fixed-deposit-product.component.html',
-  styleUrls: ['./edit-fixed-deposit-product.component.scss']
+  styleUrls: ['./edit-fixed-deposit-product.component.scss'],
+  standalone: false
 })
 export class EditFixedDepositProductComponent {
   @ViewChild(FixedDepositProductDetailsStepComponent, { static: true })

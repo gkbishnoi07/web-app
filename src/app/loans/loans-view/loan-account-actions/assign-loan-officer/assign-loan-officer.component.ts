@@ -10,7 +10,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-assign-loan-officer',
   templateUrl: './assign-loan-officer.component.html',
-  styleUrls: ['./assign-loan-officer.component.scss']
+  styleUrls: ['./assign-loan-officer.component.scss'],
+  standalone: false
 })
 export class AssignLoanOfficerComponent implements OnInit {
   @Input() dataObject: any;

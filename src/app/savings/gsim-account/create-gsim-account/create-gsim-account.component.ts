@@ -19,7 +19,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-gsim-account',
   templateUrl: './create-gsim-account.component.html',
-  styleUrls: ['./create-gsim-account.component.scss']
+  styleUrls: ['./create-gsim-account.component.scss'],
+  standalone: false
 })
 export class CreateGsimAccountComponent {
   /** Savings Account Template */

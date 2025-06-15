@@ -10,7 +10,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-floating-rate-period-dialog',
   templateUrl: './floating-rate-period-dialog.component.html',
-  styleUrls: ['./floating-rate-period-dialog.component.scss']
+  styleUrls: ['./floating-rate-period-dialog.component.scss'],
+  standalone: false
 })
 export class FloatingRatePeriodDialogComponent implements OnInit {
   /** Floating Rate Period Form. */

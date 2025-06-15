@@ -11,7 +11,8 @@ import { activities } from '../activities';
 @Component({
   selector: 'mifosx-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  standalone: false
 })
 export class DashboardComponent implements OnInit {
   /** Array of all user activities */

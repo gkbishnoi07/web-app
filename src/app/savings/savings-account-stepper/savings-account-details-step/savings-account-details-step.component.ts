@@ -12,7 +12,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-savings-account-details-step',
   templateUrl: './savings-account-details-step.component.html',
-  styleUrls: ['./savings-account-details-step.component.scss']
+  styleUrls: ['./savings-account-details-step.component.scss'],
+  standalone: false
 })
 export class SavingsAccountDetailsStepComponent implements OnInit {
   /** Savings Account Template */

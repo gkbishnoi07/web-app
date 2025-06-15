@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-toggle-withhold-tax-dialog',
   templateUrl: './toggle-withhold-tax-dialog.component.html',
-  styleUrls: ['./toggle-withhold-tax-dialog.component.scss']
+  styleUrls: ['./toggle-withhold-tax-dialog.component.scss'],
+  standalone: false
 })
 export class ToggleWithholdTaxDialogComponent {
   /**

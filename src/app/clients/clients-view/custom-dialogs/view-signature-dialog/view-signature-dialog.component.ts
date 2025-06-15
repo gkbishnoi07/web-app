@@ -15,7 +15,8 @@ import { Buffer } from 'buffer';
 @Component({
   selector: 'mifosx-view-signature-dialog',
   templateUrl: './view-signature-dialog.component.html',
-  styleUrls: ['./view-signature-dialog.component.scss']
+  styleUrls: ['./view-signature-dialog.component.scss'],
+  standalone: false
 })
 export class ViewSignatureDialogComponent implements OnInit {
   /** Id of client signature in documents */

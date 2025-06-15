@@ -20,7 +20,8 @@ import { ContinueSetupDialogComponent } from '../../../configuration-wizard/cont
 @Component({
   selector: 'mifosx-create-office',
   templateUrl: './create-office.component.html',
-  styleUrls: ['./create-office.component.scss']
+  styleUrls: ['./create-office.component.scss'],
+  standalone: false
 })
 export class CreateOfficeComponent implements OnInit, AfterViewInit {
   /** Office form. */

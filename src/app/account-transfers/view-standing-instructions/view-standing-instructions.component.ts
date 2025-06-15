@@ -5,7 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-standing-instructions',
   templateUrl: './view-standing-instructions.component.html',
-  styleUrls: ['./view-standing-instructions.component.scss']
+  styleUrls: ['./view-standing-instructions.component.scss'],
+  standalone: false
 })
 export class ViewStandingInstructionsComponent {
   /** Standing Instructions Data */

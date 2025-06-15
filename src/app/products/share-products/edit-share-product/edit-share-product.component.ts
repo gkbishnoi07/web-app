@@ -19,7 +19,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-edit-share-product',
   templateUrl: './edit-share-product.component.html',
-  styleUrls: ['./edit-share-product.component.scss']
+  styleUrls: ['./edit-share-product.component.scss'],
+  standalone: false
 })
 export class EditShareProductComponent {
   @ViewChild(ShareProductDetailsStepComponent, { static: true })

@@ -14,7 +14,8 @@ import { AuthenticationService } from 'app/core/authentication/authentication.se
 @Component({
   selector: 'mifosx-notes-tab',
   templateUrl: './notes-tab.component.html',
-  styleUrls: ['./notes-tab.component.scss']
+  styleUrls: ['./notes-tab.component.scss'],
+  standalone: false
 })
 export class NotesTabComponent implements OnInit {
   /** Client ID */

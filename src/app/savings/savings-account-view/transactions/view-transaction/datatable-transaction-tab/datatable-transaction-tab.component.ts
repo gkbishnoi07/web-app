@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-datatable-transaction-tab',
   templateUrl: './datatable-transaction-tab.component.html',
-  styleUrls: ['./datatable-transaction-tab.component.scss']
+  styleUrls: ['./datatable-transaction-tab.component.scss'],
+  standalone: false
 })
 export class DatatableTransactionTabComponent {
   /** Transaction Id */

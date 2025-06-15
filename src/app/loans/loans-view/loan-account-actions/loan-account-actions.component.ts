@@ -8,7 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'mifosx-loan-account-actions',
   templateUrl: './loan-account-actions.component.html',
-  styleUrls: ['./loan-account-actions.component.scss']
+  styleUrls: ['./loan-account-actions.component.scss'],
+  standalone: false
 })
 export class LoanAccountActionsComponent {
   /** Loan Details Data */

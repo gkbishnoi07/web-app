@@ -12,7 +12,8 @@ import { SystemService } from 'app/system/system.service';
 @Component({
   selector: 'mifosx-view-survey',
   templateUrl: './view-survey.component.html',
-  styleUrls: ['./view-survey.component.scss']
+  styleUrls: ['./view-survey.component.scss'],
+  standalone: false
 })
 export class ViewSurveyComponent {
   /** Survey Data */

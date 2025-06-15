@@ -18,7 +18,8 @@ import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.
 @Component({
   selector: 'mifosx-entity-data-table-checks',
   templateUrl: './entity-data-table-checks.component.html',
-  styleUrls: ['./entity-data-table-checks.component.scss']
+  styleUrls: ['./entity-data-table-checks.component.scss'],
+  standalone: false
 })
 export class EntityDataTableChecksComponent implements OnInit {
   /** Entity Data Table Checks data. */

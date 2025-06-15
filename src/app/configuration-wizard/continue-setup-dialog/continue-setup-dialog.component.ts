@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-continue-setup-dialog',
   templateUrl: './continue-setup-dialog.component.html',
-  styleUrls: ['./continue-setup-dialog.component.scss']
+  styleUrls: ['./continue-setup-dialog.component.scss'],
+  standalone: false
 })
 export class ContinueSetupDialogComponent {
   /* Current Step Name*/

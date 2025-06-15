@@ -13,7 +13,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-provisioning-entry',
   templateUrl: './create-provisioning-entry.component.html',
-  styleUrls: ['./create-provisioning-entry.component.scss']
+  styleUrls: ['./create-provisioning-entry.component.scss'],
+  standalone: false
 })
 export class CreateProvisioningEntryComponent implements OnInit {
   /** Minimum provisioning date allowed. */

@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-prepay-loan',
   templateUrl: './prepay-loan.component.html',
-  styleUrls: ['./prepay-loan.component.scss']
+  styleUrls: ['./prepay-loan.component.scss'],
+  standalone: false
 })
 export class PrepayLoanComponent implements OnInit {
   @Input() dataObject: any;

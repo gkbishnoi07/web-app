@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-upload-signature-dialog',
   templateUrl: './upload-signature-dialog.component.html',
-  styleUrls: ['./upload-signature-dialog.component.scss']
+  styleUrls: ['./upload-signature-dialog.component.scss'],
+  standalone: false
 })
 export class UploadSignatureDialogComponent {
   /** Client Signature */

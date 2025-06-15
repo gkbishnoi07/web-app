@@ -14,7 +14,8 @@ import { of } from 'rxjs';
 @Component({
   selector: 'mifosx-manage-tax-components',
   templateUrl: './manage-tax-components.component.html',
-  styleUrls: ['./manage-tax-components.component.scss']
+  styleUrls: ['./manage-tax-components.component.scss'],
+  standalone: false
 })
 export class ManageTaxComponentsComponent implements OnInit {
   /** Tax Components data. */

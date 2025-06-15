@@ -12,7 +12,8 @@ import { SystemService } from 'app/system/system.service';
 @Component({
   selector: 'mifosx-edit-notification',
   templateUrl: './edit-notification.component.html',
-  styleUrls: ['./edit-notification.component.scss']
+  styleUrls: ['./edit-notification.component.scss'],
+  standalone: false
 })
 export class EditNotificationComponent implements OnInit {
   /** Notification Configuration data */

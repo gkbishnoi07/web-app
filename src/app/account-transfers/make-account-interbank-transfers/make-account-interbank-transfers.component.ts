@@ -4,7 +4,8 @@ import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'mifosx-make-account-interbank-transfers',
   templateUrl: './make-account-interbank-transfers.component.html',
-  styleUrls: ['./make-account-interbank-transfers.component.scss']
+  styleUrls: ['./make-account-interbank-transfers.component.scss'],
+  standalone: false
 })
 export class MakeAccountInterbankTransfersComponent {
   @Input() makeAccountTransferForm: FormGroup;

@@ -6,7 +6,8 @@ import { OrganizationService } from 'app/organization/organization.service';
 @Component({
   selector: 'mifosx-create-fund',
   templateUrl: './create-fund.component.html',
-  styleUrls: ['./create-fund.component.scss']
+  styleUrls: ['./create-fund.component.scss'],
+  standalone: false
 })
 export class CreateFundComponent implements OnInit {
   /** Charge form. */

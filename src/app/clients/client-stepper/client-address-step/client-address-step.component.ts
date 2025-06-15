@@ -18,7 +18,8 @@ import { FormDialogComponent } from 'app/shared/form-dialog/form-dialog.componen
 @Component({
   selector: 'mifosx-client-address-step',
   templateUrl: './client-address-step.component.html',
-  styleUrls: ['./client-address-step.component.scss']
+  styleUrls: ['./client-address-step.component.scss'],
+  standalone: false
 })
 export class ClientAddressStepComponent {
   /** Client Address Field Config */

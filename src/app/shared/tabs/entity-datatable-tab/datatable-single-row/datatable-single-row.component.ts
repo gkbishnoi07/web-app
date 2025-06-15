@@ -12,7 +12,8 @@ import { SystemService } from 'app/system/system.service';
 @Component({
   selector: 'mifosx-datatable-single-row',
   templateUrl: './datatable-single-row.component.html',
-  styleUrls: ['./datatable-single-row.component.scss']
+  styleUrls: ['./datatable-single-row.component.scss'],
+  standalone: false
 })
 export class DatatableSingleRowComponent implements OnInit {
   @Input() dataObject: any;

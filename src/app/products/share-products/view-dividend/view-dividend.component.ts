@@ -8,7 +8,8 @@ import { ProductsService } from 'app/products/products.service';
 @Component({
   selector: 'mifosx-view-dividend',
   templateUrl: './view-dividend.component.html',
-  styleUrls: ['./view-dividend.component.scss']
+  styleUrls: ['./view-dividend.component.scss'],
+  standalone: false
 })
 export class ViewDividendComponent implements OnInit {
   dividendData: any;

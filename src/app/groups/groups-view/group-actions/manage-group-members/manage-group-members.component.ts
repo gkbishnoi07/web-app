@@ -17,7 +17,8 @@ import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-manage-group-members',
   templateUrl: './manage-group-members.component.html',
-  styleUrls: ['./manage-group-members.component.scss']
+  styleUrls: ['./manage-group-members.component.scss'],
+  standalone: false
 })
 export class ManageGroupMembersComponent implements AfterViewInit {
   /** Group Data */

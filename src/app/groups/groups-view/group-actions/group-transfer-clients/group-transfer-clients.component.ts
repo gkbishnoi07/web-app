@@ -13,7 +13,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-group-transfer-clients',
   templateUrl: './group-transfer-clients.component.html',
-  styleUrls: ['./group-transfer-clients.component.scss']
+  styleUrls: ['./group-transfer-clients.component.scss'],
+  standalone: false
 })
 export class GroupTransferClientsComponent implements OnInit, AfterViewInit {
   /** Transfer Clients form. */

@@ -14,7 +14,8 @@ import { CapitalizedIncome } from '../loan-product-payment-strategy-step/payment
 @Component({
   selector: 'mifosx-loan-product-accounting-step',
   templateUrl: './loan-product-accounting-step.component.html',
-  styleUrls: ['./loan-product-accounting-step.component.scss']
+  styleUrls: ['./loan-product-accounting-step.component.scss'],
+  standalone: false
 })
 export class LoanProductAccountingStepComponent implements OnInit, OnChanges {
   @Input() loanProductsTemplate: any;

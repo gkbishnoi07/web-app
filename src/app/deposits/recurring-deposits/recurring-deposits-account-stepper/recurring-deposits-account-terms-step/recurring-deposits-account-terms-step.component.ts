@@ -9,7 +9,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-recurring-deposits-account-terms-step',
   templateUrl: './recurring-deposits-account-terms-step.component.html',
-  styleUrls: ['./recurring-deposits-account-terms-step.component.scss']
+  styleUrls: ['./recurring-deposits-account-terms-step.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountTermsStepComponent implements OnInit, OnChanges {
   @Input() recurringDepositsAccountTemplate: any;

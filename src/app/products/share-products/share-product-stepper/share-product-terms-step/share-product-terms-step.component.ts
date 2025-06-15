@@ -5,7 +5,8 @@ import { combineLatest } from 'rxjs';
 @Component({
   selector: 'mifosx-share-product-terms-step',
   templateUrl: './share-product-terms-step.component.html',
-  styleUrls: ['./share-product-terms-step.component.scss']
+  styleUrls: ['./share-product-terms-step.component.scss'],
+  standalone: false
 })
 export class ShareProductTermsStepComponent implements OnInit {
   @Input() shareProductsTemplate: any;

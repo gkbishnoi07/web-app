@@ -13,7 +13,8 @@ import { SystemService } from '../../../system.service';
 @Component({
   selector: 'mifosx-edit-configuration',
   templateUrl: './edit-configuration.component.html',
-  styleUrls: ['./edit-configuration.component.scss']
+  styleUrls: ['./edit-configuration.component.scss'],
+  standalone: false
 })
 export class EditConfigurationComponent implements OnInit {
   /** Minimum transaction date allowed. */

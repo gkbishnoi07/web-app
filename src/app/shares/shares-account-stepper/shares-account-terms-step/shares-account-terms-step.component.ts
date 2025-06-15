@@ -10,7 +10,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-shares-account-terms-step',
   templateUrl: './shares-account-terms-step.component.html',
-  styleUrls: ['./shares-account-terms-step.component.scss']
+  styleUrls: ['./shares-account-terms-step.component.scss'],
+  standalone: false
 })
 export class SharesAccountTermsStepComponent implements OnChanges, OnInit {
   /** Shares Account and Product Template */

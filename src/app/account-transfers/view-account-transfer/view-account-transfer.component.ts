@@ -6,7 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-account-transfer',
   templateUrl: './view-account-transfer.component.html',
-  styleUrls: ['./view-account-transfer.component.scss']
+  styleUrls: ['./view-account-transfer.component.scss'],
+  standalone: false
 })
 export class ViewAccountTransferComponent {
   viewAccountTransferData: any;

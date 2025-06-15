@@ -18,7 +18,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-create-saving-product',
   templateUrl: './create-saving-product.component.html',
-  styleUrls: ['./create-saving-product.component.scss']
+  styleUrls: ['./create-saving-product.component.scss'],
+  standalone: false
 })
 export class CreateSavingProductComponent {
   @ViewChild(SavingProductDetailsStepComponent, { static: true })

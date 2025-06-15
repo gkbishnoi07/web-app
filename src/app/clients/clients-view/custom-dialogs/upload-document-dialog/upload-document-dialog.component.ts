@@ -5,7 +5,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators, FormControl } from '@
 @Component({
   selector: 'mifosx-upload-document-dialog',
   templateUrl: './upload-document-dialog.component.html',
-  styleUrls: ['./upload-document-dialog.component.scss']
+  styleUrls: ['./upload-document-dialog.component.scss'],
+  standalone: false
 })
 export class UploadDocumentDialogComponent implements OnInit {
   /** Upload Document form. */

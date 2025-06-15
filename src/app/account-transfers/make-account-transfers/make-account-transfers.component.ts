@@ -25,7 +25,8 @@ import { environment } from 'environments/environment';
 @Component({
   selector: 'mifosx-make-account-transfers',
   templateUrl: './make-account-transfers.component.html',
-  styleUrls: ['./make-account-transfers.component.scss']
+  styleUrls: ['./make-account-transfers.component.scss'],
+  standalone: false
 })
 export class MakeAccountTransfersComponent implements OnInit, AfterViewInit {
   /** Standing Instructions Data */

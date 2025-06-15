@@ -12,7 +12,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-recurring-deposits-account-settings-step',
   templateUrl: './recurring-deposits-account-settings-step.component.html',
-  styleUrls: ['./recurring-deposits-account-settings-step.component.scss']
+  styleUrls: ['./recurring-deposits-account-settings-step.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountSettingsStepComponent implements OnInit, OnChanges {
   @Input() isNew = true;

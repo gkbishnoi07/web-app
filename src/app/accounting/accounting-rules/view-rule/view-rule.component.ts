@@ -15,7 +15,8 @@ import { DeleteDialogComponent } from '../../../shared/delete-dialog/delete-dial
 @Component({
   selector: 'mifosx-view-rule',
   templateUrl: './view-rule.component.html',
-  styleUrls: ['./view-rule.component.scss']
+  styleUrls: ['./view-rule.component.scss'],
+  standalone: false
 })
 export class ViewRuleComponent {
   /** Accounting rule. */

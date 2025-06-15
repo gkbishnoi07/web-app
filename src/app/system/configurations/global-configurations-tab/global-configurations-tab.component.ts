@@ -15,7 +15,8 @@ import { ConfigurationWizardService } from '../../../configuration-wizard/config
 @Component({
   selector: 'mifosx-global-configurations-tab',
   templateUrl: './global-configurations-tab.component.html',
-  styleUrls: ['./global-configurations-tab.component.scss']
+  styleUrls: ['./global-configurations-tab.component.scss'],
+  standalone: false
 })
 export class GlobalConfigurationsTabComponent implements OnInit, AfterViewInit {
   /** Configuration data. */

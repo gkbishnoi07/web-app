@@ -18,7 +18,8 @@ import { EnableDialogComponent } from '../../../shared/enable-dialog/enable-dial
 @Component({
   selector: 'mifosx-view-role',
   templateUrl: './view-role.component.html',
-  styleUrls: ['./view-role.component.scss']
+  styleUrls: ['./view-role.component.scss'],
+  standalone: false
 })
 export class ViewRoleComponent implements OnInit {
   /** Role Permissions Data */

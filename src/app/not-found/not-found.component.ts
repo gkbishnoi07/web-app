@@ -4,7 +4,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'mifosx-not-found',
   templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss']
+  styleUrls: ['./not-found.component.scss'],
+  standalone: false
 })
 export class NotFoundComponent {
   constructor(private location: Location) {}

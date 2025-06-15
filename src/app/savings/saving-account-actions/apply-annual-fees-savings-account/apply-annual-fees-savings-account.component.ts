@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-apply-annual-fees-savings-account',
   templateUrl: './apply-annual-fees-savings-account.component.html',
-  styleUrls: ['./apply-annual-fees-savings-account.component.scss']
+  styleUrls: ['./apply-annual-fees-savings-account.component.scss'],
+  standalone: false
 })
 export class ApplyAnnualFeesSavingsAccountComponent implements OnInit {
   /** Minimum date allowed. */

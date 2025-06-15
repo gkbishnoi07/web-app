@@ -4,7 +4,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-session-timeout-dialog',
   templateUrl: './session-timeout-dialog.component.html',
-  styleUrls: ['./session-timeout-dialog.component.scss']
+  styleUrls: ['./session-timeout-dialog.component.scss'],
+  standalone: false
 })
 export class SessionTimeoutDialogComponent {
   constructor(public dialogRef: MatDialogRef<SessionTimeoutDialogComponent>) {}

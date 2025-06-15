@@ -14,7 +14,8 @@ import { AuthenticationService } from '../../core/authentication/authentication.
 @Component({
   selector: 'mifosx-login-form',
   templateUrl: './login-form.component.html',
-  styleUrls: ['./login-form.component.scss']
+  styleUrls: ['./login-form.component.scss'],
+  standalone: false
 })
 export class LoginFormComponent implements OnInit {
   /** Login form group. */

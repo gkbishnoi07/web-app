@@ -4,7 +4,8 @@ import { LoanProducts } from '../../loan-products';
 @Component({
   selector: 'mifosx-loan-product-preview-step',
   templateUrl: './loan-product-preview-step.component.html',
-  styleUrls: ['./loan-product-preview-step.component.scss']
+  styleUrls: ['./loan-product-preview-step.component.scss'],
+  standalone: false
 })
 export class LoanProductPreviewStepComponent implements OnInit, OnChanges {
   @Input() loanProductsTemplate: any;

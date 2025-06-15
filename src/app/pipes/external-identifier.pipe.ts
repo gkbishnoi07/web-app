@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'externalIdentifier'
+  name: 'externalIdentifier',
+  standalone: false
 })
 export class ExternalIdentifierPipe implements PipeTransform {
   transform(externalId: string): string {

@@ -12,7 +12,8 @@ import { LoansService } from '../../../loans.service';
 @Component({
   selector: 'mifosx-undo-disbursal',
   templateUrl: './undo-disbursal.component.html',
-  styleUrls: ['./undo-disbursal.component.scss']
+  styleUrls: ['./undo-disbursal.component.scss'],
+  standalone: false
 })
 export class UndoDisbursalComponent implements OnInit {
   @Input() actionName: string;

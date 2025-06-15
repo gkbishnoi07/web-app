@@ -14,7 +14,8 @@ import { SystemService } from '../system.service';
 @Component({
   selector: 'mifosx-manage-surveys',
   templateUrl: './manage-surveys.component.html',
-  styleUrls: ['./manage-surveys.component.scss']
+  styleUrls: ['./manage-surveys.component.scss'],
+  standalone: false
 })
 export class ManageSurveysComponent implements OnInit {
   /* Surveys data */

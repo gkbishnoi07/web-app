@@ -11,7 +11,8 @@ import { SharesService } from '../shares.service';
 @Component({
   selector: 'mifosx-shares-account-actions',
   templateUrl: './shares-account-actions.component.html',
-  styleUrls: ['./shares-account-actions.component.scss']
+  styleUrls: ['./shares-account-actions.component.scss'],
+  standalone: false
 })
 export class SharesAccountActionsComponent {
   /** Shares Account Data */

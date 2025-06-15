@@ -10,7 +10,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-fixed-deposit-account-terms-step',
   templateUrl: './fixed-deposit-account-terms-step.component.html',
-  styleUrls: ['./fixed-deposit-account-terms-step.component.scss']
+  styleUrls: ['./fixed-deposit-account-terms-step.component.scss'],
+  standalone: false
 })
 export class FixedDepositAccountTermsStepComponent implements OnInit, OnChanges {
   /** Fixed deposits account template */

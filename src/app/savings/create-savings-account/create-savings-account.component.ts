@@ -18,7 +18,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-savings-account',
   templateUrl: './create-savings-account.component.html',
-  styleUrls: ['./create-savings-account.component.scss']
+  styleUrls: ['./create-savings-account.component.scss'],
+  standalone: false
 })
 export class CreateSavingsAccountComponent {
   /** Savings Account Template */

@@ -8,7 +8,8 @@ import { UntypedFormControl } from '@angular/forms';
 @Component({
   selector: 'mifosx-campaign-message-step',
   templateUrl: './campaign-message-step.component.html',
-  styleUrls: ['./campaign-message-step.component.scss']
+  styleUrls: ['./campaign-message-step.component.scss'],
+  standalone: false
 })
 export class CampaignMessageStepComponent implements OnChanges {
   /** Column headers */

@@ -15,7 +15,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-financial-activity-mappings',
   templateUrl: './financial-activity-mappings.component.html',
-  styleUrls: ['./financial-activity-mappings.component.scss']
+  styleUrls: ['./financial-activity-mappings.component.scss'],
+  standalone: false
 })
 export class FinancialActivityMappingsComponent implements OnInit, AfterViewInit {
   /** Financial activity account data. */

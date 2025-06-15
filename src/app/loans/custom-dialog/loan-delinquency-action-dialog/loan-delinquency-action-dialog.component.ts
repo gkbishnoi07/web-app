@@ -5,7 +5,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-loan-delinquency-action-dialog',
   templateUrl: './loan-delinquency-action-dialog.component.html',
-  styleUrls: ['./loan-delinquency-action-dialog.component.scss']
+  styleUrls: ['./loan-delinquency-action-dialog.component.scss'],
+  standalone: false
 })
 export class LoanDelinquencyActionDialogComponent {
   delinquencyActionForm: UntypedFormGroup;

@@ -18,7 +18,8 @@ import { SharesButtonsConfiguration } from './shares-buttons.config';
 @Component({
   selector: 'mifosx-shares-account-view',
   templateUrl: './shares-account-view.component.html',
-  styleUrls: ['./shares-account-view.component.scss']
+  styleUrls: ['./shares-account-view.component.scss'],
+  standalone: false
 })
 export class SharesAccountViewComponent implements OnInit {
   /** Shares Account Data */

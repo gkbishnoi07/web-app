@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-recovery-repayment',
   templateUrl: './recovery-repayment.component.html',
-  styleUrls: ['./recovery-repayment.component.scss']
+  styleUrls: ['./recovery-repayment.component.scss'],
+  standalone: false
 })
 export class RecoveryRepaymentComponent implements OnInit {
   @Input() dataObject: any;

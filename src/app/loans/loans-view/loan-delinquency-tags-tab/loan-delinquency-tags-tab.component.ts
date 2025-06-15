@@ -18,7 +18,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-loan-delinquency-tags-tab',
   templateUrl: './loan-delinquency-tags-tab.component.html',
-  styleUrls: ['./loan-delinquency-tags-tab.component.scss']
+  styleUrls: ['./loan-delinquency-tags-tab.component.scss'],
+  standalone: false
 })
 export class LoanDelinquencyTagsTabComponent implements OnInit {
   loanDelinquencyTags: LoanDelinquencyTags[] = [];

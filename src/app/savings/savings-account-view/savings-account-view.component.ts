@@ -25,7 +25,8 @@ import { environment } from 'environments/environment';
 @Component({
   selector: 'mifosx-savings-account-view',
   templateUrl: './savings-account-view.component.html',
-  styleUrls: ['./savings-account-view.component.scss']
+  styleUrls: ['./savings-account-view.component.scss'],
+  standalone: false
 })
 export class SavingsAccountViewComponent implements OnInit {
   /** Savings Account Data */

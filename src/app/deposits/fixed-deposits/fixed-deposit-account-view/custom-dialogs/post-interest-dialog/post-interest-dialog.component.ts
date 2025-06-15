@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-post-interest-dialog',
   templateUrl: './post-interest-dialog.component.html',
-  styleUrls: ['./post-interest-dialog.component.scss']
+  styleUrls: ['./post-interest-dialog.component.scss'],
+  standalone: false
 })
 export class PostInterestDialogComponent {
   /**

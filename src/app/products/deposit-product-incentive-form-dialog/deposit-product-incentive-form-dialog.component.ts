@@ -6,7 +6,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-deposit-product-incentive-form-dialog',
   templateUrl: './deposit-product-incentive-form-dialog.component.html',
-  styleUrls: ['./deposit-product-incentive-form-dialog.component.scss']
+  styleUrls: ['./deposit-product-incentive-form-dialog.component.scss'],
+  standalone: false
 })
 export class DepositProductIncentiveFormDialogComponent implements OnInit {
   layout: {

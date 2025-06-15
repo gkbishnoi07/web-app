@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-cashiers',
   templateUrl: './cashiers.component.html',
-  styleUrls: ['./cashiers.component.scss']
+  styleUrls: ['./cashiers.component.scss'],
+  standalone: false
 })
 export class CashiersComponent implements OnInit {
   /** Cashiers data. */

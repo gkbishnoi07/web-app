@@ -18,7 +18,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-roles-and-permissions',
   templateUrl: './roles-and-permissions.component.html',
-  styleUrls: ['./roles-and-permissions.component.scss']
+  styleUrls: ['./roles-and-permissions.component.scss'],
+  standalone: false
 })
 export class RolesAndPermissionsComponent implements OnInit, AfterViewInit {
   /** Role data. */

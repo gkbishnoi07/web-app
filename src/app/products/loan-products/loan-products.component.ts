@@ -12,7 +12,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-loan-products',
   templateUrl: './loan-products.component.html',
-  styleUrls: ['./loan-products.component.scss']
+  styleUrls: ['./loan-products.component.scss'],
+  standalone: false
 })
 export class LoanProductsComponent implements OnInit, AfterViewInit {
   loanProductsData: any;

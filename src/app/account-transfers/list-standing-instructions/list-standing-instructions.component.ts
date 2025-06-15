@@ -19,7 +19,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-list-standing-instructions',
   templateUrl: './list-standing-instructions.component.html',
-  styleUrls: ['./list-standing-instructions.component.scss']
+  styleUrls: ['./list-standing-instructions.component.scss'],
+  standalone: false
 })
 export class ListStandingInstructionsComponent {
   /** Recurring Deposits Data */

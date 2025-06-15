@@ -18,7 +18,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-edit-shares-account',
   templateUrl: './edit-shares-account.component.html',
-  styleUrls: ['./edit-shares-account.component.scss']
+  styleUrls: ['./edit-shares-account.component.scss'],
+  standalone: false
 })
 export class EditSharesAccountComponent {
   /** Shares Account and Template */

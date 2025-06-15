@@ -12,7 +12,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-server-selector',
   templateUrl: './server-selector.component.html',
-  styleUrls: ['./server-selector.component.scss']
+  styleUrls: ['./server-selector.component.scss'],
+  standalone: false
 })
 export class ServerSelectorComponent implements OnInit {
   /** Input server. */

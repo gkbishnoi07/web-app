@@ -13,7 +13,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-client-family-member-dialog',
   templateUrl: './client-family-member-dialog.component.html',
-  styleUrls: ['./client-family-member-dialog.component.scss']
+  styleUrls: ['./client-family-member-dialog.component.scss'],
+  standalone: false
 })
 export class ClientFamilyMemberDialogComponent implements OnInit {
   /** Maximum Due Date allowed. */

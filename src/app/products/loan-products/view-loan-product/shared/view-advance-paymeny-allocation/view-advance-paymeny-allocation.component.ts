@@ -8,7 +8,8 @@ import {
 @Component({
   selector: 'mifosx-view-advance-paymeny-allocation',
   templateUrl: './view-advance-paymeny-allocation.component.html',
-  styleUrls: ['./view-advance-paymeny-allocation.component.scss']
+  styleUrls: ['./view-advance-paymeny-allocation.component.scss'],
+  standalone: false
 })
 export class ViewAdvancePaymenyAllocationComponent {
   @Input() paymentAllocation: PaymentAllocation | null;

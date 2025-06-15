@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, UntypedFormControl, Validators } 
 @Component({
   selector: 'mifosx-fixed-deposit-product-settings-step',
   templateUrl: './fixed-deposit-product-settings-step.component.html',
-  styleUrls: ['./fixed-deposit-product-settings-step.component.scss']
+  styleUrls: ['./fixed-deposit-product-settings-step.component.scss'],
+  standalone: false
 })
 export class FixedDepositProductSettingsStepComponent implements OnInit {
   @Input() fixedDepositProductsTemplate: any;

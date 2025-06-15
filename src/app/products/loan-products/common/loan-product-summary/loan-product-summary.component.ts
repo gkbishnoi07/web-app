@@ -23,7 +23,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-loan-product-summary',
   templateUrl: './loan-product-summary.component.html',
-  styleUrls: ['./loan-product-summary.component.scss']
+  styleUrls: ['./loan-product-summary.component.scss'],
+  standalone: false
 })
 export class LoanProductSummaryComponent implements OnInit, OnChanges {
   @Input() action: string;

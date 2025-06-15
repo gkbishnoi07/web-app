@@ -8,7 +8,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-adjust-loan-charge',
   templateUrl: './adjust-loan-charge.component.html',
-  styleUrls: ['./adjust-loan-charge.component.scss']
+  styleUrls: ['./adjust-loan-charge.component.scss'],
+  standalone: false
 })
 export class AdjustLoanChargeComponent implements OnInit {
   /** Loan Id */

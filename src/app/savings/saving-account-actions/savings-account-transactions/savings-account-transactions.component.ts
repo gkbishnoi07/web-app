@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-savings-transactions',
   templateUrl: './savings-account-transactions.component.html',
-  styleUrls: ['./savings-account-transactions.component.scss']
+  styleUrls: ['./savings-account-transactions.component.scss'],
+  standalone: false
 })
 export class SavingsAccountTransactionsComponent implements OnInit {
   /** Minimum Due Date allowed. */

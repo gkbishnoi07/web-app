@@ -5,7 +5,8 @@ import { environment } from '../../../environments/environment';
 @Component({
   selector: 'mifosx-warning-dialog',
   templateUrl: './warning-dialog.component.html',
-  styleUrls: ['./warning-dialog.component.scss']
+  styleUrls: ['./warning-dialog.component.scss'],
+  standalone: false
 })
 export class WarningDialogComponent {
   title: string;

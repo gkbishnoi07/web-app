@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-reject-client-transfer',
   templateUrl: './reject-client-transfer.component.html',
-  styleUrls: ['./reject-client-transfer.component.scss']
+  styleUrls: ['./reject-client-transfer.component.scss'],
+  standalone: false
 })
 export class RejectClientTransferComponent implements OnInit {
   /** Reject Client Transfer form. */

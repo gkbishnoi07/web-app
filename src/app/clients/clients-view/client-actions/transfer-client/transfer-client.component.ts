@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-transfer-client',
   templateUrl: './transfer-client.component.html',
-  styleUrls: ['./transfer-client.component.scss']
+  styleUrls: ['./transfer-client.component.scss'],
+  standalone: false
 })
 export class TransferClientComponent implements OnInit {
   /** Minimum date allowed. */

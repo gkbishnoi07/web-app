@@ -6,7 +6,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-edit-notes-dialog',
   templateUrl: './edit-notes-dialog.component.html',
-  styleUrls: ['./edit-notes-dialog.component.scss']
+  styleUrls: ['./edit-notes-dialog.component.scss'],
+  standalone: false
 })
 export class EditNotesDialogComponent implements OnInit {
   noteForm: UntypedFormGroup;

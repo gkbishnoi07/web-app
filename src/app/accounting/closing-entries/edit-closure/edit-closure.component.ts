@@ -12,7 +12,8 @@ import { AccountingService } from '../../accounting.service';
 @Component({
   selector: 'mifosx-edit-closure',
   templateUrl: './edit-closure.component.html',
-  styleUrls: ['./edit-closure.component.scss']
+  styleUrls: ['./edit-closure.component.scss'],
+  standalone: false
 })
 export class EditClosureComponent implements OnInit {
   /** Accounting closure form. */

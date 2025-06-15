@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-capture-image-dialog',
   templateUrl: './capture-image-dialog.component.html',
-  styleUrls: ['./capture-image-dialog.component.scss']
+  styleUrls: ['./capture-image-dialog.component.scss'],
+  standalone: false
 })
 export class CaptureImageDialogComponent implements AfterViewInit, OnDestroy {
   /** Video element reference */

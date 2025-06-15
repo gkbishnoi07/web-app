@@ -18,7 +18,8 @@ import { DeleteDialogComponent } from 'app/shared/delete-dialog/delete-dialog.co
 @Component({
   selector: 'mifosx-standing-instructions-tab',
   templateUrl: './standing-instructions-tab.component.html',
-  styleUrls: ['./standing-instructions-tab.component.scss']
+  styleUrls: ['./standing-instructions-tab.component.scss'],
+  standalone: false
 })
 export class StandingInstructionsTabComponent implements OnInit {
   /** Loans Data */

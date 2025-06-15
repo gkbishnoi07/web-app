@@ -5,7 +5,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-share-product-general-tab',
   templateUrl: './share-product-general-tab.component.html',
-  styleUrls: ['./share-product-general-tab.component.scss']
+  styleUrls: ['./share-product-general-tab.component.scss'],
+  standalone: false
 })
 export class ShareProductGeneralTabComponent {
   shareProduct: any;

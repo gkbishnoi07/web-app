@@ -14,7 +14,8 @@ import { of } from 'rxjs';
 @Component({
   selector: 'mifosx-adhoc-query',
   templateUrl: './adhoc-query.component.html',
-  styleUrls: ['./adhoc-query.component.scss']
+  styleUrls: ['./adhoc-query.component.scss'],
+  standalone: false
 })
 export class AdhocQueryComponent implements OnInit {
   /** Adhoc Queries data. */

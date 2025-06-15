@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-standing-instructions',
   templateUrl: './create-standing-instructions.component.html',
-  styleUrls: ['./create-standing-instructions.component.scss']
+  styleUrls: ['./create-standing-instructions.component.scss'],
+  standalone: false
 })
 export class CreateStandingInstructionsComponent implements OnInit {
   /** Standing Instructions Data */

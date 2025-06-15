@@ -20,7 +20,8 @@ import { DeleteDialogComponent } from 'app/shared/delete-dialog/delete-dialog.co
 @Component({
   selector: 'mifosx-edit-report',
   templateUrl: './edit-report.component.html',
-  styleUrls: ['./edit-report.component.scss']
+  styleUrls: ['./edit-report.component.scss'],
+  standalone: false
 })
 export class EditReportComponent implements OnInit {
   /** Report Data. */

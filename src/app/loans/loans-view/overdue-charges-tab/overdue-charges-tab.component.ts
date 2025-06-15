@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-overdue-charges-tab',
   templateUrl: './overdue-charges-tab.component.html',
-  styleUrls: ['./overdue-charges-tab.component.scss']
+  styleUrls: ['./overdue-charges-tab.component.scss'],
+  standalone: false
 })
 export class OverdueChargesTabComponent implements OnInit {
   /** Stores the resolved loan data */

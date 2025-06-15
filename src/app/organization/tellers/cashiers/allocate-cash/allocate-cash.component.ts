@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-allocate-cash',
   templateUrl: './allocate-cash.component.html',
-  styleUrls: ['./allocate-cash.component.scss']
+  styleUrls: ['./allocate-cash.component.scss'],
+  standalone: false
 })
 export class AllocateCashComponent implements OnInit {
   /** Minimum Date allowed. */

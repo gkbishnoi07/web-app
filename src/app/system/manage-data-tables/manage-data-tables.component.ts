@@ -18,7 +18,8 @@ import { ConfigurationWizardService } from '../../configuration-wizard/configura
 @Component({
   selector: 'mifosx-manage-data-tables',
   templateUrl: './manage-data-tables.component.html',
-  styleUrls: ['./manage-data-tables.component.scss']
+  styleUrls: ['./manage-data-tables.component.scss'],
+  standalone: false
 })
 export class ManageDataTablesComponent implements OnInit, AfterViewInit {
   /** Data table data. */

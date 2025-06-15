@@ -11,7 +11,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-view-provisioning-journal-entries',
   templateUrl: './view-provisioning-journal-entries.component.html',
-  styleUrls: ['./view-provisioning-journal-entries.component.scss']
+  styleUrls: ['./view-provisioning-journal-entries.component.scss'],
+  standalone: false
 })
 export class ViewProvisioningJournalEntriesComponent implements OnInit {
   /** Provisioning journal entry data. */

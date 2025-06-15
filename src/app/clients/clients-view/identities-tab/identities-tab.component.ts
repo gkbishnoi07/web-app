@@ -24,7 +24,8 @@ import { ClientsService } from '../../clients.service';
 @Component({
   selector: 'mifosx-identities-tab',
   templateUrl: './identities-tab.component.html',
-  styleUrls: ['./identities-tab.component.scss']
+  styleUrls: ['./identities-tab.component.scss'],
+  standalone: false
 })
 export class IdentitiesTabComponent {
   /** Client Identities */

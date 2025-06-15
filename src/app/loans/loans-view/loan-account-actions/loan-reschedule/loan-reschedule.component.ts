@@ -10,7 +10,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-loan-reschedule',
   templateUrl: './loan-reschedule.component.html',
-  styleUrls: ['./loan-reschedule.component.scss']
+  styleUrls: ['./loan-reschedule.component.scss'],
+  standalone: false
 })
 export class LoanRescheduleComponent implements OnInit {
   @Input() dataObject: any;

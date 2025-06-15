@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-make-repayment',
   templateUrl: './make-repayment.component.html',
-  styleUrls: ['./make-repayment.component.scss']
+  styleUrls: ['./make-repayment.component.scss'],
+  standalone: false
 })
 export class MakeRepaymentComponent implements OnInit {
   @Input() dataObject: any;

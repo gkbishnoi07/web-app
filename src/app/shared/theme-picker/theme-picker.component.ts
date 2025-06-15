@@ -16,7 +16,8 @@ import { ThemeStorageService } from './theme-storage.service';
   selector: 'mifosx-theme-picker',
   templateUrl: './theme-picker.component.html',
   styleUrls: ['./theme-picker.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class ThemePickerComponent implements OnInit {
   /** Default theme for the application. */

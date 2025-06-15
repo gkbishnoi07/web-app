@@ -19,7 +19,8 @@ import { ClientsService } from '../clients.service';
 @Component({
   selector: 'mifosx-clients-view',
   templateUrl: './clients-view.component.html',
-  styleUrls: ['./clients-view.component.scss']
+  styleUrls: ['./clients-view.component.scss'],
+  standalone: false
 })
 export class ClientsViewComponent implements OnInit {
   clientViewData: any;

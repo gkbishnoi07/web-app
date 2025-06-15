@@ -21,7 +21,8 @@ import { Charge, Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-recurring-deposits-account-charges-step',
   templateUrl: './recurring-deposits-account-charges-step.component.html',
-  styleUrls: ['./recurring-deposits-account-charges-step.component.scss']
+  styleUrls: ['./recurring-deposits-account-charges-step.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountChargesStepComponent implements OnInit, OnChanges {
   @Input() recurringDepositsAccountTemplate: any;

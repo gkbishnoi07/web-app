@@ -17,7 +17,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'mifosx-view-holidays',
   templateUrl: './view-holidays.component.html',
-  styleUrls: ['./view-holidays.component.scss']
+  styleUrls: ['./view-holidays.component.scss'],
+  standalone: false
 })
 export class ViewHolidaysComponent {
   /** Holiday data. */

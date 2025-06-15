@@ -26,7 +26,8 @@ import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.
 @Component({
   selector: 'mifosx-entity-to-entity-mapping',
   templateUrl: './entity-to-entity-mapping.component.html',
-  styleUrls: ['./entity-to-entity-mapping.component.scss']
+  styleUrls: ['./entity-to-entity-mapping.component.scss'],
+  standalone: false
 })
 export class EntityToEntityMappingComponent implements OnInit {
   /** Stores entity to entity mapping data */

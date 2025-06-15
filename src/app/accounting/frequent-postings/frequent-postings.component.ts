@@ -13,7 +13,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-frequent-postings',
   templateUrl: './frequent-postings.component.html',
-  styleUrls: ['./frequent-postings.component.scss']
+  styleUrls: ['./frequent-postings.component.scss'],
+  standalone: false
 })
 export class FrequentPostingsComponent implements OnInit {
   /** Minimum transaction date allowed. */

@@ -6,7 +6,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-client-datatable-step',
   templateUrl: './client-datatable-step.component.html',
-  styleUrls: ['./client-datatable-step.component.scss']
+  styleUrls: ['./client-datatable-step.component.scss'],
+  standalone: false
 })
 export class ClientDatatableStepComponent implements OnInit {
   /** Input Fields Data */

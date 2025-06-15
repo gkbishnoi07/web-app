@@ -6,7 +6,8 @@ import { FormfieldBase } from './model/formfield-base';
 @Component({
   selector: 'mifosx-formfield',
   templateUrl: './formfield.component.html',
-  styleUrls: ['./formfield.component.scss']
+  styleUrls: ['./formfield.component.scss'],
+  standalone: false
 })
 export class FormfieldComponent {
   @Input() form: UntypedFormGroup;

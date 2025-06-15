@@ -15,7 +15,8 @@ import { DeleteDialogComponent } from 'app/shared/delete-dialog/delete-dialog.co
 @Component({
   selector: 'mifosx-view-template',
   templateUrl: './view-template.component.html',
-  styleUrls: ['./view-template.component.scss']
+  styleUrls: ['./view-template.component.scss'],
+  standalone: false
 })
 export class ViewTemplateComponent {
   /** Template Data */

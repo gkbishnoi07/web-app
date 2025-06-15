@@ -21,7 +21,8 @@ import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-transactions-tab',
   templateUrl: './transactions-tab.component.html',
-  styleUrls: ['./transactions-tab.component.scss']
+  styleUrls: ['./transactions-tab.component.scss'],
+  standalone: false
 })
 export class TransactionsTabComponent implements OnInit {
   /** Savings Account Status */

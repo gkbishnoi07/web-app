@@ -19,7 +19,8 @@ import { Accounting } from 'app/core/utils/accounting';
 @Component({
   selector: 'mifosx-edit-recurring-deposit-product',
   templateUrl: './edit-recurring-deposit-product.component.html',
-  styleUrls: ['./edit-recurring-deposit-product.component.scss']
+  styleUrls: ['./edit-recurring-deposit-product.component.scss'],
+  standalone: false
 })
 export class EditRecurringDepositProductComponent {
   @ViewChild(RecurringDepositProductDetailsStepComponent, { static: true })

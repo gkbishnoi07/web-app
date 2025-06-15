@@ -13,7 +13,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-view-transaction',
   templateUrl: './view-transaction.component.html',
-  styleUrls: ['./view-transaction.component.scss']
+  styleUrls: ['./view-transaction.component.scss'],
+  standalone: false
 })
 export class ViewTransactionComponent {
   accountId: string;

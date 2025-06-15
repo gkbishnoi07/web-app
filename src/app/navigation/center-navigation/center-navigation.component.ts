@@ -8,7 +8,8 @@ import { SavingsAccountTableComponent } from '../savings-account-table/savings-a
 @Component({
   selector: 'mifosx-center-navigation',
   templateUrl: './center-navigation.component.html',
-  styleUrls: ['./center-navigation.component.scss']
+  styleUrls: ['./center-navigation.component.scss'],
+  standalone: false
 })
 export class CenterNavigationComponent {
   @ViewChild(LoanAccountTableComponent) loanAccountTableComponent: LoanAccountTableComponent;

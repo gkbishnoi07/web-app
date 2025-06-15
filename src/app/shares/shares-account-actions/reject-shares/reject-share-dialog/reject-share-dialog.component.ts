@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-reject-share-dialog',
   templateUrl: './reject-share-dialog.component.html',
-  styleUrls: ['./reject-share-dialog.component.scss']
+  styleUrls: ['./reject-share-dialog.component.scss'],
+  standalone: false
 })
 export class RejectShareDialogComponent {
   /**

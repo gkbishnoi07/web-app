@@ -13,7 +13,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-client-general-step',
   templateUrl: './client-general-step.component.html',
-  styleUrls: ['./client-general-step.component.scss']
+  styleUrls: ['./client-general-step.component.scss'],
+  standalone: false
 })
 export class ClientGeneralStepComponent implements OnInit {
   @Output() legalFormChangeEvent = new EventEmitter<{ legalForm: number }>();

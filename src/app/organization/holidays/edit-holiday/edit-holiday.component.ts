@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-edit-holiday',
   templateUrl: './edit-holiday.component.html',
-  styleUrls: ['./edit-holiday.component.scss']
+  styleUrls: ['./edit-holiday.component.scss'],
+  standalone: false
 })
 export class EditHolidayComponent implements OnInit {
   /** Edit Holiday form. */

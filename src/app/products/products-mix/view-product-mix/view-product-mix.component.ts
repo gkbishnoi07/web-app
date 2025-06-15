@@ -17,7 +17,8 @@ import { ProductsService } from 'app/products/products.service';
 @Component({
   selector: 'mifosx-view-product-mix',
   templateUrl: './view-product-mix.component.html',
-  styleUrls: ['./view-product-mix.component.scss']
+  styleUrls: ['./view-product-mix.component.scss'],
+  standalone: false
 })
 export class ViewProductMixComponent implements OnInit {
   /** Product mix data. */

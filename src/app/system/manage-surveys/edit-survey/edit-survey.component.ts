@@ -20,7 +20,8 @@ import { Survey, QuestionData, ResponseData } from './../survey.model';
 @Component({
   selector: 'mifosx-edit-survey',
   templateUrl: './edit-survey.component.html',
-  styleUrls: ['./edit-survey.component.scss']
+  styleUrls: ['./edit-survey.component.scss'],
+  standalone: false
 })
 export class EditSurveyComponent {
   /** Survey form. */

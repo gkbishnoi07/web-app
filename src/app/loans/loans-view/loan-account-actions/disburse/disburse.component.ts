@@ -15,7 +15,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-disburse',
   templateUrl: './disburse.component.html',
-  styleUrls: ['./disburse.component.scss']
+  styleUrls: ['./disburse.component.scss'],
+  standalone: false
 })
 export class DisburseComponent implements OnInit {
   @Input() dataObject: any;

@@ -7,7 +7,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-create-range',
   templateUrl: './create-range.component.html',
-  styleUrls: ['./create-range.component.scss']
+  styleUrls: ['./create-range.component.scss'],
+  standalone: false
 })
 export class CreateRangeComponent implements OnInit {
   /** Delinquency Range form. */

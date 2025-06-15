@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-inactivate-charge-dialog',
   templateUrl: './inactivate-charge-dialog.component.html',
-  styleUrls: ['./inactivate-charge-dialog.component.scss']
+  styleUrls: ['./inactivate-charge-dialog.component.scss'],
+  standalone: false
 })
 export class InactivateChargeDialogComponent {
   /**

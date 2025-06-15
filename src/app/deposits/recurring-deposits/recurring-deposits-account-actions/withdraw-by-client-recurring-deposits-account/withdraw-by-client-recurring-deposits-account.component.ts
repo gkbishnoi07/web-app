@@ -13,7 +13,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-withdraw-by-client-recurring-deposits-account',
   templateUrl: './withdraw-by-client-recurring-deposits-account.component.html',
-  styleUrls: ['./withdraw-by-client-recurring-deposits-account.component.scss']
+  styleUrls: ['./withdraw-by-client-recurring-deposits-account.component.scss'],
+  standalone: false
 })
 export class WithdrawByClientRecurringDepositsAccountComponent implements OnInit {
   /** Minimum date allowed. */

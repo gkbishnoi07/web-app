@@ -4,7 +4,8 @@ import { JobIdAndParameterType, JobParameterType } from '../custom-parameters-po
 @Component({
   selector: 'mifosx-custom-parameters-table',
   templateUrl: './custom-parameters-table.component.html',
-  styleUrls: ['./custom-parameters-table.component.scss']
+  styleUrls: ['./custom-parameters-table.component.scss'],
+  standalone: false
 })
 export class CustomParametersTableComponent implements OnInit {
   /* Job name for table title */

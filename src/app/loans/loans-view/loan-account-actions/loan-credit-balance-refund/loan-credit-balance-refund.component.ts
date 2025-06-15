@@ -9,7 +9,8 @@ import { Currency } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-loan-credit-balance-refund',
   templateUrl: './loan-credit-balance-refund.component.html',
-  styleUrls: ['./loan-credit-balance-refund.component.scss']
+  styleUrls: ['./loan-credit-balance-refund.component.scss'],
+  standalone: false
 })
 export class LoanCreditBalanceRefundComponent implements OnInit {
   @Input() dataObject: any;

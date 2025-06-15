@@ -24,7 +24,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-view-campaign',
   templateUrl: './view-campaign.component.html',
-  styleUrls: ['./view-campaign.component.scss']
+  styleUrls: ['./view-campaign.component.scss'],
+  standalone: false
 })
 export class ViewCampaignComponent implements OnInit {
   /** Minimum date allowed. */

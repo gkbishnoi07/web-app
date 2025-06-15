@@ -12,7 +12,8 @@ import { CentersService } from '../../../centers.service';
 @Component({
   selector: 'mifosx-staff-assignment-history',
   templateUrl: './staff-assignment-history.component.html',
-  styleUrls: ['./staff-assignment-history.component.scss']
+  styleUrls: ['./staff-assignment-history.component.scss'],
+  standalone: false
 })
 export class StaffAssignmentHistoryComponent implements OnInit {
   /** Staff Assignment History Data */

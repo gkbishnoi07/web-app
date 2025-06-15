@@ -8,7 +8,8 @@ import { SavingsAccountTableComponent } from '../savings-account-table/savings-a
 @Component({
   selector: 'mifosx-group-navigation',
   templateUrl: './group-navigation.component.html',
-  styleUrls: ['./group-navigation.component.scss']
+  styleUrls: ['./group-navigation.component.scss'],
+  standalone: false
 })
 export class GroupNavigationComponent {
   @ViewChild(LoanAccountTableComponent) loanAccountTableComponent: LoanAccountTableComponent;

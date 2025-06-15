@@ -10,7 +10,8 @@ import { AccountsFilterPipe } from '../../pipes/accounts-filter.pipe';
 @Component({
   selector: 'mifosx-loan-account-table',
   templateUrl: './loan-account-table.component.html',
-  styleUrls: ['./loan-account-table.component.scss']
+  styleUrls: ['./loan-account-table.component.scss'],
+  standalone: false
 })
 export class LoanAccountTableComponent {
   /** Columns to be displayed in the loan accounts table. */

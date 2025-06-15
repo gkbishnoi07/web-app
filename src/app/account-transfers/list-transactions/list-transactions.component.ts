@@ -12,7 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-list-transactions',
   templateUrl: './list-transactions.component.html',
-  styleUrls: ['./list-transactions.component.scss']
+  styleUrls: ['./list-transactions.component.scss'],
+  standalone: false
 })
 export class ListTransactionsComponent {
   /** List Transactions Data */

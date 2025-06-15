@@ -9,7 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-transactions-tab',
   templateUrl: './transactions-tab.component.html',
-  styleUrls: ['./transactions-tab.component.scss']
+  styleUrls: ['./transactions-tab.component.scss'],
+  standalone: false
 })
 export class TransactionsTabComponent implements OnInit {
   /** Shares Account Data */

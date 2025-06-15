@@ -10,7 +10,8 @@ import { AccountsFilterPipe } from '../../pipes/accounts-filter.pipe';
 @Component({
   selector: 'mifosx-share-account-table',
   templateUrl: './share-account-table.component.html',
-  styleUrls: ['./share-account-table.component.scss']
+  styleUrls: ['./share-account-table.component.scss'],
+  standalone: false
 })
 export class ShareAccountTableComponent {
   /** Columns to be displayed in the share accounts table. */

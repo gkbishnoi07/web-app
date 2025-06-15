@@ -15,7 +15,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-add-charge-fixed-deposits-account',
   templateUrl: './add-charge-fixed-deposits-account.component.html',
-  styleUrls: ['./add-charge-fixed-deposits-account.component.scss']
+  styleUrls: ['./add-charge-fixed-deposits-account.component.scss'],
+  standalone: false
 })
 export class AddChargeFixedDepositsAccountComponent implements OnInit {
   /** Minimum Due Date allowed. */

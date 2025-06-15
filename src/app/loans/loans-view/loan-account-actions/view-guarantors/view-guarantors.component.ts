@@ -17,7 +17,8 @@ import { LoansAccountViewGuarantorDetailsDialogComponent } from 'app/loans/custo
 @Component({
   selector: 'mifosx-view-guarantors',
   templateUrl: './view-guarantors.component.html',
-  styleUrls: ['./view-guarantors.component.scss']
+  styleUrls: ['./view-guarantors.component.scss'],
+  standalone: false
 })
 export class ViewGuarantorsComponent implements OnInit {
   @Input() dataObject: any;

@@ -15,7 +15,8 @@ import { OrganizationService } from 'app/organization/organization.service';
 @Component({
   selector: 'mifosx-view-cashier',
   templateUrl: './view-cashier.component.html',
-  styleUrls: ['./view-cashier.component.scss']
+  styleUrls: ['./view-cashier.component.scss'],
+  standalone: false
 })
 export class ViewCashierComponent {
   /** Cashier data. */

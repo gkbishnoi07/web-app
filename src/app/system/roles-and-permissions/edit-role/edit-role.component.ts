@@ -12,7 +12,8 @@ import { SystemService } from '../../system.service';
 @Component({
   selector: 'mifosx-edit-role',
   templateUrl: './edit-role.component.html',
-  styleUrls: ['./edit-role.component.scss']
+  styleUrls: ['./edit-role.component.scss'],
+  standalone: false
 })
 export class EditRoleComponent implements OnInit {
   /** Role Form */

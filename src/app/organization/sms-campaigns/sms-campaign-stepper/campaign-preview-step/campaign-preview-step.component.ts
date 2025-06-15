@@ -7,7 +7,8 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 @Component({
   selector: 'mifosx-campaign-preview-step',
   templateUrl: './campaign-preview-step.component.html',
-  styleUrls: ['./campaign-preview-step.component.scss']
+  styleUrls: ['./campaign-preview-step.component.scss'],
+  standalone: false
 })
 export class CampaignPreviewStepComponent implements OnInit {
   /** SMS Campaign */

@@ -12,7 +12,8 @@ import { SharesService } from 'app/shares/shares.service';
 @Component({
   selector: 'mifosx-shares-account-details-step',
   templateUrl: './shares-account-details-step.component.html',
-  styleUrls: ['./shares-account-details-step.component.scss']
+  styleUrls: ['./shares-account-details-step.component.scss'],
+  standalone: false
 })
 export class SharesAccountDetailsStepComponent implements OnInit {
   /** Shares Account Template */

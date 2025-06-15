@@ -8,7 +8,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-calculate-interest-dialog',
   templateUrl: './calculate-interest-dialog.component.html',
-  styleUrls: ['./calculate-interest-dialog.component.scss']
+  styleUrls: ['./calculate-interest-dialog.component.scss'],
+  standalone: false
 })
 export class CalculateInterestDialogComponent {
   /**

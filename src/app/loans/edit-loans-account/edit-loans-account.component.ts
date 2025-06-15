@@ -15,7 +15,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-edit-loans-account',
   templateUrl: './edit-loans-account.component.html',
-  styleUrls: ['./edit-loans-account.component.scss']
+  styleUrls: ['./edit-loans-account.component.scss'],
+  standalone: false
 })
 export class EditLoansAccountComponent {
   @ViewChild(LoansAccountDetailsStepComponent, { static: true })

@@ -19,7 +19,8 @@ import { LoansAccountDatatableStepComponent } from '../loans-account-stepper/loa
 @Component({
   selector: 'mifosx-create-loans-account',
   templateUrl: './create-loans-account.component.html',
-  styleUrls: ['./create-loans-account.component.scss']
+  styleUrls: ['./create-loans-account.component.scss'],
+  standalone: false
 })
 export class CreateLoansAccountComponent {
   /** Imports all the step component */

@@ -11,7 +11,8 @@ import { ClientsService } from 'app/clients/clients.service';
 @Component({
   selector: 'mifosx-general-tab',
   templateUrl: './general-tab.component.html',
-  styleUrls: ['./general-tab.component.scss']
+  styleUrls: ['./general-tab.component.scss'],
+  standalone: false
 })
 export class GeneralTabComponent {
   /** Open Loan Accounts Columns */

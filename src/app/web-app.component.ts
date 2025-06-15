@@ -79,7 +79,8 @@ registerLocaleData(localeSW);
 
     ])
 
-  ]
+  ],
+  standalone: false
 })
 export class WebAppComponent implements OnInit {
   buttonConfig: KeyboardShortcutsConfiguration;

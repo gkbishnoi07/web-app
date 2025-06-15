@@ -17,7 +17,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-create-campaign',
   templateUrl: './create-campaign.component.html',
-  styleUrls: ['./create-campaign.component.scss']
+  styleUrls: ['./create-campaign.component.scss'],
+  standalone: false
 })
 export class CreateCampaignComponent {
   /** SMS Campaign Template */

@@ -18,7 +18,8 @@ import { AccountingService } from '../../accounting.service';
 @Component({
   selector: 'mifosx-view-provisioning-entry',
   templateUrl: './view-provisioning-entry.component.html',
-  styleUrls: ['./view-provisioning-entry.component.scss']
+  styleUrls: ['./view-provisioning-entry.component.scss'],
+  standalone: false
 })
 export class ViewProvisioningEntryComponent implements OnInit, AfterViewInit {
   /** Provisioning entry id. */

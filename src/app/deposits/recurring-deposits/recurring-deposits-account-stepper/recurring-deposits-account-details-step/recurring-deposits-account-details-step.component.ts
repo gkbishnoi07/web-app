@@ -12,7 +12,8 @@ import { RecurringDepositsService } from '../../recurring-deposits.service';
 @Component({
   selector: 'mifosx-recurring-deposits-account-details-step',
   templateUrl: './recurring-deposits-account-details-step.component.html',
-  styleUrls: ['./recurring-deposits-account-details-step.component.scss']
+  styleUrls: ['./recurring-deposits-account-details-step.component.scss'],
+  standalone: false
 })
 export class RecurringDepositsAccountDetailsStepComponent implements OnInit {
   /** Recurring Deposits Account Template */

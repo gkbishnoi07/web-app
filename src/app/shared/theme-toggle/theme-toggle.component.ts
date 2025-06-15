@@ -5,7 +5,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-theme-toggle',
   templateUrl: './theme-toggle.component.html',
-  styleUrls: ['./theme-toggle.component.scss']
+  styleUrls: ['./theme-toggle.component.scss'],
+  standalone: false
 })
 export class ThemeToggleComponent implements OnInit, OnChanges {
   darkModeOn: boolean;

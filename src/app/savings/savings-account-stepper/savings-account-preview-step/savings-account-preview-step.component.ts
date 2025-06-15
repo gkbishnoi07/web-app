@@ -9,7 +9,8 @@ import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'mifosx-savings-account-preview-step',
   templateUrl: './savings-account-preview-step.component.html',
-  styleUrls: ['./savings-account-preview-step.component.scss']
+  styleUrls: ['./savings-account-preview-step.component.scss'],
+  standalone: false
 })
 export class SavingsAccountPreviewStepComponent implements OnChanges {
   /** Savings Account Product Template */

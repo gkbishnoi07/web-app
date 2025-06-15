@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import * as vkbeautify from 'vkbeautify';
 
 @Pipe({
-  name: 'prettyPrint'
+  name: 'prettyPrint',
+  standalone: false
 })
 export class PrettyPrintPipe implements PipeTransform {
   transform(value: any) {

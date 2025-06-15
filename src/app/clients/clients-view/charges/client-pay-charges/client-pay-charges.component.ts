@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-client-pay-charges',
   templateUrl: './client-pay-charges.component.html',
-  styleUrls: ['./client-pay-charges.component.scss']
+  styleUrls: ['./client-pay-charges.component.scss'],
+  standalone: false
 })
 export class ClientPayChargesComponent implements OnInit {
   /** Transaction Form. */

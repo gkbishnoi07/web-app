@@ -14,7 +14,8 @@ import { AccountingService } from '../accounting.service';
 @Component({
   selector: 'mifosx-provisioning-entries',
   templateUrl: './provisioning-entries.component.html',
-  styleUrls: ['./provisioning-entries.component.scss']
+  styleUrls: ['./provisioning-entries.component.scss'],
+  standalone: false
 })
 export class ProvisioningEntriesComponent implements OnInit {
   /** Provisioning entry data. */

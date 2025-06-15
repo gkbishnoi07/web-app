@@ -19,7 +19,8 @@ import * as _ from 'lodash';
 @Component({
   selector: 'mifosx-datatable-multi-row',
   templateUrl: './datatable-multi-row.component.html',
-  styleUrls: ['./datatable-multi-row.component.scss']
+  styleUrls: ['./datatable-multi-row.component.scss'],
+  standalone: false
 })
 export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges {
   SELECT_NAME_FIELD = 'select';

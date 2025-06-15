@@ -6,7 +6,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-loans-account-schedule-step',
   templateUrl: './loans-account-schedule-step.component.html',
-  styleUrls: ['./loans-account-schedule-step.component.scss']
+  styleUrls: ['./loans-account-schedule-step.component.scss'],
+  standalone: false
 })
 export class LoansAccountScheduleStepComponent {
   /** Currency Code */

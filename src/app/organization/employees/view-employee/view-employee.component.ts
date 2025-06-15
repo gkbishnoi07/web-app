@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-employee',
   templateUrl: './view-employee.component.html',
-  styleUrls: ['./view-employee.component.scss']
+  styleUrls: ['./view-employee.component.scss'],
+  standalone: false
 })
 export class ViewEmployeeComponent {
   /** Employee data. */

@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-premature-close-fixed-deposits-account',
   templateUrl: './premature-close-fixed-deposits-account.component.html',
-  styleUrls: ['./premature-close-fixed-deposits-account.component.scss']
+  styleUrls: ['./premature-close-fixed-deposits-account.component.scss'],
+  standalone: false
 })
 export class PrematureCloseFixedDepositsAccountComponent implements OnInit {
   /** Minimum date allowed. */

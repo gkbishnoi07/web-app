@@ -12,7 +12,8 @@ import { OrganizationService } from 'app/organization/organization.service';
 @Component({
   selector: 'mifosx-edit-payment-type',
   templateUrl: './edit-payment-type.component.html',
-  styleUrls: ['./edit-payment-type.component.scss']
+  styleUrls: ['./edit-payment-type.component.scss'],
+  standalone: false
 })
 export class EditPaymentTypeComponent implements OnInit {
   /** Payment Type form. */

@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-accounting-rules',
   templateUrl: './accounting-rules.component.html',
-  styleUrls: ['./accounting-rules.component.scss']
+  styleUrls: ['./accounting-rules.component.scss'],
+  standalone: false
 })
 export class AccountingRulesComponent implements OnInit {
   /** Accounting rule data. */

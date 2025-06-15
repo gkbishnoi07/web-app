@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms
 @Component({
   selector: 'mifosx-loan-product-currency-step',
   templateUrl: './loan-product-currency-step.component.html',
-  styleUrls: ['./loan-product-currency-step.component.scss']
+  styleUrls: ['./loan-product-currency-step.component.scss'],
+  standalone: false
 })
 export class LoanProductCurrencyStepComponent implements OnInit {
   @Input() loanProductsTemplate: any;

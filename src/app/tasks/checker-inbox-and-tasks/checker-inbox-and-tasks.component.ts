@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'mifosx-checker-inbox-and-tasks',
   templateUrl: './checker-inbox-and-tasks.component.html',
-  styleUrls: ['./checker-inbox-and-tasks.component.scss']
+  styleUrls: ['./checker-inbox-and-tasks.component.scss'],
+  standalone: false
 })
 export class CheckerInboxAndTasksComponent {
   constructor() {}

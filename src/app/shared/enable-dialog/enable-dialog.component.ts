@@ -8,7 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-enable-dialog',
   templateUrl: './enable-dialog.component.html',
-  styleUrls: ['./enable-dialog.component.scss']
+  styleUrls: ['./enable-dialog.component.scss'],
+  standalone: false
 })
 export class EnableDialogComponent {
   /**

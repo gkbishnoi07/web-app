@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-create-dividend',
   templateUrl: './create-dividend.component.html',
-  styleUrls: ['./create-dividend.component.scss']
+  styleUrls: ['./create-dividend.component.scss'],
+  standalone: false
 })
 export class CreateDividendComponent implements OnInit {
   /** Create Dividend Form. */

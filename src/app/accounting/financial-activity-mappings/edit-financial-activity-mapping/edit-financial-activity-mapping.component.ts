@@ -13,7 +13,8 @@ import { GLAccount } from 'app/shared/models/general.model';
 @Component({
   selector: 'mifosx-edit-financial-activity-mapping',
   templateUrl: './edit-financial-activity-mapping.component.html',
-  styleUrls: ['./edit-financial-activity-mapping.component.scss']
+  styleUrls: ['./edit-financial-activity-mapping.component.scss'],
+  standalone: false
 })
 export class EditFinancialActivityMappingComponent implements OnInit {
   /** Financial activity mapping form. */

@@ -14,7 +14,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-activate-client',
   templateUrl: './activate-client.component.html',
-  styleUrls: ['./activate-client.component.scss']
+  styleUrls: ['./activate-client.component.scss'],
+  standalone: false
 })
 export class ActivateClientComponent implements OnInit {
   /** Minimum date allowed. */

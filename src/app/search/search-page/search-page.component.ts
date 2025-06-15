@@ -11,7 +11,8 @@ import { SearchData } from '../search.model';
 @Component({
   selector: 'mifosx-search-page',
   templateUrl: './search-page.component.html',
-  styleUrls: ['./search-page.component.scss']
+  styleUrls: ['./search-page.component.scss'],
+  standalone: false
 })
 export class SearchPageComponent {
   /** Flags if number of search results exceed 200 */

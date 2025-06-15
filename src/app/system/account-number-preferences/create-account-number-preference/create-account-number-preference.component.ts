@@ -12,7 +12,8 @@ import { SystemService } from '../../system.service';
 @Component({
   selector: 'mifosx-create-account-number-preference',
   templateUrl: './create-account-number-preference.component.html',
-  styleUrls: ['./create-account-number-preference.component.scss']
+  styleUrls: ['./create-account-number-preference.component.scss'],
+  standalone: false
 })
 export class CreateAccountNumberPreferenceComponent implements OnInit {
   /** Account Number Preferences Form */

@@ -29,7 +29,8 @@ import { SettingsService } from 'app/settings/settings.service';
       state('expanded', style({ height: '*' })),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))])
 
-  ]
+  ],
+  standalone: false
 })
 export class FixedDepositProductInterestRateChartStepComponent implements OnInit {
   @Input() fixedDepositProductsTemplate: any;

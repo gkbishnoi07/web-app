@@ -14,7 +14,8 @@ import { Dates } from 'app/core/utils/dates';
 @Component({
   selector: 'mifosx-edit-group',
   templateUrl: './edit-group.component.html',
-  styleUrls: ['./edit-group.component.scss']
+  styleUrls: ['./edit-group.component.scss'],
+  standalone: false
 })
 export class EditGroupComponent implements OnInit {
   /** Minimum date allowed. */

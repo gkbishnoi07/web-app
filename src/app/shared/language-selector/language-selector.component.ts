@@ -15,7 +15,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-language-selector',
   templateUrl: './language-selector.component.html',
-  styleUrls: ['./language-selector.component.scss']
+  styleUrls: ['./language-selector.component.scss'],
+  standalone: false
 })
 export class LanguageSelectorComponent {
   /** Language selector form control. */

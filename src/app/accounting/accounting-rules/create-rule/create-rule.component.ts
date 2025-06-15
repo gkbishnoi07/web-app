@@ -15,7 +15,8 @@ import { oneOfTheFieldsIsRequiredValidator } from '../one-of-the-fields-is-requi
 @Component({
   selector: 'mifosx-create-rule',
   templateUrl: './create-rule.component.html',
-  styleUrls: ['./create-rule.component.scss']
+  styleUrls: ['./create-rule.component.scss'],
+  standalone: false
 })
 export class CreateRuleComponent implements OnInit {
   /** Accounting rule form. */

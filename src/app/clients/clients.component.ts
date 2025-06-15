@@ -12,7 +12,8 @@ import { ClientsService } from './clients.service';
 @Component({
   selector: 'mifosx-clients',
   templateUrl: './clients.component.html',
-  styleUrls: ['./clients.component.scss']
+  styleUrls: ['./clients.component.scss'],
+  standalone: false
 })
 export class ClientsComponent implements OnInit {
   @ViewChild('showClosedAccounts') showClosedAccounts: MatCheckbox;

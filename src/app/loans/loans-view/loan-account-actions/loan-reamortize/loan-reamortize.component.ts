@@ -6,7 +6,8 @@ import { LoansService } from 'app/loans/loans.service';
 @Component({
   selector: 'mifosx-loan-reamortize',
   templateUrl: './loan-reamortize.component.html',
-  styleUrls: ['./loan-reamortize.component.scss']
+  styleUrls: ['./loan-reamortize.component.scss'],
+  standalone: false
 })
 export class LoanReamortizeComponent implements OnInit {
   @Input() dataObject: any;

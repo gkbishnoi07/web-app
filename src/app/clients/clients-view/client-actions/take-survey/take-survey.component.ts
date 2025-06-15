@@ -12,7 +12,8 @@ import { AuthenticationService } from '../../../../core/authentication/authentic
 @Component({
   selector: 'mifosx-take-survey',
   templateUrl: './take-survey.component.html',
-  styleUrls: ['./take-survey.component.scss']
+  styleUrls: ['./take-survey.component.scss'],
+  standalone: false
 })
 export class TakeSurveyComponent {
   /** List of all Survey Data */

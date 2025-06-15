@@ -8,7 +8,8 @@ import { SettingsService } from 'app/settings/settings.service';
 @Component({
   selector: 'mifosx-asset-transfer-loan',
   templateUrl: './asset-transfer-loan.component.html',
-  styleUrls: ['./asset-transfer-loan.component.scss']
+  styleUrls: ['./asset-transfer-loan.component.scss'],
+  standalone: false
 })
 export class AssetTransferLoanComponent implements OnInit {
   BUYBACK_COMMAND = 'buyback';

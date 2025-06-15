@@ -11,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-templates',
   templateUrl: './templates.component.html',
-  styleUrls: ['./templates.component.scss']
+  styleUrls: ['./templates.component.scss'],
+  standalone: false
 })
 export class TemplatesComponent implements OnInit {
   /** Templates data. */

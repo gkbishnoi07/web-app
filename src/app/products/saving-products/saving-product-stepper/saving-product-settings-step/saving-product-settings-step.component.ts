@@ -4,7 +4,8 @@ import { UntypedFormGroup, UntypedFormBuilder, UntypedFormControl, Validators } 
 @Component({
   selector: 'mifosx-saving-product-settings-step',
   templateUrl: './saving-product-settings-step.component.html',
-  styleUrls: ['./saving-product-settings-step.component.scss']
+  styleUrls: ['./saving-product-settings-step.component.scss'],
+  standalone: false
 })
 export class SavingProductSettingsStepComponent implements OnInit {
   @Input() savingProductsTemplate: any;

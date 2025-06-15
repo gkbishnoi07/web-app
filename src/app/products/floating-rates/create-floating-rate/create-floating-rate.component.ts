@@ -23,7 +23,8 @@ import { FloatingRatePeriodDialogComponent } from '../floating-rate-period-dialo
 @Component({
   selector: 'mifosx-create-floating-rate',
   templateUrl: './create-floating-rate.component.html',
-  styleUrls: ['./create-floating-rate.component.scss']
+  styleUrls: ['./create-floating-rate.component.scss'],
+  standalone: false
 })
 export class CreateFloatingRateComponent implements OnInit {
   /** Floating Rate Period Data. */

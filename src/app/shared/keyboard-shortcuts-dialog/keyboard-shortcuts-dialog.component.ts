@@ -8,7 +8,8 @@ import { KeyboardShortcutsConfiguration } from '../../keyboards-shortcut-config'
 @Component({
   selector: 'mifosx-keyboard-shortcuts-dialog',
   templateUrl: './keyboard-shortcuts-dialog.component.html',
-  styleUrls: ['./keyboard-shortcuts-dialog.component.scss']
+  styleUrls: ['./keyboard-shortcuts-dialog.component.scss'],
+  standalone: false
 })
 export class KeyboardShortcutsDialogComponent implements OnInit {
   buttonConfig: KeyboardShortcutsConfiguration;

@@ -15,7 +15,8 @@ import Chart from 'chart.js';
 @Component({
   selector: 'mifosx-amount-collected-pie',
   templateUrl: './amount-collected-pie.component.html',
-  styleUrls: ['./amount-collected-pie.component.scss']
+  styleUrls: ['./amount-collected-pie.component.scss'],
+  standalone: false
 })
 export class AmountCollectedPieComponent implements OnInit {
   /** Static Form control for office Id */

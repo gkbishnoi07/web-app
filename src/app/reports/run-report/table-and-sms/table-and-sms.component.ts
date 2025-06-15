@@ -22,7 +22,8 @@ import * as ExcelJS from 'exceljs';
 @Component({
   selector: 'mifosx-table-and-sms',
   templateUrl: './table-and-sms.component.html',
-  styleUrls: ['./table-and-sms.component.scss']
+  styleUrls: ['./table-and-sms.component.scss'],
+  standalone: false
 })
 export class TableAndSmsComponent implements OnChanges {
   /** Run Report Data */

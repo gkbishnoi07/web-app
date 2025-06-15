@@ -32,7 +32,8 @@ interface SubmitPermissionData {
 @Component({
   selector: 'mifosx-configure-maker-checker-tasks',
   templateUrl: './configure-maker-checker-tasks.component.html',
-  styleUrls: ['./configure-maker-checker-tasks.component.scss']
+  styleUrls: ['./configure-maker-checker-tasks.component.scss'],
+  standalone: false
 })
 export class ConfigureMakerCheckerTasksComponent implements OnInit, AfterViewInit {
   permissionsData: Permission[] = [];

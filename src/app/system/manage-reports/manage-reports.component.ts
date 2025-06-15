@@ -19,7 +19,8 @@ import { CompletionDialogComponent } from '../../configuration-wizard/completion
 @Component({
   selector: 'mifosx-manage-reports',
   templateUrl: './manage-reports.component.html',
-  styleUrls: ['./manage-reports.component.scss']
+  styleUrls: ['./manage-reports.component.scss'],
+  standalone: false
 })
 export class ManageReportsComponent implements OnInit, AfterViewInit {
   /** Reports Data. */

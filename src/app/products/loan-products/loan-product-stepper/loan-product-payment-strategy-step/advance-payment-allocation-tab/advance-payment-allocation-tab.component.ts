@@ -18,7 +18,8 @@ import {
 @Component({
   selector: 'mifosx-advance-payment-allocation-tab',
   templateUrl: './advance-payment-allocation-tab.component.html',
-  styleUrls: ['./advance-payment-allocation-tab.component.scss']
+  styleUrls: ['./advance-payment-allocation-tab.component.scss'],
+  standalone: false
 })
 export class AdvancePaymentAllocationTabComponent implements OnInit {
   @Input() advancedPaymentAllocation: AdvancedPaymentAllocation;

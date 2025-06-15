@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-fixed-deposit-product',
   templateUrl: './view-fixed-deposit-product.component.html',
-  styleUrls: ['./view-fixed-deposit-product.component.scss']
+  styleUrls: ['./view-fixed-deposit-product.component.scss'],
+  standalone: false
 })
 export class ViewFixedDepositProductComponent {
   fixedDepositDatatables: any = [];

@@ -4,7 +4,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'mifosx-recurring-deposit-confirmation-action',
   templateUrl: './recurring-deposit-confirmation-dialog.component.html',
-  styleUrls: ['./recurring-deposit-confirmation-dialog.component.scss']
+  styleUrls: ['./recurring-deposit-confirmation-dialog.component.scss'],
+  standalone: false
 })
 export class RecurringDepositConfirmationDialogComponent {
   /**

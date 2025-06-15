@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'mifosx-view-office',
   templateUrl: './view-office.component.html',
-  styleUrls: ['./view-office.component.scss']
+  styleUrls: ['./view-office.component.scss'],
+  standalone: false
 })
 export class ViewOfficeComponent {
   /** Office datatables data */
