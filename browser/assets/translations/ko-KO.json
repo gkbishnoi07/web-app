@@ -3,6 +3,8 @@
   "Logged in as": "다음 계정으로 로그인됨",
   "Remember me": "날 기억해",
   "errors": {
+    "error.resource.notImplemented.type": "구현되지 않은 오류",
+    "error.resource.notImplemented.message": "구현되지 않은 기능입니다!",
     "linkedSavingsAccountOwnership": "연결된 저축 계좌가 선택한 클라이언트에 속하지 않습니다.",
     "clientNotInGSIM": "ID가 {{id}}인 클라이언트가 GSIM에 없습니다.",
     "Capitalized Income amount adjusted already adjusted": "자본화된 소득 금액은 이미 조정되었습니다.",
@@ -425,6 +427,7 @@
       "GSIM Application": "GSIM 애플리케이션",
       "Generate Report": "보고서 생성",
       "Get Parameters": "매개변수 가져오기",
+      "Go back": "돌아가기",
       "Go to next step": "다음 단계로 이동",
       "Group Loan Application": "단체대출 신청",
       "Group Saving Application": "그룹저장 신청",
@@ -459,6 +462,7 @@
       "Pie Chart": "파이 차트",
       "Post Dividend": "배당 후",
       "Previous": "이전의",
+      "Preview": "미리보기",
       "Print": "인쇄",
       "Proceed": "진행하다",
       "Productive Collection Sheet": "생산적인 컬렉션 시트",
@@ -801,7 +805,10 @@
       "required and cannot be negative": "필수이며 음수일 수 없습니다.",
       "should": "~해야 한다",
       "on": "~에",
-      "Password validation": "비밀번호는 최소 자여야 하며 대문자, 소문자 및 특수 문자 1개가 포함되어야 하며 반복되는 문자나 공백으로 구성되어서는 안 됩니다."
+      "Password validation": "비밀번호는 최소 자여야 하며 대문자, 소문자 및 특수 문자 1개가 포함되어야 하며 반복되는 문자나 공백으로 구성되어서는 안 됩니다.",
+      "Must be at least": "최소한이어야 합니다",
+      "Must be less or equal to": "이보다 작거나 같아야 합니다.",
+      "must be after or equal to start date": "시작 날짜 이후이거나 같아야 합니다"
     },
     "heading": {
       "Account Linked Financial": "다양한 금융 활동과 연결된 계정 목록입니다. 자세한 내용을 보려면 다음을 클릭하세요.",
@@ -1071,6 +1078,7 @@
       "Reject Checker": "검사기를 거부하십시오",
       "Release Amount": "출시 금액",
       "Repaid Every": "마다 상환",
+      "Repayment Schedule Preview": "상환 일정 미리보기",
       "Report Parameter": "보고서 매개변수",
       "Reschedule Loan": "일정 조정 대출",
       "Revert Transaction": "거래 되돌리기",
@@ -1192,6 +1200,7 @@
         "INCOME": "소득",
         "EXPENSE": "비용"
       },
+      "Percentage is required": "백분율이 필요합니다",
       "ACCOUNTING": "회계",
       "ADDRESS": "주소",
       "Above Changes are Effective from": "위 변경사항은 다음부터 적용됩니다.",
@@ -3043,6 +3052,7 @@
       "Loan Products": "대출상품",
       "Loan Provisioning Criteria Organization": "조직에 대한 대출 준비 기준 정의",
       "Loan Tranche Details": "대출 트랜치 세부정보",
+      "Loan Term Variations": "대출 용어 변형",
       "Loan View": "대출보기",
       "Loan products define the rules, default settings": "대출 상품은 금융 기관의 대출 상품에 대한 규칙, 기본 설정 및 제약 조건을 정의합니다. 대출 상품은 금융 기관 고객을 위한 여러 대출 계정에 대한 템플릿을 제공합니다.",
       "Loan": "대출",
@@ -3091,6 +3101,7 @@
       "No checker inbox data available for this search": "이 검색에 사용할 수 있는 검사기 받은 편지함 데이터가 없습니다.",
       "No client was found": "클라이언트를 찾을 수 없습니다.",
       "No data found": "데이터가 없습니다",
+      "NoDocuments": "사용 가능한 문서가 없습니다.",
       "No loan locked available": "잠긴 대출이 없습니다.",
       "No notifications": "알림 없음",
       "No pending loan available for disbursal": "지급 가능한 보류 중인 대출이 없습니다.",
@@ -3333,7 +3344,8 @@
       "Voluntary": "자발적인",
       "Write a note": "메모 쓰기",
       "“Maker-Checker” principle requires every tasks": "\"Maker-Checker\" 원칙은 오류와 오용 가능성을 줄이기 위해 모든 작업을 두 사람이 완료하도록 요구합니다. 한 사람이 프로세스를 시작하고 두 번째 사람이 프로세스를 완료합니다.",
-      "Buy Down Fees": "매입 수수료"
+      "Buy Down Fees": "매입 수수료",
+      "UploadDocumentHint": "미리보기를 생성하려면 PDF 또는 이미지를 업로드하세요."
     },
     "titles": {
       "Dashboard": "계기반",

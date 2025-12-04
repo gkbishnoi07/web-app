@@ -3,6 +3,8 @@
   "Logged in as": "connecté en tant que",
   "Remember me": "Souviens-toi de moi",
   "errors": {
+    "error.resource.notImplemented.type": "Erreur non implémentée",
+    "error.resource.notImplemented.message": "Fonctionnalité non implémentée !",
     "linkedSavingsAccountOwnership": "Le compte d'épargne lié n'appartient pas au client sélectionné.",
     "clientNotInGSIM": "Le client avec l'ID {{id}} n'est pas membre du GSIM.",
     "Capitalized Income amount adjusted already adjusted": "Montant du revenu capitalisé ajusté déjà ajusté",
@@ -425,6 +427,7 @@
       "GSIM Application": "Demande GSIM",
       "Generate Report": "Générer un rapport",
       "Get Parameters": "Obtenir les paramètres",
+      "Go back": "Retour",
       "Go to next step": "Passer à l'étape suivante",
       "Group Loan Application": "Demande de prêt de groupe",
       "Group Saving Application": "Demande d'épargne de groupe",
@@ -459,6 +462,7 @@
       "Pie Chart": "Diagramme circulaire",
       "Post Dividend": "Après dividende",
       "Previous": "Précédent",
+      "Preview": "Aperçu",
       "Print": "Imprimer",
       "Proceed": "Procéder",
       "Productive Collection Sheet": "Fiche de collecte productive",
@@ -801,7 +805,10 @@
       "required and cannot be negative": "obligatoire et ne peut pas être négatif",
       "should": "devrait",
       "on": "sur",
-      "Password validation": "Le mot de passe doit contenir au minimum {{minchar}} caractères, dont 1 majuscule, 1 minuscule et un caractère spécial et ne doit pas être composé de caractères répétés ou d'espaces blancs."
+      "Password validation": "Le mot de passe doit contenir au minimum {{minchar}} caractères, dont 1 majuscule, 1 minuscule et un caractère spécial et ne doit pas être composé de caractères répétés ou d'espaces blancs.",
+      "Must be at least": "Doit être au moins",
+      "Must be less or equal to": "Doit être inférieur ou égal à",
+      "must be after or equal to start date": "doit être postérieure ou égale à la date de début"
     },
     "heading": {
       "Account Linked Financial": "Liste des comptes liés aux différentes activités financières. Pour en savoir plus cliquez :",
@@ -1070,6 +1077,7 @@
       "Reject Checker": "Rejeter le vérificateur",
       "Release Amount": "Montant de la libération",
       "Repaid Every": "Remboursé tous les",
+      "Repayment Schedule Preview": "Aperçu du calendrier de remboursement",
       "Report Parameter": "Paramètre de rapport",
       "Reschedule Loan": "Prêt de reproduction",
       "Revert Transaction": "Annuler la transaction",
@@ -1191,6 +1199,7 @@
         "INCOME": "REVENU",
         "EXPENSE": "FRAIS"
       },
+      "Percentage is required": "Le pourcentage est requis",
       "ACCOUNTING": "COMPTABILITÉ",
       "ADDRESS": "ADRESSE",
       "Above Changes are Effective from": "Les modifications ci-dessus entrent en vigueur à partir de",
@@ -3042,6 +3051,7 @@
       "Loan Products": "Produits de prêt",
       "Loan Provisioning Criteria Organization": "Définir les critères de provisionnement des prêts pour l'organisation",
       "Loan Tranche Details": "Détails de la tranche de prêt",
+      "Loan Term Variations": "Variations de Durée du Prêt",
       "Loan View": "Vue du prêt",
       "Loan products define the rules, default settings": "Les produits de prêt définissent les règles, les paramètres par défaut et les contraintes des offres de prêt d'une institution financière. Un produit de prêt fournit un modèle pour plusieurs comptes de prêt pour les clients de l'institution financière.",
       "Loan": "Prêt",
@@ -3090,6 +3100,7 @@
       "No checker inbox data available for this search": "Aucune donnée de boîte de réception du vérificateur disponible pour cette recherche.",
       "No client was found": "Aucun client n'a été trouvé",
       "No data found": "Aucune donnée disponible",
+      "NoDocuments": "Aucun document disponible.",
       "No loan locked available": "Aucun prêt bloqué disponible.",
       "No notifications": "Pas de notifications",
       "No pending loan available for disbursal": "Aucun prêt en attente disponible pour décaissement.",
@@ -3332,7 +3343,8 @@
       "Voluntary": "Volontaire",
       "Write a note": "Écrire une note",
       "“Maker-Checker” principle requires every tasks": "Le principe « Maker-Checker » exige que chaque tâche soit effectuée par deux personnes afin de réduire les risques d'erreurs et de mauvaise utilisation. Une personne lance le processus et la seconde le termine.",
-      "Buy Down Fees": "Frais de rachat"
+      "Buy Down Fees": "Frais de rachat",
+      "UploadDocumentHint": "Téléchargez un PDF ou une image pour générer un aperçu."
     },
     "titles": {
       "Dashboard": "Tableau de bord",

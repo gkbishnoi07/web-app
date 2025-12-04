@@ -3,6 +3,8 @@
   "Logged in as": "prisijungęs kaip",
   "Remember me": "Prisimink mane",
   "errors": {
+    "error.resource.notImplemented.type": "Neįdiegta klaida",
+    "error.resource.notImplemented.message": "Funkcionalumas neįdiegtas!",
     "linkedSavingsAccountOwnership": "Susieta taupomoji sąskaita nepriklauso pasirinktam klientui.",
     "clientNotInGSIM": "Klientas su ID {{id}} nėra GSIM sistemoje.",
     "Capitalized Income amount adjusted already adjusted": "Kapitalizuotų pajamų suma pakoreguota jau pakoreguota",
@@ -425,6 +427,7 @@
       "GSIM Application": "GSIM programa",
       "Generate Report": "Sukurti ataskaitą",
       "Get Parameters": "Gaukite parametrus",
+      "Go back": "Grįžti",
       "Go to next step": "Eikite į kitą veiksmą",
       "Group Loan Application": "Grupinės paskolos paraiška",
       "Group Saving Application": "Grupės išsaugojimo programa",
@@ -459,6 +462,7 @@
       "Pie Chart": "Skritulinė diagrama",
       "Post Dividend": "Paskelbkite dividendus",
       "Previous": "Ankstesnis",
+      "Preview": "Peržiūra",
       "Print": "Spausdinti",
       "Proceed": "Tęskite",
       "Productive Collection Sheet": "Produktyvus surinkimo lapas",
@@ -801,7 +805,10 @@
       "required and cannot be negative": "privaloma ir negali būti neigiama",
       "should": "turėtų",
       "on": "įjungta",
-      "Password validation": "Slaptažodį turi sudaryti ne mažiau kaip {{minchar}} simbolių, iš kurių turi būti 1 didžioji, mažoji raidė ir specialus simbolis, o jį neturėtų sudaryti pasikartojantys simboliai ar tarpai"
+      "Password validation": "Slaptažodį turi sudaryti ne mažiau kaip {{minchar}} simbolių, iš kurių turi būti 1 didžioji, mažoji raidė ir specialus simbolis, o jį neturėtų sudaryti pasikartojantys simboliai ar tarpai",
+      "Must be at least": "Turi būti bent jau",
+      "Must be less or equal to": "Turi būti mažesnis arba lygus",
+      "must be after or equal to start date": "turi būti po pradžios datos arba jai lygi"
     },
     "heading": {
       "Account Linked Financial": "Sąskaitų, susietų su įvairia finansine veikla, sąrašas. Norėdami sužinoti daugiau, spustelėkite:",
@@ -1070,6 +1077,7 @@
       "Reject Checker": "Atmeskite tikrintuvą",
       "Release Amount": "Išleidimo suma",
       "Repaid Every": "Atlyginama kas",
+      "Repayment Schedule Preview": "Grąžinimo grafiko peržiūra",
       "Report Parameter": "Ataskaitos parametras",
       "Reschedule Loan": "Paskelbta paskola",
       "Revert Transaction": "Grąžinti operaciją",
@@ -1191,6 +1199,7 @@
         "INCOME": "PAJAMOS",
         "EXPENSE": "IŠLAIDOS"
       },
+      "Percentage is required": "Reikalingas procentas",
       "ACCOUNTING": "APSKAITA",
       "ADDRESS": "ADRESAS",
       "Above Changes are Effective from": "Aukščiau pateikti pakeitimai galioja nuo",
@@ -3043,6 +3052,7 @@
       "Loan Products": "Paskolos produktai",
       "Loan Provisioning Criteria Organization": "Apibrėžkite organizacijos paskolos suteikimo kriterijus",
       "Loan Tranche Details": "Išsami informacija apie paskolos dalį",
+      "Loan Term Variations": "Paskolos terminų variacijos",
       "Loan View": "Paskolos vaizdas",
       "Loan products define the rules, default settings": "Paskolų produktai apibrėžia finansų įstaigos skolinimo pasiūlymų taisykles, numatytuosius nustatymus ir apribojimus. Paskolos produktas suteikia šabloną kelioms paskolos paskyroms finansų įstaigos klientams.",
       "Loan": "Paskola",
@@ -3091,6 +3101,7 @@
       "No checker inbox data available for this search": "Nėra šios paieškos tikrinimo gautųjų duomenų.",
       "No client was found": "Klientas nerastas",
       "No data found": "Duomenų nerasta",
+      "NoDocuments": "Nėra dokumentų.",
       "No loan locked available": "Nėra užblokuotos paskolos.",
       "No notifications": "Nėra pranešimų",
       "No pending loan available for disbursal": "Nėra laukiamos paskolos, kurią būtų galima išmokėti.",
@@ -3333,7 +3344,8 @@
       "Voluntary": "Savanoriškas",
       "Write a note": "Parašykite pastabą",
       "“Maker-Checker” principle requires every tasks": "„Maker-Checker“ principas reikalauja, kad kiekvieną užduotį atliktų du žmonės, kad būtų sumažinta klaidų ir netinkamo naudojimo galimybė. Vienas asmuo pradeda procesą, o antrasis jį užbaigia.",
-      "Buy Down Fees": "Išpirkimo mokesčiai"
+      "Buy Down Fees": "Išpirkimo mokesčiai",
+      "UploadDocumentHint": "Įkelkite PDF arba vaizdą, kad sugeneruotumėte peržiūrą."
     },
     "titles": {
       "Dashboard": "Prietaisų skydelis",

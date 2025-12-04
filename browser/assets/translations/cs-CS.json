@@ -3,6 +3,8 @@
   "Logged in as": "Přihlášen jako",
   "Remember me": "Zapamatuj si mě",
   "errors": {
+    "error.resource.notImplemented.type": "Nenaimplementovaná chyba",
+    "error.resource.notImplemented.message": "Funkce není implementována!",
     "linkedSavingsAccountOwnership": "Propojený spořicí účet nepatří vybranému klientovi.",
     "clientNotInGSIM": "Klient s ID {{id}} není přítomen v GSIM.",
     "Capitalized Income amount adjusted already adjusted": "Výše kapitalizovaného příjmu již upravená",
@@ -425,6 +427,7 @@
       "GSIM Application": "Aplikace GSIM",
       "Generate Report": "Vygenerovat zprávu",
       "Get Parameters": "Získat parametry",
+      "Go back": "Vrátit se",
       "Go to next step": "Přejděte k dalšímu kroku",
       "Group Loan Application": "Žádost o skupinovou půjčku",
       "Group Saving Application": "Aplikace pro ukládání skupin",
@@ -459,6 +462,7 @@
       "Pie Chart": "Koláčový graf",
       "Post Dividend": "Vyplácet dividendu",
       "Previous": "Předchozí",
+      "Preview": "Náhled",
       "Print": "Tisk",
       "Proceed": "Pokračovat",
       "Productive Collection Sheet": "Produktivní kolekce list",
@@ -801,7 +805,10 @@
       "required and cannot be negative": "požadováno a nemůže být záporné",
       "should": "by měl",
       "on": "na",
-      "Password validation": "Heslo by mělo obsahovat minimálně {{minchar}} znaků, které by měly obsahovat 1 velké písmeno, malé písmeno a speciální znak a nemělo by se skládat z opakujících se znaků nebo mezer."
+      "Password validation": "Heslo by mělo obsahovat minimálně {{minchar}} znaků, které by měly obsahovat 1 velké písmeno, malé písmeno a speciální znak a nemělo by se skládat z opakujících se znaků nebo mezer.",
+      "Must be at least": "Musí být alespoň",
+      "Must be less or equal to": "Musí být menší nebo rovno",
+      "must be after or equal to start date": "musí být po nebo rovno datu zahájení"
     },
     "heading": {
       "Account Linked Financial": "Seznam účtů spojených s různými finančními aktivitami. Chcete-li vědět více, klikněte:",
@@ -1069,6 +1076,7 @@
       "Reject Checker": "Odmítnout kontrolu",
       "Release Amount": "Částka uvolnění",
       "Repaid Every": "Splaceno každý",
+      "Repayment Schedule Preview": "Náhled splátkového kalendáře",
       "Report Parameter": "Parametr sestavy",
       "Reschedule Loan": "Přeplánovací půjčka",
       "Revert Transaction": "Vrátit transakci",
@@ -1191,6 +1199,7 @@
         "EXPENSE": "NÁKLADY"
       },
       "ACCOUNTING": "ÚČETNICTVÍ",
+      "Percentage is required": "Je vyžadováno procento",
       "ADDRESS": "ADRESA",
       "Above Changes are Effective from": "Výše uvedené změny jsou účinné od",
       "Absent": "Chybí",
@@ -3043,6 +3052,7 @@
       "Loan Products": "Úvěrové produkty",
       "Loan Provisioning Criteria Organization": "Definujte kritéria pro poskytování úvěrů pro organizaci",
       "Loan Tranche Details": "Podrobnosti o tranši úvěru",
+      "Loan Term Variations": "Variace podmínek úvěru",
       "Loan View": "Pohled na půjčku",
       "Loan products define the rules, default settings": "Úvěrové produkty definují pravidla, výchozí nastavení a omezení pro nabídky půjček finanční instituce. Úvěrový produkt poskytuje pro klienty finanční instituce šablonu pro více úvěrových účtů.",
       "Loan": "Půjčka",
@@ -3091,6 +3101,7 @@
       "No checker inbox data available for this search": "Pro toto vyhledávání nejsou k dispozici žádná data doručené pošty Checker.",
       "No client was found": "Nebyl nalezen žádný klient",
       "No data found": "Nenalezena žádná data",
+      "NoDocuments": "Žádné dokumenty k dispozici.",
       "No loan locked available": "Žádná půjčka není k dispozici.",
       "No notifications": "Žádné oznámení",
       "No pending loan available for disbursal": "Není k dispozici žádná nevyřízená půjčka k vyplacení.",
@@ -3333,7 +3344,8 @@
       "Voluntary": "Dobrovolný",
       "Write a note": "Napište poznámku",
       "“Maker-Checker” principle requires every tasks": "Princip „Maker-Checker“ vyžaduje, aby každý úkol prováděli dva lidé, aby se snížila pravděpodobnost chyb a zneužití. Jedna osoba proces iniciuje a druhá jej dokončí.",
-      "Buy Down Fees": "Poplatky za odkup"
+      "Buy Down Fees": "Poplatky za odkup",
+      "UploadDocumentHint": "Nahrajte PDF nebo obrázek pro vygenerování náhledu."
     },
     "titles": {
       "Dashboard": "Přístrojová deska",
