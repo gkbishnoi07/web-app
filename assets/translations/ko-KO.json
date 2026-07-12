@@ -475,6 +475,7 @@
     "accounting": {
       "Accrual (periodic)": "발생(정기적)",
       "Accrual (upfront)": "발생(선불)",
+      "ACC_DEF_REV_AM": "이연매출 상각액을 반영한 발생주의 회계",
       "CASH_BASED": "현금",
       "Cash": "현금",
       "NONE": "없음",
@@ -577,6 +578,8 @@
       "Create Interest Refund": "이자 환불 생성",
       "Create Journal Entries": "분개 항목 만들기",
       "Create Loan Product": "대출상품 생성",
+      "Create Loan Product (Classic)": "Create Loan Product (Classic)",
+      "Create Loan Product (Convenient)": "Create Loan Product (Convenient)",
       "Create Office": "사무실 만들기",
       "Create Payment Type": "결제 유형 생성",
       "Create Preference": "환경설정 만들기",
@@ -771,7 +774,8 @@
       "Yes": "예",
       "undo_account_transfer": "계좌 이체 취소",
       "All": "전체",
-      "Pause Breach": "위반 일시중지"
+      "Pause Breach": "위반 일시중지",
+      "Resume Breach": "중단된 작업 재개"
     },
     "catalogs": {
       "% Amount": "양",
@@ -1120,6 +1124,10 @@
     },
     "heading": {
       "Breach Actions": "위반 행위",
+      "Delinquency & Breach": "연체 및 위반",
+      "Interest": "이자",
+      "Multi-step form": "Multi-step form",
+      "Loan product creation": "Loan product creation",
       "Near Breach Actions": "위반 임박 행위",
       "About Us": "회사 소개",
       "Account Information": "계정 정보",
@@ -1588,6 +1596,9 @@
       "Pause Timeline": "일시중지 타임라인"
     },
     "inputs": {
+      "Annual interest rate": "Annual interest rate",
+      "Annual interest rate by loan cycle": "Annual interest rate by loan cycle",
+      "Annual interest rate frequency": "Annual interest rate frequency",
       "Breach Actions": "위반 행위",
       "# Remittance": "# 송금",
       "# Senders": "# 송금인",
@@ -2006,6 +2017,7 @@
       "Discount Default": "할인 기본값",
       "Discount External Id": "할인 외부 ID",
       "Discount External Id must differ from External Id": "할인 외부 ID는 외부 ID와 달라야 합니다",
+      "Discount Fee Adjustment": "할인 수수료 조정",
       "Discount Fee Balance": "할인 수수료 잔액",
       "Discount must be greater than or equal to 0": "할인은 0 이상이어야 합니다",
       "Display Name": "이름 표시하기",
@@ -2497,6 +2509,7 @@
       "Multiple Debit Entries Allowed": "복수 차변 항목 허용",
       "Municipality": "시/군/구",
       "N/A": "해당 없음",
+      "Net Disbursal Amount": "순 지급 금액",
       "New": "신규",
       "NID": "국민 신분증",
       "Name": "이름",
@@ -2818,6 +2831,7 @@
       "Revised Meeting Date": "수정된 회의 날짜",
       "Role": "역할",
       "Role Description": "역할 설명",
+      "Schedule": "Schedule",
       "System": "시스템",
       "This role provides all application permissions": "이 역할은 모든 애플리케이션 권한을 제공합니다.",
       "Role Name": "역할 이름",
@@ -3338,6 +3352,7 @@
       "Withdrawn": "빼는"
     },
     "dialogContext": {
+      "Are you sure you want to resume the breach pause": "중단된 작업을 재개하시겠습니까?",
       "Are you sure you want Unassign Staff": "직원 해제를 하시겠습니까?",
       "Are you sure you want to calculate interest ?": "이자를 계산하시겠습니까?",
       "Are you sure you want to post interest ?": "이자를 등록하시겠습니까?",
@@ -3369,6 +3384,8 @@
       "undo_account_transfer": "이 계좌 이체를 취소하시겠습니까?"
     },
     "text": {
+      "Max": "최대",
+      "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "위반 행위 없음",
       "No Near Breach Actions": "위반 임박 행위 없음",
       "A": "ㅏ",
@@ -3974,6 +3991,10 @@
       "Table": "테이블",
       "Tax Components": "세금 구성요소",
       "Tellers": "텔러",
+      "Template defaults are preloaded": "Template defaults are preloaded",
+      "Select a product below": "Select a product below",
+      "Upcoming": "예정된",
+      "Complete control over every aspect of product behavior": "모라토리엄과 보조금부터 다중 트랜치 구조, 배분 규칙까지 — 상품 동작의 모든 측면을 완벽하게 제어할 수 있습니다.",
       "Template I am trying to use": "제가 사용하려고 하는 템플릿입니다. 괜찮나요?",
       "Templates": "템플릿",
       "Tenant": "임차인",
@@ -4127,7 +4148,17 @@
       "withoutCategory": "카테고리 없음",
       "Maker-Checker principle requires every tasks": "원칙은 오류와 오용 가능성을 줄이기 위해 모든 작업을 두 사람이 완료하도록 요구합니다. 한 사람이 프로세스를 시작하고 두 번째 사람이 프로세스를 완료합니다.",
       "Breach Actions": "위반 작업",
-      "“Maker-Checker” principle requires every tasks": "\"Maker-Checker\" 원칙은 오류와 오용 가능성을 줄이기 위해 모든 작업을 두 사람이 완료하도록 요구합니다. 한 사람이 프로세스를 시작하고 두 번째 사람이 프로세스를 완료합니다."
+      "“Maker-Checker” principle requires every tasks": "\"Maker-Checker\" 원칙은 오류와 오용 가능성을 줄이기 위해 모든 작업을 두 사람이 완료하도록 요구합니다. 한 사람이 프로세스를 시작하고 두 번째 사람이 프로세스를 완료합니다.",
+      "SavingsAccountsStayedLockedBusinessEvent": "Savings Accounts Stayed Locked Business Event",
+      "WorkingCapitalLoanDisbursalTransactionBusinessEvent": "Working Capital Loan Disbursal Transaction Business Event",
+      "WorkingCapitalLoanUndoDisbursalTransactionBusinessEvent": "Working Capital Loan Undo Disbursal Transaction Business Event",
+      "WorkingCapitalLoanRepaymentTransactionBusinessEvent": "Working Capital Loan Repayment Transaction Business Event",
+      "WorkingCapitalLoanCreditBalanceRefundTransactionBusinessEvent": "Working Capital Loan Credit Balance Refund Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeTransactionBusinessEvent": "Working Capital Loan Discount Fee Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeAdjustmentTransactionBusinessEvent": "Working Capital Loan Discount Fee Adjustment Transaction Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPreBusinessEvent": "Working Capital Loan Charge Adjustment Pre Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPostBusinessEvent": "Working Capital Loan Charge Adjustment Post Business Event",
+      "SavingsAccountForceWithdrawalBusinessEvent": "Savings Account Force Withdrawal Business Event"
     },
     "permissions": {
       "actions": {

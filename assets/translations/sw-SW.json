@@ -475,6 +475,7 @@
     "accounting": {
       "Accrual (periodic)": "Accrual (mara kwa mara)",
       "Accrual (upfront)": "Accrual (mbele)",
+      "ACC_DEF_REV_AM": "Ukusanyaji pamoja na upunguzaji wa mapato yaliyocheleweshwa",
       "CASH_BASED": "Fedha taslimu",
       "Cash": "Fedha taslimu",
       "NONE": "Hakuna",
@@ -577,6 +578,8 @@
       "Create Interest Refund": "Unda Marejesho ya Riba",
       "Create Journal Entries": "Unda Maingizo ya Jarida",
       "Create Loan Product": "Tengeneza Bidhaa ya Mkopo",
+      "Create Loan Product (Classic)": "Create Loan Product (Classic)",
+      "Create Loan Product (Convenient)": "Create Loan Product (Convenient)",
       "Create Office": "Unda Ofisi",
       "Create Payment Type": "Unda Aina ya Malipo",
       "Create Preference": "Tengeneza Upendeleo",
@@ -771,7 +774,8 @@
       "Yes": "Ndiyo",
       "undo_account_transfer": "Futa uhamisho wa akaunti",
       "All": "Vyote",
-      "Pause Breach": "Sitisha Ukiukaji"
+      "Pause Breach": "Sitisha Ukiukaji",
+      "Resume Breach": "Endelea Ukiukaji"
     },
     "catalogs": {
       "% Amount": "Kiasi",
@@ -1118,6 +1122,10 @@
     },
     "heading": {
       "Breach Actions": "Ukiukaji Vitendo",
+      "Delinquency & Breach": "Uhalifu na Ukiukaji",
+      "Interest": "Riba",
+      "Multi-step form": "Multi-step form",
+      "Loan product creation": "Loan product creation",
       "Near Breach Actions": "Ukiukaji unaokaribia Vitendo",
       "About Us": "Kuhusu Sisi",
       "Account Information": "Taarifa za Akaunti",
@@ -1584,6 +1592,9 @@
       "Pause Timeline": "Mfuatano wa Pumziko"
     },
     "inputs": {
+      "Annual interest rate": "Annual interest rate",
+      "Annual interest rate by loan cycle": "Annual interest rate by loan cycle",
+      "Annual interest rate frequency": "Annual interest rate frequency",
       "Breach Actions": "Ukiukaji Vitendo",
       "# Remittance": "# Uhawilishaji",
       "# Senders": "# Watumaji",
@@ -2002,6 +2013,7 @@
       "Discount Default": "Punguzo Chaguomsingi",
       "Discount External Id": "Kitambulisho cha Nje cha Punguzo",
       "Discount External Id must differ from External Id": "Kitambulisho cha Nje cha Punguzo lazima kitofautiane na Kitambulisho cha Nje",
+      "Discount Fee Adjustment": "Marekebisho ya Ada ya Punguzo",
       "Discount Fee Balance": "Salio la ada ya punguzo",
       "Discount must be greater than or equal to 0": "Punguzo lazima liwe kubwa au sawa na 0",
       "Display Name": "Jina la Kuonyesha",
@@ -2493,6 +2505,7 @@
       "Multiple Debit Entries Allowed": "Maingizo Mengi ya Malipo Yanaruhusiwa",
       "Municipality": "Manispaa",
       "N/A": "N/A",
+      "Net Disbursal Amount": "Kiasi Halisi cha Utoaji",
       "New": "Mpya",
       "NID": "Kitambulisho cha Taifa",
       "Name": "Jina",
@@ -2815,6 +2828,7 @@
       "Revised Meeting Date": "Tarehe ya Mkutano Iliyorekebishwa",
       "Role": "Jukumu",
       "Role Description": "Maelezo ya Wajibu",
+      "Schedule": "Schedule",
       "System": "Mfumo",
       "This role provides all application permissions": "Jukumu hili linatoa ruhusa zote za programu.",
       "Role Name": "Jina la jukumu",
@@ -3335,6 +3349,7 @@
       "Withdrawn": "Kutolewa"
     },
     "dialogContext": {
+      "Are you sure you want to resume the breach pause": "Je, una hakika unataka kuendelea na kusitishwa kwa ukiukaji?",
       "Are you sure you want Unassign Staff": "Je, una uhakika unataka kuondoa wafanyakazi?",
       "Are you sure you want to calculate interest ?": "Je, una uhakika unataka kuhesabu riba?",
       "Are you sure you want to post interest ?": "Je, una uhakika unataka kuchapisha riba?",
@@ -3366,6 +3381,8 @@
       "undo_account_transfer": "Una uhakika unataka kufuta uhamisho huu wa akaunti?"
     },
     "text": {
+      "Max": "Upeo",
+      "Hidden variables and predefined values are included in the final payload automatically.": "Hidden variables and predefined values are included in the final payload automatically.",
       "No Breach Actions": "Hakuna Ukiukaji Vitendo",
       "No Near Breach Actions": "Hakuna Ukiukaji unaokaribia Vitendo",
       "A": "A",
@@ -3971,6 +3988,10 @@
       "Table": "Meza",
       "Tax Components": "Vipengele vya Ushuru",
       "Tellers": "Watangazaji",
+      "Template defaults are preloaded": "Template defaults are preloaded",
+      "Select a product below": "Select a product below",
+      "Upcoming": "Inayokuja",
+      "Complete control over every aspect of product behavior": "Udhibiti kamili juu ya kila kipengele cha tabia ya bidhaa — kutoka kusitishwa na ruzuku hadi miundo ya tranche nyingi, kanuni za mgawanyo, na mengine zaidi.",
       "Template I am trying to use": "Hiki ndicho kiolezo ninachojaribu kutumia. Je, ni sawa.",
       "Templates": "Violezo",
       "Tenant": "Mpangaji",
@@ -4124,7 +4145,17 @@
       "withoutCategory": "Bila Kitengo",
       "Maker-Checker principle requires every tasks": "Kanuni ya Mtengenezaji-Kikagua inahitaji kila kazi kukamilishwa na watu wawili ili kupunguza uwezekano wa makosa na matumizi mabaya. Mtu mmoja anaanzisha mchakato na wa pili anakamilisha.",
       "Breach Actions": "Vitendo vya Ukiukaji",
-      "“Maker-Checker” principle requires every tasks": "Kanuni ya \"Mtengenezaji-Kikagua\" inahitaji kila kazi kukamilishwa na watu wawili ili kupunguza uwezekano wa makosa na matumizi mabaya. Mtu mmoja anaanzisha mchakato na wa pili anakamilisha."
+      "“Maker-Checker” principle requires every tasks": "Kanuni ya \"Mtengenezaji-Kikagua\" inahitaji kila kazi kukamilishwa na watu wawili ili kupunguza uwezekano wa makosa na matumizi mabaya. Mtu mmoja anaanzisha mchakato na wa pili anakamilisha.",
+      "SavingsAccountsStayedLockedBusinessEvent": "Savings Accounts Stayed Locked Business Event",
+      "WorkingCapitalLoanDisbursalTransactionBusinessEvent": "Working Capital Loan Disbursal Transaction Business Event",
+      "WorkingCapitalLoanUndoDisbursalTransactionBusinessEvent": "Working Capital Loan Undo Disbursal Transaction Business Event",
+      "WorkingCapitalLoanRepaymentTransactionBusinessEvent": "Working Capital Loan Repayment Transaction Business Event",
+      "WorkingCapitalLoanCreditBalanceRefundTransactionBusinessEvent": "Working Capital Loan Credit Balance Refund Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeTransactionBusinessEvent": "Working Capital Loan Discount Fee Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeAdjustmentTransactionBusinessEvent": "Working Capital Loan Discount Fee Adjustment Transaction Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPreBusinessEvent": "Working Capital Loan Charge Adjustment Pre Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPostBusinessEvent": "Working Capital Loan Charge Adjustment Post Business Event",
+      "SavingsAccountForceWithdrawalBusinessEvent": "Savings Account Force Withdrawal Business Event"
     },
     "permissions": {
       "actions": {

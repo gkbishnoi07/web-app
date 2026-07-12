@@ -476,6 +476,7 @@
     "accounting": {
       "Accrual (periodic)": "Akruální (periodické)",
       "Accrual (upfront)": "Akruální (předem)",
+      "ACC_DEF_REV_AM": "Časové rozlišení s odpisem odložených výnosů",
       "CASH_BASED": "Hotovost",
       "Cash": "Hotovost",
       "NONE": "Žádný",
@@ -578,6 +579,8 @@
       "Create Interest Refund": "Vytvořit vrácení úroků",
       "Create Journal Entries": "Vytvářejte záznamy deníku",
       "Create Loan Product": "Vytvořte produkt půjčky",
+      "Create Loan Product (Classic)": "Vytvořit úvěrový produkt (klasický)",
+      "Create Loan Product (Convenient)": "Vytvořit úvěrový produkt (pohodlný)",
       "Create Office": "Vytvořit Office",
       "Create Payment Type": "Vytvořit typ platby",
       "Create Preference": "Vytvořit předvolbu",
@@ -772,7 +775,8 @@
       "Yes": "Ano",
       "undo_account_transfer": "Vrátit převod účtu",
       "All": "Vše",
-      "Pause Breach": "Pozastavit porušení"
+      "Pause Breach": "Pozastavit porušení",
+      "Resume Breach": "Obnovení porušení"
     },
     "catalogs": {
       "% Amount": "% Amount",
@@ -1121,6 +1125,10 @@
     },
     "heading": {
       "Breach Actions": "Porušení Akce",
+      "Delinquency & Breach": "Delikvence a porušení",
+      "Interest": "Úrok",
+      "Multi-step form": "Vícekrokový formulář",
+      "Loan product creation": "Vytvoření úvěrového produktu",
       "Near Breach Actions": "Blížící se porušení Akce",
       "About Us": "O Nás",
       "Account Information": "Informace o účtu",
@@ -1587,6 +1595,9 @@
       "Pause Timeline": "Časová osa pauz"
     },
     "inputs": {
+      "Annual interest rate": "Roční úroková sazba",
+      "Annual interest rate by loan cycle": "Roční úroková sazba podle úvěrového cyklu",
+      "Annual interest rate frequency": "Frekvence roční úrokové sazby",
       "Breach Actions": "Porušení Akce",
       "# Remittance": "# Remitence",
       "# Senders": "# Odesílatelé",
@@ -2005,6 +2016,7 @@
       "Discount Default": "Výchozí sleva",
       "Discount External Id": "Externí id slevy",
       "Discount External Id must differ from External Id": "Externí id slevy se musí lišit od externího id",
+      "Discount Fee Adjustment": "Úprava poplatku za slevu",
       "Discount Fee Balance": "Zůstatek diskontního poplatku",
       "Discount must be greater than or equal to 0": "Sleva musí být větší nebo rovna 0",
       "Display Name": "Zobrazovaný název",
@@ -2496,6 +2508,7 @@
       "Multiple Debit Entries Allowed": "Je povoleno více debetních záznamů",
       "Municipality": "Obec",
       "N/A": "N/A",
+      "Net Disbursal Amount": "Čistá vyplacená částka",
       "New": "Nové",
       "NID": "Národní ID",
       "Name": "název",
@@ -2818,6 +2831,7 @@
       "Revised Meeting Date": "Upravený termín schůzky",
       "Role": "Role",
       "Role Description": "Popis role",
+      "Schedule": "Splátkový kalendář",
       "System": "Systém",
       "This role provides all application permissions": "Tato role poskytuje všechna oprávnění aplikace.",
       "Role Name": "Název role",
@@ -3339,6 +3353,7 @@
       "Withdrawn": "Stažený"
     },
     "dialogContext": {
+      "Are you sure you want to resume the breach pause": "Opravdu chcete obnovit porušení?",
       "Are you sure you want Unassign Staff": "Opravdu chcete odebrat přiřazení zaměstnance?",
       "Are you sure you want to calculate interest ?": "Jste si jisti, že chcete spočítat zájem?",
       "Are you sure you want to post interest ?": "Jste si jisti, že chcete zveřejnit zájem?",
@@ -3370,6 +3385,8 @@
       "undo_account_transfer": "Opravdu chcete vrátit tento převod účtu?"
     },
     "text": {
+      "Max": "Max",
+      "Hidden variables and predefined values are included in the final payload automatically.": "Skryté proměnné a předdefinované hodnoty jsou automaticky zahrnuty do konečného payloadu.",
       "No Breach Actions": "Žádné Porušení Akce",
       "No Near Breach Actions": "Žádné Blížící se porušení Akce",
       "A": "A",
@@ -3975,6 +3992,10 @@
       "Table": "Stůl",
       "Tax Components": "Složky daně",
       "Tellers": "Věštci",
+      "Template defaults are preloaded": "Výchozí hodnoty šablony jsou předvyplněny",
+      "Select a product below": "Vyberte produkt níže",
+      "Upcoming": "Nadcházející",
+      "Complete control over every aspect of product behavior": "Úplná kontrola nad každým aspektem chování produktu — od moratoria a subvencí až po struktury s více tranšemi, pravidla rozdělování plateb a mnohem více.",
       "Template I am trying to use": "Toto je šablona, ​​kterou se snažím použít. Je to v pořádku?",
       "Templates": "Šablony",
       "Tenant": "Nájemce",
@@ -4128,7 +4149,17 @@
       "withoutCategory": "Bez kategorie",
       "Maker-Checker principle requires every tasks": "Princip Maker-Checker vyžaduje, aby každý úkol prováděli dva lidé, aby se snížila pravděpodobnost chyb a zneužití. Jedna osoba proces iniciuje a druhá jej dokončí.",
       "Breach Actions": "Akce porušení",
-      "“Maker-Checker” principle requires every tasks": "Princip „Maker-Checker“ vyžaduje, aby každý úkol prováděli dva lidé, aby se snížila pravděpodobnost chyb a zneužití. Jedna osoba proces iniciuje a druhá jej dokončí."
+      "“Maker-Checker” principle requires every tasks": "Princip „Maker-Checker“ vyžaduje, aby každý úkol prováděli dva lidé, aby se snížila pravděpodobnost chyb a zneužití. Jedna osoba proces iniciuje a druhá jej dokončí.",
+      "SavingsAccountsStayedLockedBusinessEvent": "Savings Accounts Stayed Locked Business Event",
+      "WorkingCapitalLoanDisbursalTransactionBusinessEvent": "Working Capital Loan Disbursal Transaction Business Event",
+      "WorkingCapitalLoanUndoDisbursalTransactionBusinessEvent": "Working Capital Loan Undo Disbursal Transaction Business Event",
+      "WorkingCapitalLoanRepaymentTransactionBusinessEvent": "Working Capital Loan Repayment Transaction Business Event",
+      "WorkingCapitalLoanCreditBalanceRefundTransactionBusinessEvent": "Working Capital Loan Credit Balance Refund Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeTransactionBusinessEvent": "Working Capital Loan Discount Fee Transaction Business Event",
+      "WorkingCapitalLoanDiscountFeeAdjustmentTransactionBusinessEvent": "Working Capital Loan Discount Fee Adjustment Transaction Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPreBusinessEvent": "Working Capital Loan Charge Adjustment Pre Business Event",
+      "WorkingCapitalLoanChargeAdjustmentPostBusinessEvent": "Working Capital Loan Charge Adjustment Post Business Event",
+      "SavingsAccountForceWithdrawalBusinessEvent": "Savings Account Force Withdrawal Business Event"
     },
     "permissions": {
       "actions": {
