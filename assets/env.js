@@ -89,6 +89,8 @@
   window['env']['mifosInterbankTransfersApiProvider'] = '';
   window['env']['mifosInterbankTransfersApiVersion'] = '';
   window['env']['mifosInterbankTransfersEnabled'] = 'true';
+  window['env']['cbIldEnabled'] = 'false';
+  window['env']['pluginBaseUrl'] = 'http://localhost:8084';
 
   // Remittance Module Environment variables
   window['env']['mifosRemittanceApiClientUrl'] = '';
@@ -101,7 +103,9 @@
   // Mifos Copilot AI assistant
   // Set enableCopilot to 'true' to load the Copilot panel for this deployment (off by default)
   window['env']['enableCopilot'] = false;
-  window['env']['copilotMcpBaseUrl'] = 'https://ai.mifos.community';
+  // Base URL of the Copilot gateway, which holds the LLM key server-side and runs banking
+  // tools as the logged-in officer. Leave empty to use the built-in mock responses.
+  window['env']['copilotMcpBaseUrl'] = '';
 
   // Enable Role-Based Access Control (RBAC) for menu/button permissions
   // Set to true to enable RBAC, false (default) for backward compatibility
@@ -120,6 +124,9 @@
   // Postal Code Lookup (auto-fill address from postal code via external API)
   // Set to 'true' to enable, 'false' (default) to disable
   window['env']['enablePostalCodeLookup'] = 'false';
+
+  // Client Address Location (latitude, longitude, and map)
+  window['env']['enableClientAddressLocation'] = false;
 
   // Password Configuration
   window['env']['minPasswordLength'] = 8;
